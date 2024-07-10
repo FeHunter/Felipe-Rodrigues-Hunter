@@ -1,9 +1,10 @@
 import './App.css'
+import { Header } from './components/default/Header/Header'
 
 function App() {
   return (
-    <section>
-      <h1>Felipe Hunter</h1>
+    <section className='AppSection'>
+      <Header/>
     </section>
   )
 }
