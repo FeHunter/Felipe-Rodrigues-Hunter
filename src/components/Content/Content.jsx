@@ -1,6 +1,7 @@
 import { Footer } from '../Footer/Footer';
 import { CardContent } from './CardContent/CardContent';
 import style from './Content.module.css';
+import { ContentSlider } from './ContentSlider/ContentSlider';
 import { ItemList } from './List/ItemList';
 import { ProjectCard } from './ProjectCard/ProjectCard';
 import { SkillCard } from './SkillCard/SkillCard';
@@ -91,12 +92,16 @@ export function Content (){
             <CardContent title={"Projetos"} icon={<i class="fa-regular fa-folder-open"></i>} >
                 <div className={style.projectsContainer}>
                     <div className={style.projects}>
-                        <ProjectCard title={"Dino Island The Four Crystals - Unity, C#"} img={"src/assets/img/Projetos/Dino_Island_TFC.jpg"} />
-                        <ProjectCard title={"The Dark Forest Guardians - Unity, C#"} img={"src/assets/img/Projetos/The_Dark_Forest_G.png"} />
-                        <ProjectCard title={"E-Commerce com React, Mobile First e Responsivo"} img={"src/assets/img/Projetos/E-commerce Img.png"} />
-                        <ProjectCard title={"Rede Social com React, Material UI, Mobile First e Responsivo"} img={"src/assets/img/Projetos/Social Network Img.png"} />
-                        <ProjectCard title={"Joda Da Velha - JavaScript"} img={"src/assets/img/Projetos/JogoDaVelha_JS.JPG"} />
-                        <ProjectCard title={"Tela de Login - HTML/CSS"} img={"src/assets/img/Projetos/Login_Page_FRONT-END.JPG"} />
+                        <ContentSlider
+                            blocks={[
+                                <ProjectCard title={"Dino Island The Four Crystals - Unity, C#"} img={"src/assets/img/Projetos/Dino_Island_TFC.jpg"} />,
+                                <ProjectCard title={"The Dark Forest Guardians - Unity, C#"} img={"src/assets/img/Projetos/The_Dark_Forest_G.png"} />,
+                                <ProjectCard title={"E-Commerce com React, Mobile First e Responsivo"} img={"src/assets/img/Projetos/E-commerce Img.png"} />,
+                                <ProjectCard title={"Rede Social com React, Material UI, Mobile First e Responsivo"} img={"src/assets/img/Projetos/Social Network Img.png"} />,
+                                <ProjectCard title={"Joda Da Velha - JavaScript"} img={"src/assets/img/Projetos/JogoDaVelha_JS.JPG"} />,
+                                <ProjectCard title={"Tela de Login - HTML/CSS"} img={"src/assets/img/Projetos/Login_Page_FRONT-END.JPG"} />
+                            ]}
+                        />
                     </div>
                 </div>
             </CardContent>
