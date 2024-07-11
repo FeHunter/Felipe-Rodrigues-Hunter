@@ -5,6 +5,7 @@ export function Header () {
     return (
         <header className={style.container}>
             <div className={style.titleContainer}>
+                <span className={style.icon}> <i class="fa-solid fa-code"></i> </span>
                 <h1>Felipe Rodrigues <span className={style.subtitle}>Hunter</span></h1>
             </div>
             <div className={style.buttonsContainer}>

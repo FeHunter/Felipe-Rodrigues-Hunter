@@ -10,6 +10,13 @@
 
 .titleContainer {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    font-size: 1.3em;
+    margin-right: 10%;
 }
 
 .subtitle {

@@ -40,7 +40,10 @@ export function Content (){
                         </li>
                         <li>
                             <p>Banco de Dados SQL do Zero ao Avançado + Projetos Reais 2023</p>
-                            <p className={style.cursando}>Cursando</p>
+                            <p className={style.cursando}>
+                                <i class="fa-solid fa-terminal"></i>
+                                Cursando
+                            </p>
                         </li>
                         <li>
                             <p>Aprenda Microsoft POWER BI em 7 dias + Projetos Reais (2023)</p>
