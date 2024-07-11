@@ -54,9 +54,20 @@ export function Content (){
                 <div  className={style.list}>
                     <h3>Experiência Profissional</h3>
                     <ul>
+                        <br/>
+                        <li>
+                            <p>Desenvolvedor de jogos indies</p>
+                            <p>2018 - Atualmente</p>
+                        </li>
+                        <br/>
+                        <li>
+                            <p>Programador Web - Freelance</p>
+                            <p>2020 - 2022</p>
+                        </li>
+                        <br/>
                         <li>
                             <p>Recepcionista Bilíngue - Verzani & Sandrini - Itaú BBA S.A.</p>
-                            <p>2022 - Atualmente.</p>
+                            <p>2022 - Atualmente</p>
                         </li>
                     </ul>
                 </div>
