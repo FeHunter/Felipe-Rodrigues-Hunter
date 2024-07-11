@@ -74,6 +74,7 @@ export function Content (){
                     </div>
                 </section>
             </CardContent>
+            <CardContent title={"Projetos"} icon={<i class="fa-regular fa-folder-open"></i>} ></CardContent>
         </section>
     );
 }
