@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Footer } from '../Footer/Footer';
 import { CardContent } from './CardContent/CardContent';
 import style from './Content.module.css';
@@ -5,8 +6,43 @@ import { ContentSlider } from './ContentSlider/ContentSlider';
 import { ItemList } from './List/ItemList';
 import { ProjectCard } from './ProjectCard/ProjectCard';
 import { SkillCard } from './SkillCard/SkillCard';
+import { PopUpWindow } from './PopUpWindow/PopUpWindow';
 
 export function Content (){
+
+    const [popWindow, setPopWindow] = useState({
+        "Dino Island" : false,
+        "The Dark Forest" : false,
+        "Fim de Semana" : false,
+        "Jogo Da Velha" : false,
+        "ECommerce React" : false,
+        "Rede Social" : false,
+        "Tela de Login" : false,
+    })
+    function togglePopWindow (key) {
+        setPopWindow(prevState => ({
+            ...prevState,
+            [key]: !prevState[key]
+        }));
+        console.log(key);
+    }
+
+    function ContentOfPopWindows (){
+        return (
+            <section>
+                <PopUpWindow
+                    label={"Dino Island The Four Crystals - Unity, C#"}
+                    visible={popWindow['Dino Island']}
+                    closeClick={()=>{ togglePopWindow("Dino Island") }}
+                >
+                    <div>
+                        <p>Descrição: Jogo de plataforma 2D</p>
+                    </div>
+                </PopUpWindow>
+            </section>
+        )
+    }
+
     return (
         <section className={style.container}>
             <CardContent title={"Sobre"} icon={<i class="fa-solid fa-circle-info"></i>} >
@@ -94,10 +130,14 @@ export function Content (){
                     <div className={style.projects}>
                         <ContentSlider
                             blocks={[
-                                <ProjectCard title={"Dino Island The Four Crystals - Unity, C#"} img={"src/assets/img/Projetos/Dino_Island_TFC.jpg"} />,
+                                <ProjectCard
+                                    title={"Dino Island The Four Crystals - Unity, C#"}
+                                    img={"src/assets/img/Projetos/Dino_Island_TFC.jpg"}
+                                    onClick={()=>{ togglePopWindow("Dino Island") }}
+                                />,
                                 <ProjectCard title={"The Dark Forest Guardians - Unity, C#"} img={"src/assets/img/Projetos/The_Dark_Forest_G.png"} />,
                                 <ProjectCard title={"Fim de Semana App - React"} img={"src/assets/img/Projetos/Dino_Island_TFC.jpg"} />,
-                                <ProjectCard title={"Joda Da Velha - JavaScript"} img={"src/assets/img/Projetos/JogoDaVelha_JS.JPG"} />,
+                                <ProjectCard title={"Jogo Da Velha - JavaScript"} img={"src/assets/img/Projetos/JogoDaVelha_JS.JPG"} />,
                                 <ProjectCard title={"E-Commerce com React, Mobile First e Responsivo"} img={"src/assets/img/Projetos/E-commerce Img.png"} />,
                                 <ProjectCard title={"Rede Social com React, Material UI, Mobile First e Responsivo"} img={"src/assets/img/Projetos/Social Network Img.png"} />,
                                 <ProjectCard title={"Tela de Login - HTML/CSS"} img={"src/assets/img/Projetos/Login_Page_FRONT-END.JPG"} />,
@@ -105,6 +145,8 @@ export function Content (){
                         />
                     </div>
                 </div>
+                {/* Janelas de PopUp dos projetos */}
+                {ContentOfPopWindows()}
             </CardContent>
             <Footer/>
         </section>
