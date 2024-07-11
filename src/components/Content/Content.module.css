@@ -5,6 +5,11 @@
     overflow-y: auto;
 }
 
+.aboutText p {
+    margin: 2% 0;
+}
+
+/* Lista */
 .list {
     display: flex;
     flex-direction: column;
@@ -20,16 +25,14 @@
 }
 .list ul {
     width: 70%;
+    list-style: none;
 }
 .cursando, .list a {
     color: gray;
     text-decoration: none;
 }
-.cursando:hover, .list a:hover {
-    cursor: pointer;
-    color: gold;
-}
 
+/* Habilidades */
 .skillContainer {
     width: 100%;
     display: flex;

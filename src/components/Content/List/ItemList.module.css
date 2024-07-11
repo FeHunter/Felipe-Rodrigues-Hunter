@@ -1,0 +1,37 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1%;
+    margin: 2% 0;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 10px;
+    transition: .3s;
+}
+.item:hover {
+    cursor: pointer;
+}
+.item:hover > .content a, .item:hover > .content span {
+    color: gold;
+    transition: .3s;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.progressBar {
+    position: relative;
+    display: block;
+    height: 3px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    transition: .3s;
+}
+.item:hover > .progressBar {
+    background-color: gold;
+    transition: .3s;
+}

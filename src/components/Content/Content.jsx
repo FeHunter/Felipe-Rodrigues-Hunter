@@ -1,12 +1,13 @@
 import { CardContent } from './CardContent/CardContent';
 import style from './Content.module.css';
+import { ItemList } from './List/ItemList';
 import { SkillCard } from './SkillCard/SkillCard';
 
 export function Content (){
     return (
         <section className={style.container}>
             <CardContent title={"Sobre"} icon={<i class="fa-solid fa-circle-info"></i>} >
-                <div>
+                <div className={style.aboutText}>
                     <p>
                         Olá, meu nome é Felipe, tenho 22 anos e moro em Embu Das Artes, São Paulo. Atuo como Desenvolvedor Web e de Jogos, possuindo habilidades em HTML, CSS, Javascript, C/C++, C# e <a href="https://unity.com/pt" target="_blank">Unity Engine</a>. Atualmente, sou estudante de Análise e Desenvolvimento de Sistemas no <a href="https://www.infnet.edu.br/infnet/home/" target="_blank">Instituto Infnet</a>.
                     </p>
@@ -23,30 +24,30 @@ export function Content (){
                 <div className={style.list}>
                     <h3>Educação</h3>
                     <ul>
-                        <li>
+                        <ItemList  progressBar={'70%'}>
                             <p>Análise e Desenvolvimento de Sistemas - Infnet</p>
-                            <p className={style.cursando}><i class="fa-solid fa-terminal"></i> Cursando...</p>
-                        </li>
-                        <li>
+                            <span className={style.cursando}><i class="fa-solid fa-hourglass-end"></i> Cursando...</span>
+                        </ItemList>
+                        <ItemList progressBar={'100%'}>
                             <p>Curso em Vídeo HTML5</p>
-                            <a href="pdf/Certificado_do_Curso_Em_Vidio_HTML5.pdf" target="_blank"><i class="fa-solid fa-terminal"></i> Certificado</a>
-                        </li>
-                        <li>
-                            <p>Curso Completo de Linguagem C e C++ - Iniciante Ao Avançado</p>
-                            <a href="pdf/Certificado_C&C++_Udemy.pdf" target="_blank"><i class="fa-solid fa-terminal"></i> Certificado</a>
-                        </li>
-                        <li>
-                            <p>C# COMPLETO Programação Orientada a Objetos + Projetos</p>
-                            <p className={style.cursando}><i class="fa-solid fa-terminal"></i> Cursando...</p>
-                        </li>
-                        <li>
+                            <a href="pdf/Certificado_do_Curso_Em_Vidio_HTML5.pdf" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
+                        </ItemList>
+                        <ItemList  progressBar={'100%'}>
+                            <p>Curso Completo de Linguagem C e C++</p>
+                            <a href="pdf/Certificado_C&C++_Udemy.pdf" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
+                        </ItemList>
+                        <ItemList  progressBar={'95%'}>
+                            <p>C# Programação Orientada a Objetos + Projetos</p>
+                            <span className={style.cursando}><i class="fa-solid fa-hourglass-end"></i> Cursando...</span>
+                        </ItemList>
+                        <ItemList  progressBar={'30%'}>
                             <p>Banco de Dados SQL do Zero ao Avançado + Projetos Reais 2023</p>
-                            <p className={style.cursando}> <i class="fa-solid fa-terminal"></i> Cursando...</p>
-                        </li>
-                        <li>
-                            <p>Aprenda Microsoft POWER BI em 7 dias + Projetos Reais (2023)</p>
-                            <a href="pdf/Certificado Udemy Power BI.pdf" target="_blank"><i class="fa-solid fa-terminal"></i> Certificado</a>
-                        </li>
+                            <span className={style.cursando}> <i class="fa-solid fa-hourglass-end"></i> Cursando...</span>
+                        </ItemList>
+                        <ItemList  progressBar={'100%'}>
+                            <p>Microsoft POWER BI 2023</p>
+                            <a href="pdf/Certificado Udemy Power BI.pdf" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
+                        </ItemList>
                     </ul>
                 </div>
                 <div  className={style.list}>
