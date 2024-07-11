@@ -96,10 +96,11 @@ export function Content (){
                             blocks={[
                                 <ProjectCard title={"Dino Island The Four Crystals - Unity, C#"} img={"src/assets/img/Projetos/Dino_Island_TFC.jpg"} />,
                                 <ProjectCard title={"The Dark Forest Guardians - Unity, C#"} img={"src/assets/img/Projetos/The_Dark_Forest_G.png"} />,
+                                <ProjectCard title={"Fim de Semana App - React"} img={"src/assets/img/Projetos/Dino_Island_TFC.jpg"} />,
+                                <ProjectCard title={"Joda Da Velha - JavaScript"} img={"src/assets/img/Projetos/JogoDaVelha_JS.JPG"} />,
                                 <ProjectCard title={"E-Commerce com React, Mobile First e Responsivo"} img={"src/assets/img/Projetos/E-commerce Img.png"} />,
                                 <ProjectCard title={"Rede Social com React, Material UI, Mobile First e Responsivo"} img={"src/assets/img/Projetos/Social Network Img.png"} />,
-                                <ProjectCard title={"Joda Da Velha - JavaScript"} img={"src/assets/img/Projetos/JogoDaVelha_JS.JPG"} />,
-                                <ProjectCard title={"Tela de Login - HTML/CSS"} img={"src/assets/img/Projetos/Login_Page_FRONT-END.JPG"} />
+                                <ProjectCard title={"Tela de Login - HTML/CSS"} img={"src/assets/img/Projetos/Login_Page_FRONT-END.JPG"} />,
                             ]}
                         />
                     </div>
