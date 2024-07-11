@@ -1,10 +1,12 @@
 import './App.css'
-import { Header } from './components/default/Header/Header'
+import { Content } from './components/Content/Content'
+import { Header } from './components/Header/Header'
 
 function App() {
   return (
     <section className='AppSection'>
-      <Header/>
+      <div className='header'> <Header/> </div>
+      <div className='content'> <Content/> </div>
     </section>
   )
 }

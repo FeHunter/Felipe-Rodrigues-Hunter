@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 2% 0;
+}
+
+.title {
+    font-size: 1.1em;
+    color: gold;
+    width: 100%;
+    padding: 1%;
+    border-bottom: 1px solid gray;
+}
+
+.text {
+    width: 90%;
+    text-align: left;
+    margin-top: 1%;
+}
+.text p {
+    margin: 20px 0;
+}

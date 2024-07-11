@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0;
+}
+.list h3 {
+    width: 70%;
+    text-align: left;
+    color: gold;
+    font-size: 1.2em;
+}
+.list ul {
+    width: 70%;
+}
+.cursando, .list a {
+    color: gray;
+}
+.cursando:hover, .list a:hover {
+    cursor: pointer;
+    color: gold;
+}
