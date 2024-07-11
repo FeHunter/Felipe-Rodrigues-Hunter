@@ -1,3 +1,4 @@
+import { Footer } from '../Footer/Footer';
 import { CardContent } from './CardContent/CardContent';
 import style from './Content.module.css';
 import { ItemList } from './List/ItemList';
@@ -99,6 +100,7 @@ export function Content (){
                     </div>
                 </div>
             </CardContent>
+            <Footer/>
         </section>
     );
 }

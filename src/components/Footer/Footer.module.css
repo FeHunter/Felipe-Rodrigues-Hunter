@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+    border-top: 1px solid rgb(70, 70, 70);
+    color: gray;
+}
+
+.linksContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.externalLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20%;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-style: normal;
+}
