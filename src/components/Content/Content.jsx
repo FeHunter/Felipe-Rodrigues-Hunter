@@ -147,11 +147,11 @@ export function Content (){
                         <div>
                             <ProjectText
                                 title={"Sobre:"}
-                                text={"Projeto feito para avaliação da faculdade. Site e-commerce, uma loja que vende peças exclusivas para lamborghini. Site totalmente responsivo e pensando em Mobile First. Técninas e tecnologias usadas usadas: Mobile First, React, CSS Module, HTML, CSS, JS e Responsividade."}
+                                text={"Projeto feito para avaliação da faculdade. Site e-commerce, uma loja que vende peças exclusivas para lamborghini. Site totalmente responsivo e pensando em Mobile First. \n\n Técninas e tecnologias usadas usadas: \n° Mobile First, \n° React, \n° CSS Module, \n° HTML, \n° CSS, \n° JS, \n° Responsividade."}
                             />
                         </div>
                     </section>
-                    <ProjectImages label={"Screenshots do jogo rodando no navegador"}> 
+                    <ProjectImages label={"Screenshots"}> 
                         <img src='src/assets/img/Projetos/eccomerce_scr1.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
                         <img src='src/assets/img/Projetos/eccomerce_scr2.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
                     </ProjectImages>
@@ -166,15 +166,16 @@ export function Content (){
                         <div>
                             <ProjectText
                                 title={"Sobre:"}
-                                text={"Projeto feito para avaliação da faculdade. Site e-commerce, uma loja que vende peças exclusivas para lamborghini. Site totalmente responsivo e pensando em Mobile First. Técninas e tecnologias usadas usadas: Mobile First, React, CSS Module, HTML, CSS, JS e Responsividade."}
+                                text={"Projeto Rede Social feito para avaliação da faculdade. Site de uma rede social com tema de F1 e carros, campos como feed de postagem, amigos sugestão de amizades e comentários em cada post. \n\n Técninas e tecnologias usadas usadas \n° Mobile First, \n° React, \n° CSS Module, \n° HTML, \n° CSS, \n° JS, \n° Material UI, \n° Responsividade."}
                             />
                         </div>
                     </section>
-                    <ProjectImages label={"Screenshots do jogo rodando no navegador"}> 
-                        <img src='src/assets/img/Projetos/eccomerce_scr1.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
-                        <img src='src/assets/img/Projetos/eccomerce_scr2.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
+                    <ProjectImages label={"Screenshots"}> 
+                        <img src='src/assets/img/Projetos/socialCarsScr1.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
+                        <img src='src/assets/img/Projetos/socialCarsScr2.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
+                        <img src='src/assets/img/Projetos/socialCarsScr3.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
                     </ProjectImages>
-                    <ProjectLink label={"Código no GitHub"} link={"https://github.com/FeHunter/Site-Ecommerce-AT"} />
+                    <ProjectLink label={"Código no GitHub"} link={"https://github.com/FeHunter/Rede-Social-AT-Mobile-First"} />
                 </PopUpWindow>
             </section>
         )
@@ -182,20 +183,21 @@ export function Content (){
 
     return (
         <section className={style.container}>
-            <CardContent title={"Sobre"} icon={<i class="fa-solid fa-circle-info"></i>} >
+            <CardContent id={"Sobre"} title={"Sobre"} icon={<i class="fa-solid fa-circle-info"></i>}>
                 <div className={style.aboutText}>
-                    <p>
-                        Olá, meu nome é Felipe, tenho 22 anos e moro em Embu Das Artes, São Paulo. Atuo como Desenvolvedor Web e de Jogos, possuindo habilidades em HTML, CSS, Javascript, C/C++, C# e <a href="https://unity.com/pt" target="_blank">Unity Engine</a>. Atualmente, sou estudante de Análise e Desenvolvimento de Sistemas no <a href="https://www.infnet.edu.br/infnet/home/" target="_blank">Instituto Infnet</a>.
-                    </p>
-                    <p>
-                        Meu principal objetivo é ingressar no mercado de Tecnologia da Informação, buscando oportunidades de estágio ou posição júnior como Programador Front-End ou Programador Unity.
-                    </p>
-                    <p>
-                        Embora trabalhe como Recepcionista Bilíngue no Banco Itaú e aprecie essa experiência, minha paixão pela área de TI me motiva a migrar para esse setor.
-                    </p>
-                    <p>
-                        Sou entusiasta de videogames a curiosidade sobre como os jogos são criados foi o impulso inicial que me levou a explorar a programação e desenvolver minhas habilidades nesse campo.
-                    </p>
+                <p>
+                    Olá! Meu nome é Felipe, tenho 23 anos. Sou Desenvolvedor Web e de Jogos, possuo habilidades em HTML5, CSS3, JavaScript, React, C# e <a href="https://unity.com/pt" target="_blank">Unity Engine</a>. Sou estudante de Análise e Desenvolvimento de Sistemas no <a href="https://www.infnet.edu.br/infnet/home/" target="_blank">Instituto Infnet</a>.
+                </p>
+                <p>
+                    Meu principal objetivo é ingressar no mercado de Tecnologia, buscando oportunidades de estágio ou posição júnior como Programador Front-End ou Programador Unity.
+                </p>
+                <p>
+                    Embora trabalhe como Recepcionista Bilíngue no Banco Itaú e aprecie essa experiência, minha paixão pela área de TI me motiva a migrar para esse setor.
+                </p>
+                <p>
+                    Sou entusiasta de videogames, e a curiosidade sobre como os jogos são criados foi o impulso inicial que me levou a explorar a programação e desenvolver minhas habilidades nesse campo.
+                </p>
+
                 </div>
                 <div className={style.list}>
                     <h3>Educação</h3>
@@ -206,11 +208,11 @@ export function Content (){
                         </ItemList>
                         <ItemList progressBar={'100%'}>
                             <p>Curso em Vídeo HTML5</p>
-                            <a href="pdf/Certificado_do_Curso_Em_Vidio_HTML5.pdf" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
+                            <a href="src/assets/pdf/Certificado_do_Curso_Em_Vidio_HTML5.pdf" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
                         </ItemList>
                         <ItemList  progressBar={'100%'}>
                             <p>Curso Completo de Linguagem C e C++</p>
-                            <a href="pdf/Certificado_C&C++_Udemy.pdf" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
+                            <a href="src/assets/pdf/Certificado_C&C++_Udemy.pdf" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
                         </ItemList>
                         <ItemList  progressBar={'95%'}>
                             <p>C# Programação Orientada a Objetos + Projetos</p>
@@ -222,7 +224,7 @@ export function Content (){
                         </ItemList>
                         <ItemList  progressBar={'100%'}>
                             <p>Microsoft POWER BI 2023</p>
-                            <a href="pdf/Certificado Udemy Power BI.pdf" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
+                            <a href="src/assets/pdf/Certificado Udemy Power BI.pdf" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
                         </ItemList>
                     </ul>
                 </div>
@@ -237,7 +239,7 @@ export function Content (){
                         <br/>
                         <li>
                             <p>Programador Web - Freelance</p>
-                            <p>2020 - 2022</p>
+                            <p>2021 - 2022</p>
                         </li>
                         <br/>
                         <li>
@@ -247,7 +249,7 @@ export function Content (){
                     </ul>
                 </div>
             </CardContent>
-            <CardContent title={"Habilidades"} icon={<i class="fa-regular fa-file-code"></i>} >
+            <CardContent id={"Habilidades"} title={"Habilidades"} icon={<i class="fa-regular fa-file-code"></i>} >
                 <section className={style.skillContainer}>
                     <div className={style.skills}>
                         <SkillCard label={"HTML 5"} img={"src/assets/img/Habilidades/html5.png"} />
@@ -262,7 +264,7 @@ export function Content (){
                     </div>
                 </section>
             </CardContent>
-            <CardContent title={"Projetos"} icon={<i class="fa-regular fa-folder-open"></i>} >
+            <CardContent id={"Projetos"} title={"Projetos"} icon={<i class="fa-regular fa-folder-open"></i>} >
                 <div className={style.projectsContainer}>
                     <div className={style.projects}>
                         <ContentSlider
@@ -295,8 +297,8 @@ export function Content (){
                                 <ProjectCard
                                     title={"Rede Social com React, Material UI, Mobile First e Responsivo"}
                                     img={"src/assets/img/Projetos/Social Network Img.png"}
+                                    onClick={()=>{ togglePopWindow("Rede Social") }}
                                 />,
-                                <ProjectCard title={"Tela de Login - HTML/CSS"} img={"src/assets/img/Projetos/Login_Page_FRONT-END.JPG"} />,
                             ]}
                         />
                     </div>

@@ -30,3 +30,13 @@
     justify-content: flex-end;
     width: 50%;
 }
+
+.linksContainer {
+    display: flex;
+    flex-direction: column;
+}
+.externalLink {
+    text-decoration: none;
+    font-style: normal;
+    margin: 1%;
+}

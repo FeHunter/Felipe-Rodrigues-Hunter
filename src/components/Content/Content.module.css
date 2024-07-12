@@ -42,7 +42,7 @@
 .skills {
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
+    width: 80%;
     justify-content: space-around;
 }
 

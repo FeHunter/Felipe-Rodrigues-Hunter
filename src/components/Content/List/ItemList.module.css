@@ -8,9 +8,7 @@
     border-radius: 10px;
     transition: .3s;
 }
-.item:hover {
-    cursor: pointer;
-}
+
 .item:hover > .content a, .item:hover > .content span {
     color: gold;
     transition: .3s;
