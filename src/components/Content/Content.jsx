@@ -107,27 +107,25 @@ export function Content (){
                     closeClick={()=>{ togglePopWindow("Fim de Semana") }}
                 >
                     <section>
-                        <div>
-                            <ProjectText
-                                title={"O que é?"}
-                                text={"Uma aplicação web que permita aos usuários terem acesso aos eventos (Festa, Parques, Museus etc.) que estão ocorrendo no mês e, principalmente, no final de semana em uma determinada localidade."}
-                            />
-                            <ProjectText
-                                title={"Tecnologias e Técnicas:"}
-                                text={"Esta plataforma foi desenvolvida utilizando React e técnicas como Mobile First e Scrum. Todo o versionamento do código foi feito utilizando o GitHub. Foram usadas APIs de terceiros como Sympla, Google Analytics e Google Maps."}
-                            />
-                            <ProjectText
-                                title={"Algumas Funcionalidades:"}
-                                text={"Cardápio: A plataforma permite ao usuário montar um cardápio dos itens que pretende consumir no evento, proporcionando assim um controle sobre seus gastos. Junto com o estabelecimento, a plataforma disponibiliza ao usuário as opções de alimentos para consumo no local. Caso deseje, o usuário também pode realizar compras através da plataforma. \n\n Transporte por Aplicativo: A plataforma, em parceria com alguns serviços de transporte, disponibiliza ao usuário diversas opções de transporte até o evento e de volta para sua residência ou local de escolha, sempre prezando pela segurança e transparência. \n\n Além de outras funcionalidades, como filtros por região, categorias, faixa etária e mais."}
-                            />
-                        </div>
+                        <ProjectText
+                            title={"O que é?"}
+                            text={"Uma aplicação web que permita aos usuários terem acesso aos eventos (Festa, Parques, Museus etc.) que estão ocorrendo no mês e, principalmente, no final de semana em uma determinada localidade."}
+                        />
+                        <ProjectText
+                            title={"Sobre o desenvolvimento:"}
+                            text={"Esta plataforma foi desenvolvida utilizando React e técnicas como Mobile First e Scrum. Todo o versionamento do código foi feito utilizando o GitHub. Foram usadas APIs de terceiros como Sympla, Google Analytics e Google Maps. \n\n Estou utilizando o sistema de autenticação do Google Firebase para cadastrar os usuários na plataforma, mas pretendo migrar futuramente para o Auth0, que permitirá mais opções de login com uma maior facilidade de implementação. \n\n Um dos maiores desafios foi implementar a API do Google Maps. Mesmo com vários tutoriais disponíveis na internet sobre o assunto, nada parecia funcionar corretamente. Depois de muito tempo, comecei a entender o funcionamento o suficiente para conseguir mostrar a rota entre duas localizações: a localização padrão do usuário informada no cadastro até o local do evento. \n\n Uma função desafiadora para programar, sem sombra de dúvidas, foi o sistema de cardápio para os eventos. A ideia é permitir ao usuário montar seu cardápio com os itens disponíveis no evento; ao arrastar o item para seu carrinho, o valor do item é adicionado à soma total."}
+                        />
+                        <ProjectImages label={"Imagens da Plataforma"}>
+                            <img src='https://i.ibb.co/wr81JBQ/Fim-de-Semana-App-scr1.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
+                            <img src='https://i.ibb.co/6P2xv7J/Fim-de-Semana-App-scr2.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
+                            <img src='https://i.ibb.co/0cF9Lpq/Fim-de-Semana-App-scr3.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
+                            <img src='https://i.ibb.co/1MKSJNy/Fim-de-Semana-App-scr4.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
+                        </ProjectImages>
+                        <ProjectText
+                            title={"Algumas Funcionalidades:"}
+                            text={"Cardápio: A plataforma permite ao usuário montar um cardápio dos itens que pretende consumir no evento, proporcionando assim um controle sobre seus gastos. Junto com o estabelecimento, a plataforma disponibiliza ao usuário as opções de alimentos para consumo no local. Caso deseje, o usuário também pode realizar compras através da plataforma. \n\n Transporte por Aplicativo: A plataforma, em parceria com alguns serviços de transporte, disponibiliza ao usuário diversas opções de transporte até o evento e de volta para sua residência ou local de escolha, sempre prezando pela segurança e transparência. \n\n Além de outras funcionalidades, como filtros por região, categorias, faixa etária e mais."}
+                        />
                     </section>
-                    <ProjectImages label={"Imagens da Plataforma"}>
-                        <img src='https://i.ibb.co/wr81JBQ/Fim-de-Semana-App-scr1.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
-                        <img src='https://i.ibb.co/6P2xv7J/Fim-de-Semana-App-scr2.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
-                        <img src='https://i.ibb.co/0cF9Lpq/Fim-de-Semana-App-scr3.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
-                        <img src='https://i.ibb.co/1MKSJNy/Fim-de-Semana-App-scr4.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
-                    </ProjectImages>
                 </PopUpWindow>
                 <PopUpWindow
                     label={"Jogo da Velha - Javascript"}
