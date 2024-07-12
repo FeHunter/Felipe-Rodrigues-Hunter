@@ -36,27 +36,37 @@ export function Content (){
                     closeClick={()=>{ togglePopWindow("Dino Island") }}
                 >
                     <section>
-                        <div>
-                            <ProjectText
-                                title={"Porque este jogo?"}
-                                text={"Meu genêro de jogo favorito é plataforma, gosto muito desse tipo de jogo como Super Mario World, Jak And Daxter, Adventure Island que foi a inspiração direta para Dino Island. Comecei o jogo em meados de 2021 e ainda estou fazendo algums melhorias até hoje..."}
-                            />
-                            <ProjectText
-                                title={"Sobre o jogo"}
-                                text={"Neste jogo você jogará com um dinossauro que é o guardião do cristal azul, seu objetivo será recuperar os outros três cristais que foram levados por um mago malvado que quer todo o poder dos cristais. \n Mas você não está sozinho, há outro mago que o ajudará a recuperar os cristais que você pegou. Você terá que passar por desafios na ilha dos dinossauros tendo que evitar seus amigos dinossauros que estão desesperados sem cristais. Para isso, o bom bruxo criou uma poção que faz os dinossauros adormecerem e que o ajudará em sua jornada."}
-                            />
-                        </div>
+                        <ProjectText
+                            title={"Porque este jogo?"}
+                            text={"Meu gênero de jogo favorito é plataforma. Gosto muito desse tipo de jogo, como Super Mario World, Jak and Daxter e Adventure Island, que foi a inspiração direta para Dino Island. Comecei o jogo em meados de 2021 e ainda estou fazendo algumas melhorias até hoje."}
+                        />
+                        <ProjectText
+                            title={"Sobre o jogo"}
+                            text={"Este é um jogo de plataforma 2D sidescroll com desafios de plataforma e progressão de níveis. \n Neste jogo você jogará com um dinossauro que é o guardião do cristal azul, seu objetivo será recuperar os outros três cristais que foram levados por um mago malvado que quer todo o poder dos cristais."}
+                        />
                         <ProjectImages label={"Imagens do jogo"}>
                             <img src="https://img.itch.zone/aW1hZ2UvNzkyNDU3LzUxMjc3NzguZ2lm/347x500/UftXH4.gif" alt="Dino Island The Four Crystal - BY Felipe Hunter" />
                             <img src="https://img.itch.zone/aW1hZ2UvNzkyNDU3LzUxMjc3OTguZ2lm/347x500/EmXVle.gif" alt="Dino Island The Four Crystal - BY Felipe Hunter" srcset="" />
                             <img src="https://img.itch.zone/aW1hZ2UvNzkyNDU3LzUxNjQyODAuZ2lm/347x500/fJRcUH.gif" alt="Dino Island The Four Crystal - BY Felipe Hunter" />
                             <img src="https://img.itch.zone/aW1hZ2UvNzkyNDU3LzUxNjQyNzguZ2lm/347x500/KVnF5F.gif" alt="Dino Island The Four Crystal - BY Felipe Hunter" />
                         </ProjectImages>
+                        <ProjectText
+                            title={"Um pouco sobre o desenvolvimento"}
+                            text={"Iniciei este projeto com a Unity 2022, se me lembro bem. A programação em si não foi o maior desafio; nesse lado eu me dou bem e é a parte que mais gosto de fazer no desenvolvimento. \n\n O desafio maior em si foi a arte para o jogo, que se compõe do trabalho de vários outros artistas que disponibilizam seus trabalhos como assets gratuitos. Alguns elementos eu mesmo tive que fazer ou adaptar para se encaixar no contexto do jogo. Outro desafio foram os efeitos sonoros, que também foram encontrados em sites que disponibilizam áudios gratuitamente e, claro, improvisei alguns também. \n\n O suporte ao Gamepad foi implementado em suas últimas atualizações. O suporte foi implantado utilizando o novo Input System da Unity, que permite de forma fácil e de uma só vez programar todos os movimentos e ações para diferentes tipos de entradas, como Gamepad e Teclado."}
+                        />
+                        <ProjectText
+                            title={"O que esperar deste projeto?"}
+                            text={"Atualmente, estou trabalhando em atualizações que finalizarão de vez o desenvolvimento de Ilha dos Dinossauros. No entanto, a jornada continuará em outra aventura que chegará em breve à Steam."}
+                        />
                         <ProjectVideo label={"Vídeos do jogo"}>
                             <iframe
                                 width="560" height="315" src="https://www.youtube.com/embed/wkU8fbxVK-A?si=Pip_S3tdD4EScCKY" title="Dino Island The Four Crystals Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/U3NIZ9258Jc?si=RZem2Q6vTVzViQIz" title="Dino Island The Four Crystals Gameplay Level" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </ProjectVideo>
+                        <ProjectText
+                            title={"Considerações finais"}
+                            text={"O jogo está disponível para download de forma gratuita na plataforma Itch.io. Você pode baixar o jogo, que está disponível para Windows."}
+                        />
                         <ProjectLink label={"Link do jogo"} link={"https://felipehunter.itch.io/dino-island-the-four-crystals"} />
                     </section>
                 </PopUpWindow>
@@ -66,24 +76,30 @@ export function Content (){
                     closeClick={()=>{ togglePopWindow("The Dark Forest") }}
                 >
                     <section>
-                        <div>
-                            <ProjectText
-                                title={"Sobre o jogo?"}
-                                text={"Este foi o primeiro grande jogo que fiz, o primeiro a ser públicado na internet. Bem difícil por sinal eu ainda estava aprendendo os conteitos do Game Design."}
-                            />
-                        </div>
+                        <ProjectText
+                            title={"Sobre o jogo?"}
+                            text={"Este foi o primeiro grande jogo que fiz, o primeiro a ser publicado na internet. Foi bem difícil, pois eu ainda estava aprendendo os conceitos de Game Design. Assim como mencionado sobre Dino Island, criar artes para o jogo não é o meu ponto forte; sou mais voltado para a programação. No entanto, isso não me impediu de utilizar assets gratuitos e criar alguns por conta própria."}
+                        />
+                        <ProjectText
+                            title={"Sobre o desenvolvimento"}
+                            text={"Aqui foi minha primeira interação com um projeto grande que exigia gerenciamento para sair do papel. Minha maior dificuldade foi com o aspecto visual do jogo; eu não sabia muito bem como lidar com diferentes assets de diferentes artistas e mesclá-los. O jogo acabou ficando bastante escuro até eu conseguir adaptar um shader para aumentar o brilho."}
+                        />
+                        <ProjectImages label={"Imagens do jogo"}>
+                            <img src="https://img.itch.zone/aW1hZ2UvNTYyNjE1LzI5NTI2NjAucG5n/347x500/vWmWjj.png" alt="The Dark Forest by Felipe H."/>
+                            <img src="https://img.itch.zone/aW1hZ2UvNTYyNjE1LzI5NTI2NTkucG5n/347x500/ct6Prb.png" alt="The Dark Forest by Felipe H."/>
+                            <img src="https://img.itch.zone/aW1hZ2UvNTYyNjE1LzI5NTI2NTcucG5n/347x500/DrBGhv.png" alt="The Dark Forest by Felipe H."/>
+                            <img src="https://img.itch.zone/aW1hZ2UvNTYyNjE1LzMxNTIwNjcucG5n/347x500/%2FkWCuG.png" alt="The Dark Forest by Felipe H."/>
+                        </ProjectImages>
+                        <ProjectText
+                            title={"Considerações finais"}
+                            text={"Considero o projeto finalizado; não pretendo fazer mais alterações neste jogo. Vou guardá-lo como uma memória do meu primeiro trabalho como desenvolvedor de jogos."}
+                        />
+                        <ProjectVideo label={"Vídeos do jogo"}>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/belNQJRYU8k?si=YGaSsOAiMmdvmTYh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/uclSN7YKR2o?si=IYRKlBaFEsfXr5tL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </ProjectVideo>
+                        <ProjectLink label={"Link do jogo"} link={"https://felipehunter.itch.io/the-dark-forest-guardians"} />
                     </section>
-                    <ProjectImages label={"Imagens do jogo"}>
-                        <img src="https://img.itch.zone/aW1hZ2UvNTYyNjE1LzI5NTI2NjAucG5n/347x500/vWmWjj.png" alt="The Dark Forest by Felipe H."/>
-                        <img src="https://img.itch.zone/aW1hZ2UvNTYyNjE1LzI5NTI2NTkucG5n/347x500/ct6Prb.png" alt="The Dark Forest by Felipe H."/>
-                        <img src="https://img.itch.zone/aW1hZ2UvNTYyNjE1LzI5NTI2NTcucG5n/347x500/DrBGhv.png" alt="The Dark Forest by Felipe H."/>
-                        <img src="https://img.itch.zone/aW1hZ2UvNTYyNjE1LzMxNTIwNjcucG5n/347x500/%2FkWCuG.png" alt="The Dark Forest by Felipe H."/>
-                    </ProjectImages>
-                    <ProjectVideo label={"Vídeos do jogo"}>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/belNQJRYU8k?si=YGaSsOAiMmdvmTYh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/uclSN7YKR2o?si=IYRKlBaFEsfXr5tL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </ProjectVideo>
-                    <ProjectLink label={"Link do jogo"} link={"https://felipehunter.itch.io/the-dark-forest-guardians"} />
                 </PopUpWindow>
                 <PopUpWindow
                     label={"Fim de Semana"}
@@ -185,18 +201,11 @@ export function Content (){
             <CardContent id={"Sobre"} title={"Sobre"} icon={<i class="fa-solid fa-circle-info"></i>}>
                 <div className={style.aboutText}>
                 <p>
-                    Olá! Meu nome é Felipe, tenho 23 anos. Sou Desenvolvedor Web e de Jogos, possuo habilidades em HTML5, CSS3, JavaScript, React, C# e <a href="https://unity.com/pt" target="_blank">Unity Engine</a>. Sou estudante de Análise e Desenvolvimento de Sistemas no <a href="https://www.infnet.edu.br/infnet/home/" target="_blank">Instituto Infnet</a>.
+                    Me chamo Felipe, tenho 23 anos e sou desenvolvedor. Possuo conhecimentos em linguagens como JavaScript, além de HTML5, CSS3 e o React usados na construção de sites e aplicativos. C# foi a primeira linguagem que aprendi; quando jovem, queria fazer jogos e acabei descobrindo a Unity Engine, que me introduziu ao mundo da programação. Hoje, tenho amplo conhecimento em C# e .NET.
                 </p>
                 <p>
-                    Meu principal objetivo é ingressar no mercado de Tecnologia, buscando oportunidades de estágio ou posição júnior como Programador Front-End ou Programador Unity.
+                    Tenho experiência em trabalhar em grandes projetos, adquirida no desenvolvimento dos meus jogos publicados no Itch.io, além de projetos pessoais e trabalhos acadêmicos. Atualmente, estou estudando Análise e Desenvolvimento de Sistemas no Instituto Infnet, com previsão de conclusão do curso em 2025.
                 </p>
-                <p>
-                    Embora trabalhe como Recepcionista Bilíngue no Banco Itaú e aprecie essa experiência, minha paixão pela área de TI me motiva a migrar para esse setor.
-                </p>
-                <p>
-                    Sou entusiasta de videogames, e a curiosidade sobre como os jogos são criados foi o impulso inicial que me levou a explorar a programação e desenvolver minhas habilidades nesse campo.
-                </p>
-
                 </div>
                 <div className={style.list}>
                     <h3>Educação</h3>
@@ -209,10 +218,10 @@ export function Content (){
                             <p>Curso em Vídeo HTML5</p>
                             <a href="src/assets/pdf/Certificado_do_Curso_Em_Vidio_HTML5.pdf" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
                         </ItemList>
-                        <ItemList  progressBar={'100%'}>
+                        {/* <ItemList  progressBar={'100%'}>
                             <p>Curso Completo de Linguagem C e C++</p>
                             <a href="src/assets/pdf/Certificado_C&C++_Udemy.pdf" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
-                        </ItemList>
+                        </ItemList> */}
                         <ItemList  progressBar={'95%'}>
                             <p>C# Programação Orientada a Objetos + Projetos</p>
                             <span className={style.cursando}><i class="fa-solid fa-hourglass-end"></i> Cursando...</span>
@@ -232,8 +241,8 @@ export function Content (){
                     <ul>
                         <br/>
                         <li>
-                            <p>Desenvolvedor de jogos indies</p>
-                            <p>2018 - Atualmente</p>
+                            <p>Recepcionista Bilíngue - Verzani & Sandrini - Itaú BBA S.A.</p>
+                            <p>2022 - Atualmente</p>
                         </li>
                         <br/>
                         <li>
@@ -242,9 +251,10 @@ export function Content (){
                         </li>
                         <br/>
                         <li>
-                            <p>Recepcionista Bilíngue - Verzani & Sandrini - Itaú BBA S.A.</p>
-                            <p>2022 - Atualmente</p>
+                            <p>Desenvolvedor de jogos indies</p>
+                            <p>2018 - Atualmente</p>
                         </li>
+                        
                     </ul>
                 </div>
             </CardContent>
