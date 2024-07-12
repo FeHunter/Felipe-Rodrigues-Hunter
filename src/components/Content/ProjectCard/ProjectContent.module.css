@@ -61,6 +61,6 @@
     }
     .projectImages img, .projectVideo iframe {
         margin: 1%;
-        width: 100%;
+        width: 50%;
     }
 }
