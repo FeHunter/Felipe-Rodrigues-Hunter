@@ -5,9 +5,9 @@ import { PopUpWindow } from '../Content/PopUpWindow/PopUpWindow';
 
 export function Header () {
 
+    const [viewMenu, setViewMenu] = useState(false);
     const [viewContact, setViewContact] = useState(false);
     
-
     const scrollToComponent = (id) => {
         const element = document.getElementById(id);
         if (element) {
@@ -21,7 +21,16 @@ export function Header () {
                 <span className={style.icon}> <i class="fa-solid fa-code"></i> </span>
                 <h1>Felipe Rodrigues <span className={style.subtitle}>Hunter</span></h1>
             </div>
-            <div className={style.buttonsContainer}>
+            <div className={style.buttonsMobile}>
+                <span onClick={()=>{ setViewMenu(!viewMenu) }}> <i class="fa-solid fa-bars"></i> </span>
+                <div className={viewMenu ? style.floatButtonsMobile : style.hide} >
+                    <DefaultButton label={"Sobre"} width={"40%"} onClick={()=>{ scrollToComponent("Sobre") }} />
+                    <DefaultButton label={"Habilidades"} width={"40%"} onClick={()=>{ scrollToComponent("Habilidades") }} />
+                    <DefaultButton label={"Projetos"} width={"40%"} onClick={()=>{ scrollToComponent("Projetos") }} />
+                    <DefaultButton label={"Contato"} width={"40%"} onClick={()=>{setViewContact(true)}} />
+                </div>
+            </div>
+            <div className={style.buttonsDesktop}>
                 <DefaultButton label={"Sobre"} width={"20%"} onClick={()=>{ scrollToComponent("Sobre") }} />
                 <DefaultButton label={"Habilidades"} width={"20%"} onClick={()=>{ scrollToComponent("Habilidades") }} />
                 <DefaultButton label={"Projetos"} width={"20%"} onClick={()=>{ scrollToComponent("Projetos") }} />
