@@ -1,0 +1,52 @@
+/* Text about the project */
+.projectText {
+    margin: 2% 0;
+}
+.projectText p {
+    margin: 1%;
+}
+
+/* Images & Videos */
+.projectImages, .projectVideo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 5% 0;
+}
+.projectImages img, .projectVideo iframe {
+    margin: 1%;
+}
+
+.label {
+    width: 100%;
+    font-size: 1.05em;
+    border-bottom: 1px solid gray;
+}
+.content {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+/* Project Link */
+.projectLink {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-color: gold;
+    color: black;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 1%;
+    margin: 2% auto;
+    border-radius: 10px;
+    transition: .3s;
+}
+.projectLink:hover {
+    color: black;
+    background-color: white;
+    transition: .3s;
+}

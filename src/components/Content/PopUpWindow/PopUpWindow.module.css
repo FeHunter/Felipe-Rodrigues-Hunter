@@ -35,6 +35,11 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+
+.label {
+    font-weight: bold;
+}
+
 .closeButton {
     font-size: 1.5em;
 }
@@ -48,4 +53,5 @@
     flex-direction: column;
     padding: 1%;
     background-color: #010D00;
+    overflow-y: scroll;
 }

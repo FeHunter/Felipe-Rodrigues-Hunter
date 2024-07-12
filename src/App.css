@@ -12,6 +12,7 @@
 *::-webkit-scrollbar {
   display: block;
   width: 5px;
+  height: 5px;
 }
 *::-webkit-scrollbar-thumb{
   background-color: #3C4959;

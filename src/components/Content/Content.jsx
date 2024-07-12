@@ -7,6 +7,7 @@ import { ItemList } from './List/ItemList';
 import { ProjectCard } from './ProjectCard/ProjectCard';
 import { SkillCard } from './SkillCard/SkillCard';
 import { PopUpWindow } from './PopUpWindow/PopUpWindow';
+import { ProjectImages, ProjectLink, ProjectText, ProjectVideo } from './ProjectCard/ProjectContent';
 
 export function Content (){
 
@@ -35,9 +36,30 @@ export function Content (){
                     visible={popWindow['Dino Island']}
                     closeClick={()=>{ togglePopWindow("Dino Island") }}
                 >
-                    <div>
-                        <p>Descrição: Jogo de plataforma 2D</p>
-                    </div>
+                    <section>
+                        <div>
+                            <ProjectText
+                                title={"Porque este jogo?"}
+                                text={"Meu genêro de jogo favorito é plataforma, gosto muito desse tipo de jogo como Super Mario World, Jak And Daxter, Adventure Island que foi a inspiração direta para Dino Island. Comecei o jogo em meados de 2021 e ainda estou fazendo algums melhorias até hoje..."}
+                            />
+                            <ProjectText
+                                title={"Sobre o jogo"}
+                                text={"Neste jogo você jogará com um dinossauro que é o guardião do cristal azul, seu objetivo será recuperar os outros três cristais que foram levados por um mago malvado que quer todo o poder dos cristais. Mas você não está sozinho, há outro mago que o ajudará a recuperar os cristais que você pegou. Você terá que passar por desafios na ilha dos dinossauros tendo que evitar seus amigos dinossauros que estão desesperados sem cristais. Para isso, o bom bruxo criou uma poção que faz os dinossauros adormecerem e que o ajudará em sua jornada."}
+                            />
+                        </div>
+                        <ProjectImages label={"Imagens do jogo"}>
+                            <img src="https://img.itch.zone/aW1hZ2UvNzkyNDU3LzUxMjc3NzguZ2lm/347x500/UftXH4.gif" alt="Dino Island The Four Crystal - BY Felipe Hunter" />
+                            <img src="https://img.itch.zone/aW1hZ2UvNzkyNDU3LzUxMjc3OTguZ2lm/347x500/EmXVle.gif" alt="Dino Island The Four Crystal - BY Felipe Hunter" srcset="" />
+                            <img src="https://img.itch.zone/aW1hZ2UvNzkyNDU3LzUxNjQyODAuZ2lm/347x500/fJRcUH.gif" alt="Dino Island The Four Crystal - BY Felipe Hunter" />
+                            <img src="https://img.itch.zone/aW1hZ2UvNzkyNDU3LzUxNjQyNzguZ2lm/347x500/KVnF5F.gif" alt="Dino Island The Four Crystal - BY Felipe Hunter" />
+                        </ProjectImages>
+                        <ProjectVideo label={"Vídeos do jogo"}>
+                            <iframe
+                                width="560" height="315" src="https://www.youtube.com/embed/wkU8fbxVK-A?si=Pip_S3tdD4EScCKY" title="Dino Island The Four Crystals Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/U3NIZ9258Jc?si=RZem2Q6vTVzViQIz" title="Dino Island The Four Crystals Gameplay Level" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </ProjectVideo>
+                        <ProjectLink label={"Link do jogo"} link={"https://felipehunter.itch.io/dino-island-the-four-crystals"} />
+                    </section>
                 </PopUpWindow>
             </section>
         )

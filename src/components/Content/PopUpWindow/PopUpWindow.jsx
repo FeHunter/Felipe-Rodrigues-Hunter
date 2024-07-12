@@ -8,7 +8,7 @@ export function PopUpWindow ({label, visible, closeClick, children}) {
         <section className={style.container} style={view}>
             <div  className={style.window}>
                 <div className={style.header}>
-                    <p>{label}</p>
+                    <p className={style.label}>{label}</p>
                     <span className={style.closeButton} onClick={closeClick}><i class="fa-regular fa-circle-xmark"></i></span>
                 </div>
                 <div className={style.content}> {children} </div>
