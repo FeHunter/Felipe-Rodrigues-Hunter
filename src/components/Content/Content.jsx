@@ -61,6 +61,45 @@ export function Content (){
                         <ProjectLink label={"Link do jogo"} link={"https://felipehunter.itch.io/dino-island-the-four-crystals"} />
                     </section>
                 </PopUpWindow>
+                <PopUpWindow
+                    label={"The Dark Forest Guardians - Unity, C#"}
+                    visible={popWindow['The Dark Forest']}
+                    closeClick={()=>{ togglePopWindow("The Dark Forest") }}
+                >
+                    <section>
+                        <div>
+                            <ProjectText
+                                title={"Sobre o jogo?"}
+                                text={"Este foi o primeiro grande jogo que fiz, o primeiro a ser públicado na internet. Bem difícil por sinal eu ainda estava aprendendo os conteitos do Game Design."}
+                            />
+                        </div>
+                    </section>
+                    <ProjectImages label={"Imagens do jogo"}>
+                        <img src="https://img.itch.zone/aW1hZ2UvNTYyNjE1LzI5NTI2NjAucG5n/347x500/vWmWjj.png" alt="The Dark Forest by Felipe H."/>
+                        <img src="https://img.itch.zone/aW1hZ2UvNTYyNjE1LzI5NTI2NTkucG5n/347x500/ct6Prb.png" alt="The Dark Forest by Felipe H."/>
+                        <img src="https://img.itch.zone/aW1hZ2UvNTYyNjE1LzI5NTI2NTcucG5n/347x500/DrBGhv.png" alt="The Dark Forest by Felipe H."/>
+                        <img src="https://img.itch.zone/aW1hZ2UvNTYyNjE1LzMxNTIwNjcucG5n/347x500/%2FkWCuG.png" alt="The Dark Forest by Felipe H."/>
+                    </ProjectImages>
+                    <ProjectVideo label={"Vídeos do jogo"}>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/belNQJRYU8k?si=YGaSsOAiMmdvmTYh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/uclSN7YKR2o?si=IYRKlBaFEsfXr5tL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </ProjectVideo>
+                    <ProjectLink label={"Link do jogo"} link={"https://felipehunter.itch.io/the-dark-forest-guardians"} />
+                </PopUpWindow>
+                <PopUpWindow
+                    label={"Fim de Semana"}
+                    visible={popWindow['Fim de Semana']}
+                    closeClick={()=>{ togglePopWindow("Fim de Semana") }}
+                >
+                    <section>
+                        <div>
+                            <ProjectText
+                                title={"O que é?"}
+                                text={"A ideia é simples você deseja ir a um evento no fim de semana, mas você não sabe pra onde ainda então você abre o app que ira lista os eventos disponvieis na sua localização."}
+                            />
+                        </div>
+                    </section>
+                </PopUpWindow>
             </section>
         )
     }
@@ -157,8 +196,16 @@ export function Content (){
                                     img={"src/assets/img/Projetos/Dino_Island_TFC.jpg"}
                                     onClick={()=>{ togglePopWindow("Dino Island") }}
                                 />,
-                                <ProjectCard title={"The Dark Forest Guardians - Unity, C#"} img={"src/assets/img/Projetos/The_Dark_Forest_G.png"} />,
-                                <ProjectCard title={"Fim de Semana App - React"} img={"src/assets/img/Projetos/Dino_Island_TFC.jpg"} />,
+                                <ProjectCard
+                                    title={"The Dark Forest Guardians - Unity, C#"}
+                                    img={"src/assets/img/Projetos/The_Dark_Forest_G.png"}
+                                    onClick={()=>{ togglePopWindow("The Dark Forest") }}
+                                />,
+                                <ProjectCard
+                                    title={"Fim de Semana App - React"}
+                                    img={"src/assets/img/Projetos/Dino_Island_TFC.jpg"}
+                                    onClick={()=>{ togglePopWindow("Fim de Semana") }}
+                                />,
                                 <ProjectCard title={"Jogo Da Velha - JavaScript"} img={"src/assets/img/Projetos/JogoDaVelha_JS.JPG"} />,
                                 <ProjectCard title={"E-Commerce com React, Mobile First e Responsivo"} img={"src/assets/img/Projetos/E-commerce Img.png"} />,
                                 <ProjectCard title={"Rede Social com React, Material UI, Mobile First e Responsivo"} img={"src/assets/img/Projetos/Social Network Img.png"} />,
