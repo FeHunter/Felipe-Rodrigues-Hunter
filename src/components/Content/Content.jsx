@@ -108,10 +108,10 @@ export function Content (){
                         </div>
                     </section>
                     <ProjectImages label={"Imagens da Plataforma"}>
-                        <img src='src/assets/img/Projetos/Fim de Semana App scr1.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
-                        <img src='src/assets/img/Projetos/Fim de Semana App scr2.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
-                        <img src='src/assets/img/Projetos/Fim de Semana App scr3.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
-                        <img src='src/assets/img/Projetos/Fim de Semana App scr4.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
+                        <img src='https://i.ibb.co/wr81JBQ/Fim-de-Semana-App-scr1.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
+                        <img src='https://i.ibb.co/6P2xv7J/Fim-de-Semana-App-scr2.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
+                        <img src='https://i.ibb.co/0cF9Lpq/Fim-de-Semana-App-scr3.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
+                        <img src='https://i.ibb.co/1MKSJNy/Fim-de-Semana-App-scr4.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
                     </ProjectImages>
                 </PopUpWindow>
                 <PopUpWindow
@@ -132,9 +132,9 @@ export function Content (){
                         </div>
                     </section>
                     <ProjectImages label={"Screenshots do jogo rodando no navegador"}> 
-                        <img src='src/assets/img/Projetos/JogoDaVelha_JS.JPG' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
-                        <img src='src/assets/img/Projetos/JogoDaVelha_JS_Scr1.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
-                        <img src='src/assets/img/Projetos/JogoDaVelha_JS_Scr2.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
+                        <img src='https://i.ibb.co/4SQpbgc/Jogo-Da-Velha-JS-Scr2.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
+                        <img src='https://i.ibb.co/vDk7fPC/Jogo-Da-Velha-JS-Scr1.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
+                        <img src='https://i.ibb.co/RB8Cnrq/Jogo-Da-Velha-JS.jpg' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
                     </ProjectImages>
                     <ProjectLink label={"Código no GitHub"} link={"https://github.com/FeHunter/JogoDaVelha_JS"} />
                 </PopUpWindow>
@@ -152,8 +152,8 @@ export function Content (){
                         </div>
                     </section>
                     <ProjectImages label={"Screenshots"}> 
-                        <img src='src/assets/img/Projetos/eccomerce_scr1.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
-                        <img src='src/assets/img/Projetos/eccomerce_scr2.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
+                        <img src='https://i.ibb.co/fGNrgmK/eccomerce-scr1.png' alt='ECommerce React by Felipe Hunter' width={"40%"} />
+                        <img src='https://i.ibb.co/RPbHhYY/eccomerce-scr2.png' alt='ECommerce React by Felipe Hunter' width={"40%"} />
                     </ProjectImages>
                     <ProjectLink label={"Código no GitHub"} link={"https://github.com/FeHunter/Site-Ecommerce-AT"} />
                 </PopUpWindow>
@@ -171,9 +171,9 @@ export function Content (){
                         </div>
                     </section>
                     <ProjectImages label={"Screenshots"}> 
-                        <img src='src/assets/img/Projetos/socialCarsScr1.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
-                        <img src='src/assets/img/Projetos/socialCarsScr2.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
-                        <img src='src/assets/img/Projetos/socialCarsScr3.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
+                        <img src='https://i.ibb.co/j8Z8ZHM/social-Cars-Scr2.png' alt='Rede Social by Felipe Hunter' width={"40%"} />
+                        <img src='https://i.ibb.co/PGVJqQJ/social-Cars-Scr1.png' alt='Rede Social by Felipe Hunter' width={"40%"} />
+                        <img src='https://i.ibb.co/nQ0wfPC/social-Cars-Scr3.png' alt='Rede Social by Felipe Hunter' width={"40%"} />
                     </ProjectImages>
                     <ProjectLink label={"Código no GitHub"} link={"https://github.com/FeHunter/Rede-Social-AT-Mobile-First"} />
                 </PopUpWindow>
@@ -252,15 +252,15 @@ export function Content (){
             <CardContent id={"Habilidades"} title={"Habilidades"} icon={<i class="fa-regular fa-file-code"></i>} >
                 <section className={style.skillContainer}>
                     <div className={style.skills}>
-                        <SkillCard label={"HTML 5"} img={"src/assets/img/Habilidades/html5.png"} />
-                        <SkillCard label={"CSS 3"} img={"src/assets/img/Habilidades/css.png"} />
-                        <SkillCard label={"Javascript"} img={"src/assets/img/Habilidades/javascript.png"} />
-                        <SkillCard label={"React"} img={"src/assets/img/Habilidades/react.png"} />
-                        <SkillCard label={"SQL"} img={"src/assets/img/Habilidades/sql.png"} />
-                        <SkillCard label={"C#"} img={"src/assets/img/Habilidades/c-sharp.png"} />
-                        <SkillCard label={"Unity Engine"} img={"src/assets/img/Habilidades/unity.png"} />
-                        <SkillCard label={"Game Dev"} img={"src/assets/img/Habilidades/game-development.png"} />
-                        <SkillCard label={"Power BI"} img={"src/assets/img/Habilidades/powerBi.png"} />
+                        <SkillCard label={"HTML 5"} img={"https://i.ibb.co/fXz53Jk/html5.png"} />
+                        <SkillCard label={"CSS 3"} img={"https://i.ibb.co/c2zqG4N/css.png"} />
+                        <SkillCard label={"Javascript"} img={"https://i.ibb.co/kKP423K/javascript.png"} />
+                        <SkillCard label={"React"} img={"https://i.ibb.co/kQtXB3y/react.png"} />
+                        <SkillCard label={"SQL"} img={"https://i.ibb.co/9TMkFr9/sql.png"} />
+                        <SkillCard label={"C#"} img={"https://i.ibb.co/6R9MJhb/c-sharp.png"} />
+                        <SkillCard label={"Unity Engine"} img={"https://i.ibb.co/pdMzW8Z/unity.png"} />
+                        <SkillCard label={"Game Dev"} img={"https://i.ibb.co/jbFZZJY/game-development.png"} />
+                        <SkillCard label={"Power BI"} img={"https://i.ibb.co/2Mb0YDF/powerBi.png"} />
                     </div>
                 </section>
             </CardContent>
@@ -271,32 +271,32 @@ export function Content (){
                             blocks={[
                                 <ProjectCard
                                     title={"Dino Island The Four Crystals - Unity, C#"}
-                                    img={"src/assets/img/Projetos/Dino_Island_TFC.jpg"}
+                                    img={"https://img.itch.zone/aW1hZ2UvNzkyNDU3LzExMzMwNTM3LmpwZw==/original/IKZOMQ.jpg"}
                                     onClick={()=>{ togglePopWindow("Dino Island") }}
                                 />,
                                 <ProjectCard
                                     title={"Fim de Semana App - React"}
-                                    img={"src/assets/img/Projetos/Fim de Semana App scr4.png"}
+                                    img={"https://i.ibb.co/1MKSJNy/Fim-de-Semana-App-scr4.png"}
                                     onClick={()=>{ togglePopWindow("Fim de Semana") }}
                                 />,
                                 <ProjectCard
                                     title={"The Dark Forest Guardians - Unity, C#"}
-                                    img={"src/assets/img/Projetos/The_Dark_Forest_G.png"}
+                                    img={"https://img.itch.zone/aW1hZ2UvNTYyNjE1LzI5NTI2NjAucG5n/original/DZTAhl.png"}
                                     onClick={()=>{ togglePopWindow("The Dark Forest") }}
                                 />,
                                 <ProjectCard
                                     title={"Jogo Da Velha - JavaScript"}
-                                    img={"src/assets/img/Projetos/JogoDaVelha_JS.JPG"}
+                                    img={"https://i.ibb.co/4SQpbgc/Jogo-Da-Velha-JS-Scr2.png"}
                                     onClick={()=>{ togglePopWindow("Jogo Da Velha") }}
                                 />,
                                 <ProjectCard
                                     title={"E-Commerce com React, Mobile First e Responsivo"}
-                                    img={"src/assets/img/Projetos/E-commerce Img.png"}
+                                    img={"https://i.ibb.co/28DV8TB/E-commerce-Img.png"}
                                     onClick={()=>{ togglePopWindow("ECommerce React") }}
                                 />,
                                 <ProjectCard
                                     title={"Rede Social com React, Material UI, Mobile First e Responsivo"}
-                                    img={"src/assets/img/Projetos/Social Network Img.png"}
+                                    img={"https://i.ibb.co/7S3bjwD/Social-Network-Img.png"}
                                     onClick={()=>{ togglePopWindow("Rede Social") }}
                                 />,
                             ]}
