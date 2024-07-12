@@ -16,7 +16,7 @@
 .content {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
     height: 80px;
     padding: 1%;
@@ -44,6 +44,7 @@
         width: 70%;
     }
     .content {
+        flex-direction: row;
         padding: .5%;
         height: auto;
     }

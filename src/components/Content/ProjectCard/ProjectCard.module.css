@@ -28,7 +28,7 @@
 .image {
     grid-area: image;
     margin: auto;
-    width: 100%;
+    width: 90%;
     height: 90%;
     transition: 1s;
 }
