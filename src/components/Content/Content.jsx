@@ -95,10 +95,86 @@ export function Content (){
                         <div>
                             <ProjectText
                                 title={"O que é?"}
-                                text={"A ideia é simples você deseja ir a um evento no fim de semana, mas você não sabe pra onde ainda então você abre o app que ira lista os eventos disponvieis na sua localização."}
+                                text={"Uma aplicação web que permita aos usuários terem acesso aos eventos (Festa, Parques, Museus etc.) que estão ocorrendo no mês e, principalmente, no final de semana em uma determinada localidade."}
+                            />
+                            <ProjectText
+                                title={"Tecnologias e Técnicas:"}
+                                text={"Esta plataforma foi desenvolvida utilizando React e técnicas como Mobile First e Scrum. Todo o versionamento do código foi feito utilizando o GitHub. Foram usadas APIs de terceiros como Sympla, Google Analytics e Google Maps."}
+                            />
+                            <ProjectText
+                                title={"Algumas Funcionalidades:"}
+                                text={"Cardápio: A plataforma permite ao usuário montar um cardápio dos itens que pretende consumir no evento, proporcionando assim um controle sobre seus gastos. Junto com o estabelecimento, a plataforma disponibiliza ao usuário as opções de alimentos para consumo no local. Caso deseje, o usuário também pode realizar compras através da plataforma. \n\n Transporte por Aplicativo: A plataforma, em parceria com alguns serviços de transporte, disponibiliza ao usuário diversas opções de transporte até o evento e de volta para sua residência ou local de escolha, sempre prezando pela segurança e transparência. \n\n Além de outras funcionalidades, como filtros por região, categorias, faixa etária e mais."}
                             />
                         </div>
                     </section>
+                    <ProjectImages label={"Imagens da Plataforma"}>
+                        <img src='src/assets/img/Projetos/Fim de Semana App scr1.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
+                        <img src='src/assets/img/Projetos/Fim de Semana App scr2.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
+                        <img src='src/assets/img/Projetos/Fim de Semana App scr3.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
+                        <img src='src/assets/img/Projetos/Fim de Semana App scr4.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
+                    </ProjectImages>
+                </PopUpWindow>
+                <PopUpWindow
+                    label={"Jogo da Velha - Javascript"}
+                    visible={popWindow['Jogo Da Velha']}
+                    closeClick={()=>{ togglePopWindow("Jogo Da Velha") }}
+                >
+                    <section>
+                        <div>
+                            <ProjectText
+                                title={"O que é?"}
+                                text={"Este jogo da velha foi feito durante uma aula no Curso de ADS no Instituo Infnet enquanto estavamos aprendendo a programa em Javascript."}
+                            />
+                            <ProjectText
+                                title={"Sobre:"}
+                                text={"O jogo é bem simples como todos conhecem, permitir que um ou dois usuários possam jogar entre si."}
+                            />
+                        </div>
+                    </section>
+                    <ProjectImages label={"Screenshots do jogo rodando no navegador"}> 
+                        <img src='src/assets/img/Projetos/JogoDaVelha_JS.JPG' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
+                        <img src='src/assets/img/Projetos/JogoDaVelha_JS_Scr1.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
+                        <img src='src/assets/img/Projetos/JogoDaVelha_JS_Scr2.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
+                    </ProjectImages>
+                    <ProjectLink label={"Código no GitHub"} link={"https://github.com/FeHunter/JogoDaVelha_JS"} />
+                </PopUpWindow>
+                <PopUpWindow
+                    label={"E-Commerce para avaliação da faculdade"}
+                    visible={popWindow['ECommerce React']}
+                    closeClick={()=>{ togglePopWindow("ECommerce React") }}
+                >
+                    <section>
+                        <div>
+                            <ProjectText
+                                title={"Sobre:"}
+                                text={"Projeto feito para avaliação da faculdade. Site e-commerce, uma loja que vende peças exclusivas para lamborghini. Site totalmente responsivo e pensando em Mobile First. Técninas e tecnologias usadas usadas: Mobile First, React, CSS Module, HTML, CSS, JS e Responsividade."}
+                            />
+                        </div>
+                    </section>
+                    <ProjectImages label={"Screenshots do jogo rodando no navegador"}> 
+                        <img src='src/assets/img/Projetos/eccomerce_scr1.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
+                        <img src='src/assets/img/Projetos/eccomerce_scr2.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
+                    </ProjectImages>
+                    <ProjectLink label={"Código no GitHub"} link={"https://github.com/FeHunter/Site-Ecommerce-AT"} />
+                </PopUpWindow>
+                <PopUpWindow
+                    label={"Projeto Rede Social feito para avaliação da faculdade"}
+                    visible={popWindow['Rede Social']}
+                    closeClick={()=>{ togglePopWindow("Rede Social") }}
+                >
+                    <section>
+                        <div>
+                            <ProjectText
+                                title={"Sobre:"}
+                                text={"Projeto feito para avaliação da faculdade. Site e-commerce, uma loja que vende peças exclusivas para lamborghini. Site totalmente responsivo e pensando em Mobile First. Técninas e tecnologias usadas usadas: Mobile First, React, CSS Module, HTML, CSS, JS e Responsividade."}
+                            />
+                        </div>
+                    </section>
+                    <ProjectImages label={"Screenshots do jogo rodando no navegador"}> 
+                        <img src='src/assets/img/Projetos/eccomerce_scr1.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
+                        <img src='src/assets/img/Projetos/eccomerce_scr2.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
+                    </ProjectImages>
+                    <ProjectLink label={"Código no GitHub"} link={"https://github.com/FeHunter/Site-Ecommerce-AT"} />
                 </PopUpWindow>
             </section>
         )
@@ -197,18 +273,29 @@ export function Content (){
                                     onClick={()=>{ togglePopWindow("Dino Island") }}
                                 />,
                                 <ProjectCard
+                                    title={"Fim de Semana App - React"}
+                                    img={"src/assets/img/Projetos/Fim de Semana App scr4.png"}
+                                    onClick={()=>{ togglePopWindow("Fim de Semana") }}
+                                />,
+                                <ProjectCard
                                     title={"The Dark Forest Guardians - Unity, C#"}
                                     img={"src/assets/img/Projetos/The_Dark_Forest_G.png"}
                                     onClick={()=>{ togglePopWindow("The Dark Forest") }}
                                 />,
                                 <ProjectCard
-                                    title={"Fim de Semana App - React"}
-                                    img={"src/assets/img/Projetos/Dino_Island_TFC.jpg"}
-                                    onClick={()=>{ togglePopWindow("Fim de Semana") }}
+                                    title={"Jogo Da Velha - JavaScript"}
+                                    img={"src/assets/img/Projetos/JogoDaVelha_JS.JPG"}
+                                    onClick={()=>{ togglePopWindow("Jogo Da Velha") }}
                                 />,
-                                <ProjectCard title={"Jogo Da Velha - JavaScript"} img={"src/assets/img/Projetos/JogoDaVelha_JS.JPG"} />,
-                                <ProjectCard title={"E-Commerce com React, Mobile First e Responsivo"} img={"src/assets/img/Projetos/E-commerce Img.png"} />,
-                                <ProjectCard title={"Rede Social com React, Material UI, Mobile First e Responsivo"} img={"src/assets/img/Projetos/Social Network Img.png"} />,
+                                <ProjectCard
+                                    title={"E-Commerce com React, Mobile First e Responsivo"}
+                                    img={"src/assets/img/Projetos/E-commerce Img.png"}
+                                    onClick={()=>{ togglePopWindow("ECommerce React") }}
+                                />,
+                                <ProjectCard
+                                    title={"Rede Social com React, Material UI, Mobile First e Responsivo"}
+                                    img={"src/assets/img/Projetos/Social Network Img.png"}
+                                />,
                                 <ProjectCard title={"Tela de Login - HTML/CSS"} img={"src/assets/img/Projetos/Login_Page_FRONT-END.JPG"} />,
                             ]}
                         />

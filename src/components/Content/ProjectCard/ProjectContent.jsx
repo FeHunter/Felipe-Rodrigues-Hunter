@@ -1,10 +1,16 @@
 import style from './ProjectContent.module.css';
 
 export function ProjectText ({title, text}){
+    const formattedText = text.split('\n').map((item, key) => (
+        <span key={key}>
+            {item}
+            <br />
+        </span>
+    ));
     return (
         <div className={style.projectText}>
             <h2 className={style.label}>{title}</h2>
-            <p>{text}</p>
+            <p>{formattedText}</p>
         </div>
     );
 }
