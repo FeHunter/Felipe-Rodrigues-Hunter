@@ -25,7 +25,6 @@ export function Content (){
             ...prevState,
             [key]: !prevState[key]
         }));
-        console.log(key);
     }
 
     function ContentOfPopWindows (){
@@ -290,12 +289,12 @@ export function Content (){
                                     onClick={()=>{ togglePopWindow("Jogo Da Velha") }}
                                 />,
                                 <ProjectCard
-                                    title={"E-Commerce com React, Mobile First e Responsivo"}
+                                    title={"E-Commerce com React"}
                                     img={"https://i.ibb.co/28DV8TB/E-commerce-Img.png"}
                                     onClick={()=>{ togglePopWindow("ECommerce React") }}
                                 />,
                                 <ProjectCard
-                                    title={"Rede Social com React, Material UI, Mobile First e Responsivo"}
+                                    title={"Rede Social com React"}
                                     img={"https://i.ibb.co/7S3bjwD/Social-Network-Img.png"}
                                     onClick={()=>{ togglePopWindow("Rede Social") }}
                                 />,

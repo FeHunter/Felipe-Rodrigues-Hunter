@@ -1,9 +1,10 @@
 .container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 30% 70%;
     grid-template-areas: 'title' 'image';
-    width: 45%;
+    width: 80%;
+    height: 40%;
     padding: 1%;
     margin: 1%;
     border: 1px solid transparent;
@@ -52,4 +53,12 @@
 .container:hover > .image {
     border-radius: 2px;
     transition: .5s;
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        grid-template-rows: 20% 80%;
+        width: 45%;
+        height: auto;
+    }
 }

@@ -57,7 +57,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 400px;
+    height: 450px;
 }
 
 @media screen and (min-width: 900px) {
@@ -69,5 +69,8 @@
     }
     .skills {
         width: 80%;
+    }
+    .projects {
+        height: 400px;
     }
 }
