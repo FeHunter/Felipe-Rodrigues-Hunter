@@ -157,18 +157,16 @@ export function Content (){
                     closeClick={()=>{ togglePopWindow("ECommerce React") }}
                 >
                     <section>
-                        <div>
-                            <ProjectText
-                                title={"Sobre:"}
-                                text={"Projeto feito para avaliação da faculdade. Site e-commerce, uma loja que vende peças exclusivas para lamborghini. Site totalmente responsivo e pensando em Mobile First. \n\n Técninas e tecnologias usadas usadas: \n° Mobile First, \n° React, \n° CSS Module, \n° HTML, \n° CSS, \n° JS, \n° Responsividade."}
-                            />
-                        </div>
+                        <ProjectText
+                            title={"Sobre"}
+                            text={"Projeto feito para avaliação da faculdade. Site e-commerce, uma loja que vende peças exclusivas para lamborghini. Site totalmente responsivo e pensando em Mobile First. \n\n Técninas e tecnologias usadas usadas: Mobile First, React, CSS Module, HTML, CSS, JS, Responsividade. \n\n Este projeto foi fundamental para fixar os conceitos de responsividade e o conceito de Mobile First. Foi um dos primeiros desafios durante a faculdade; hoje é algo simples, mas no começo foi bem desafiador."}
+                        />
+                        <ProjectImages label={"Screenshots"}> 
+                            <img src='https://i.ibb.co/fGNrgmK/eccomerce-scr1.png' alt='ECommerce React by Felipe Hunter' width={"40%"} />
+                            <img src='https://i.ibb.co/RPbHhYY/eccomerce-scr2.png' alt='ECommerce React by Felipe Hunter' width={"40%"} />
+                        </ProjectImages>
+                        <ProjectLink label={"Código no GitHub"} link={"https://github.com/FeHunter/Site-Ecommerce-AT"} />
                     </section>
-                    <ProjectImages label={"Screenshots"}> 
-                        <img src='https://i.ibb.co/fGNrgmK/eccomerce-scr1.png' alt='ECommerce React by Felipe Hunter' width={"40%"} />
-                        <img src='https://i.ibb.co/RPbHhYY/eccomerce-scr2.png' alt='ECommerce React by Felipe Hunter' width={"40%"} />
-                    </ProjectImages>
-                    <ProjectLink label={"Código no GitHub"} link={"https://github.com/FeHunter/Site-Ecommerce-AT"} />
                 </PopUpWindow>
                 <PopUpWindow
                     label={"Projeto Rede Social feito para avaliação da faculdade"}
@@ -176,19 +174,17 @@ export function Content (){
                     closeClick={()=>{ togglePopWindow("Rede Social") }}
                 >
                     <section>
-                        <div>
-                            <ProjectText
-                                title={"Sobre:"}
-                                text={"Projeto Rede Social feito para avaliação da faculdade. Site de uma rede social com tema de F1 e carros, campos como feed de postagem, amigos sugestão de amizades e comentários em cada post. \n\n Técninas e tecnologias usadas usadas \n° Mobile First, \n° React, \n° CSS Module, \n° HTML, \n° CSS, \n° JS, \n° Material UI, \n° Responsividade."}
-                            />
-                        </div>
+                        <ProjectText
+                            title={"Sobre:"}
+                            text={"Projeto Rede Social feito para avaliação da faculdade. Site de uma rede social com tema de F1 e carros, campos como feed de postagem, amigos sugestão de amizades e comentários em cada post. \n\n Técninas e tecnologias usadas usadas Mobile First, React, CSS Module, HTML, CSS, JS, Material UI, Responsividade. \n\n Assim como dito no projeto do E-Commerce de auto-peças este projeto foi um dos pilhares para fixar os conceitos de responsividade, mobile first e Material UI."}
+                        />
+                        <ProjectImages label={"Screenshots"}> 
+                            <img src='https://i.ibb.co/j8Z8ZHM/social-Cars-Scr2.png' alt='Rede Social by Felipe Hunter' width={"40%"} />
+                            <img src='https://i.ibb.co/PGVJqQJ/social-Cars-Scr1.png' alt='Rede Social by Felipe Hunter' width={"40%"} />
+                            <img src='https://i.ibb.co/nQ0wfPC/social-Cars-Scr3.png' alt='Rede Social by Felipe Hunter' width={"40%"} />
+                        </ProjectImages>
+                        <ProjectLink label={"Código no GitHub"} link={"https://github.com/FeHunter/Rede-Social-AT-Mobile-First"} />
                     </section>
-                    <ProjectImages label={"Screenshots"}> 
-                        <img src='https://i.ibb.co/j8Z8ZHM/social-Cars-Scr2.png' alt='Rede Social by Felipe Hunter' width={"40%"} />
-                        <img src='https://i.ibb.co/PGVJqQJ/social-Cars-Scr1.png' alt='Rede Social by Felipe Hunter' width={"40%"} />
-                        <img src='https://i.ibb.co/nQ0wfPC/social-Cars-Scr3.png' alt='Rede Social by Felipe Hunter' width={"40%"} />
-                    </ProjectImages>
-                    <ProjectLink label={"Código no GitHub"} link={"https://github.com/FeHunter/Rede-Social-AT-Mobile-First"} />
                 </PopUpWindow>
             </section>
         )
