@@ -11,8 +11,8 @@
 
 *::-webkit-scrollbar {
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
 }
 *::-webkit-scrollbar-thumb{
   background-color: #3C4959;
@@ -49,11 +49,4 @@ a {
 }
 a:hover {
   color: gold;
-}
-
-@media screen and (min-width: 900px) {
-  *::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-  }
 }

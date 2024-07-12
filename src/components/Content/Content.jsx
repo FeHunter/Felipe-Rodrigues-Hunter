@@ -43,7 +43,7 @@ export function Content (){
                             />
                             <ProjectText
                                 title={"Sobre o jogo"}
-                                text={"Neste jogo você jogará com um dinossauro que é o guardião do cristal azul, seu objetivo será recuperar os outros três cristais que foram levados por um mago malvado que quer todo o poder dos cristais. Mas você não está sozinho, há outro mago que o ajudará a recuperar os cristais que você pegou. Você terá que passar por desafios na ilha dos dinossauros tendo que evitar seus amigos dinossauros que estão desesperados sem cristais. Para isso, o bom bruxo criou uma poção que faz os dinossauros adormecerem e que o ajudará em sua jornada."}
+                                text={"Neste jogo você jogará com um dinossauro que é o guardião do cristal azul, seu objetivo será recuperar os outros três cristais que foram levados por um mago malvado que quer todo o poder dos cristais. \n Mas você não está sozinho, há outro mago que o ajudará a recuperar os cristais que você pegou. Você terá que passar por desafios na ilha dos dinossauros tendo que evitar seus amigos dinossauros que estão desesperados sem cristais. Para isso, o bom bruxo criou uma poção que faz os dinossauros adormecerem e que o ajudará em sua jornada."}
                             />
                         </div>
                         <ProjectImages label={"Imagens do jogo"}>

@@ -1,9 +1,9 @@
 /* Text about the project */
 .projectText {
-    margin: 2% 0;
+    margin: 2% 0 10% 0;
 }
 .projectText p {
-    margin: 1%;
+    margin: 2% 0;
 }
 
 /* Images & Videos */
@@ -55,6 +55,12 @@
 }
 
 @media screen and (min-width: 900px) {
+    .projectText {
+        margin: 2% 0 5% 0;
+    }
+    .projectText p {
+        margin: 1%;
+    }
     .content {
         flex-direction: row;
         align-items: center;
