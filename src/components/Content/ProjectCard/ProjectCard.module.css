@@ -35,17 +35,17 @@
 
 .container:hover {
     cursor: pointer;
-    border: 1px solid rgb(70, 70, 70);
+    border: 1px solid var(--highligth-font-color);
     border-radius: 5px;
     transition: .5s;
     
 }
 .container:hover > .title i {
-    color: gold;
+    color: var(--highligth-font-color);
     transition: .5s;
 }
 .container:hover > .title {
-    color: gold;
+    color: var(--highligth-font-color);
     transition: .5s;
 }
 .container:hover > .image {

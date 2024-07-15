@@ -9,7 +9,7 @@
 }
 .DefaultButton:hover {
     font-size: 1.1em;
-    color: gold;
+    color: var(--highligth-font-color);
     cursor: pointer;
     transition: .1s;
 }
@@ -30,9 +30,9 @@
 
 .BorderButton:hover {
     cursor: pointer;
-    color: gold;
-    border: 2px solid gold;
-    box-shadow: 1px 1px 2px gold;
+    color: var(--highligth-font-color);
+    border: 2px solid var(--highligth-font-color);
+    box-shadow: 1px 1px 2px var(--highligth-font-color);
 }
 .BorderButton:active {
     color: black;
@@ -50,7 +50,7 @@
 }
 
 .IconButton:hover {
-    color: gold;
+    color: var(--highligth-font-color);
     cursor: pointer;
 }
 

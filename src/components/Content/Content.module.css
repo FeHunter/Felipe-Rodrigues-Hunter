@@ -20,7 +20,7 @@
 .list h3 {
     width: 100%;
     text-align: left;
-    color: gold;
+    color: var(--h2-font);
     font-size: 1.2em;
 }
 .list ul {

@@ -4,8 +4,8 @@
     align-items: center;
     width: 100%;
     padding: 1% 3%;
-    background-color: #3C4959;
-    color: white;
+    background-color: var(--background-highlith-color);
+    color: var(--default-font);
 }
 
 .titleContainer {
@@ -21,8 +21,9 @@
 
 .subtitle {
     font-size: 1em;
-    color: #a7bbd4;
+    color: var(--default-font);
     font-style: italic;
+    opacity: .3;
 }
 
 .buttonsMobile{
@@ -41,7 +42,7 @@
     width: 80%;
     height: 10%;
     padding: 0 3%;
-    background-color: #3C4959;
+    background-color: var(--background-highlith-color);
 }
 
 .buttonsDesktop {
@@ -53,6 +54,7 @@
     flex-direction: column;
 }
 .externalLink {
+    color: var(--default-font);
     text-decoration: none;
     font-style: normal;
     margin: 1%;

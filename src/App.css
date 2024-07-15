@@ -3,6 +3,9 @@
 
 :root {
   --background-color: white;
+  --background-highlith-color: #a0aebe;
+  --background-color-progress: black;
+  --highligth-font-color: steelblue;
   --default-font: black;
   --h2-font: brown;
 }
@@ -49,10 +52,10 @@
 }
 
 a {
-  color: white;
+  color: var(--default-font);
   text-decoration: underline;
   font-style: italic;
 }
 a:hover {
-  color: gold;
+  color: var(--highligth-font-color);
 }

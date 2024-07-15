@@ -255,15 +255,15 @@ export function Content (){
             <CardContent id={"Habilidades"} title={"Habilidades"} icon={<i class="fa-regular fa-file-code"></i>} >
                 <section className={style.skillContainer}>
                     <div className={style.skills}>
-                        <SkillCard label={"HTML 5"} img={"https://i.ibb.co/fXz53Jk/html5.png"} />
-                        <SkillCard label={"CSS 3"} img={"https://i.ibb.co/c2zqG4N/css.png"} />
-                        <SkillCard label={"Javascript"} img={"https://i.ibb.co/kKP423K/javascript.png"} />
-                        <SkillCard label={"React"} img={"https://i.ibb.co/kQtXB3y/react.png"} />
-                        <SkillCard label={"SQL"} img={"https://i.ibb.co/9TMkFr9/sql.png"} />
+                        <SkillCard label={"HTML 5"} img={"https://i.ibb.co/fXz53Jk/html5.png"} icon={<i class="fa-brands fa-html5"></i>} />
+                        <SkillCard label={"CSS 3"} img={"https://i.ibb.co/c2zqG4N/css.png"} icon={<i class="fa-brands fa-css3-alt"></i>} />
+                        <SkillCard label={"Javascript"} img={"https://i.ibb.co/kKP423K/javascript.png"} icon={<i class="fa-brands fa-js"></i>} />
+                        <SkillCard label={"React"} img={"https://i.ibb.co/kQtXB3y/react.png"} icon={<i class="fa-brands fa-react"></i>} />
+                        <SkillCard label={"SQL"} img={"https://i.ibb.co/9TMkFr9/sql.png"} icon={<i class="fa-solid fa-database"></i>} />
                         <SkillCard label={"C#"} img={"https://i.ibb.co/6R9MJhb/c-sharp.png"} />
                         <SkillCard label={"Unity Engine"} img={"https://i.ibb.co/pdMzW8Z/unity.png"} />
                         <SkillCard label={"Game Dev"} img={"https://i.ibb.co/jbFZZJY/game-development.png"} />
-                        <SkillCard label={"Power BI"} img={"https://i.ibb.co/2Mb0YDF/powerBi.png"} />
+                        <SkillCard label={"Power BI"} img={"https://i.ibb.co/2Mb0YDF/powerBi.png"} icon={<i class="fa-solid fa-chart-column"></i>} />
                     </div>
                 </section>
             </CardContent>

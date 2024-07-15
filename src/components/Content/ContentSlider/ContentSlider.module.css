@@ -27,7 +27,7 @@
 }
 .leftButton:hover, .rightButton:hover {
     cursor: pointer;
-    color: gold;
+    color: var(--highligth-font-color);
     transition: .5s;
 }
 
