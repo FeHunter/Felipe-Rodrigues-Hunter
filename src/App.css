@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
 
+:root {
+  --background-color: white;
+  --default-font: black;
+  --h2-font: brown;
+}
+
 * {
   font-family: 'Share Tech Mono', monospace;
   font-size: 1.01em;
@@ -24,8 +30,8 @@
   grid-template-rows: 10% 90%;
   grid-template-areas: 'header' 'content';
   height: 100vh;
-  /* background-color: #010D00;
-  color: white; */
+  background-color: var(--background-color);
+  color: var(--default-font);
 }
 
 .header {

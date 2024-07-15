@@ -2,19 +2,18 @@ import { useEffect, useState } from 'react';
 import { BorderButton, DefaultButton, IconButton } from '../Buttons/Buttons';
 import style from './Header.module.css';
 import { PopUpWindow } from '../Content/PopUpWindow/PopUpWindow';
+import { setGlobalState, useGlobalState } from '../../state/states';
 
-export function Header ({changeDarkMode, darkMode}) {
+export function Header () {
 
     const [viewMenu, setViewMenu] = useState(false);
     const [viewContact, setViewContact] = useState(false);
 
+    const [darkMode] = useGlobalState('darkMode');
     const [iconDarkMode, setIconDarkMode] = useState(darkMode ?<i class="fa-regular fa-lightbulb"></i> : <i class="fa-solid fa-lightbulb"></i>);
     useEffect(()=>{
-        setIconDarkMode(darkMode ? <i class="fa-regular fa-lightbulb"></i> : <i class="fa-solid fa-lightbulb"></i>);
+        setIconDarkMode(darkMode ?<i class="fa-regular fa-lightbulb"></i> : <i class="fa-solid fa-lightbulb"></i>);
     }, [darkMode]);
-    function changeIcon (){
-        changeDarkMode();
-    }
 
     const scrollToComponent = (id) => {
         const element = document.getElementById(id);
@@ -43,7 +42,7 @@ export function Header ({changeDarkMode, darkMode}) {
                 <DefaultButton label={"Habilidades"} width={"20%"} onClick={()=>{ scrollToComponent("Habilidades") }} />
                 <DefaultButton label={"Projetos"} width={"20%"} onClick={()=>{ scrollToComponent("Projetos") }} />
                 <BorderButton label={"Contato"} width={"20%"} onClick={()=>{setViewContact(true)}} />
-                <IconButton icon={ iconDarkMode } onClick={changeIcon} />
+                <IconButton icon={ iconDarkMode } onClick={()=>{ setGlobalState('darkMode', !darkMode) }} />
             </div>
             <PopUpWindow label={"Contato"} visible={viewContact} closeClick={()=>{setViewContact(false)}}>
                 <div className={style.linksContainer}>
