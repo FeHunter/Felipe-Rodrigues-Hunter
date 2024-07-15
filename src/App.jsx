@@ -1,13 +1,13 @@
-import { useState } from 'react';
 import './App.css'
 import { Content } from './components/Content/Content'
 import { Header } from './components/Header/Header'
+import { setGlobalState, useGlobalState } from './state/states';
 
 function App() {
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode] = useGlobalState('darkMode');
   function changeMode (){
-    setDarkMode(!darkMode);
+    setGlobalState('darkMode', !darkMode);
   }
 
   const viewMode = darkMode ?
