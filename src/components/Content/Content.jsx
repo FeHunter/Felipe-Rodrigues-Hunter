@@ -221,7 +221,7 @@ export function Content (){
                             <span className={style.cursando}><i class="fa-solid fa-hourglass-end"></i> Cursando...</span>
                         </ItemList>
                         <ItemList  progressBar={'30%'}>
-                            <p>Banco de Dados SQL do Zero ao Avançado + Projetos Reais 2023</p>
+                            <p>Banco de Dados SQL</p>
                             <span className={style.cursando}> <i class="fa-solid fa-hourglass-end"></i> Cursando...</span>
                         </ItemList>
                         <ItemList  progressBar={'100%'}>

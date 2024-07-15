@@ -20,6 +20,7 @@ export function Header () {
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
         }
+        setViewMenu(false);
     }
 
     return (
