@@ -13,6 +13,9 @@
     cursor: pointer;
     transition: .1s;
 }
+.DefaultButton:active {
+    color: black;
+}
 
 .BorderButton {
     border: 2px solid white;
@@ -30,4 +33,27 @@
     color: gold;
     border: 2px solid gold;
     box-shadow: 1px 1px 2px gold;
+}
+.BorderButton:active {
+    color: black;
+}
+
+.IconButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8%;
+    font-size: 1.2em;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.IconButton:hover {
+    color: gold;
+    cursor: pointer;
+}
+
+.IconButton:active {
+    color: black;
 }

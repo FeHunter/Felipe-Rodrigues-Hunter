@@ -3,7 +3,7 @@
 
 * {
   font-family: 'Share Tech Mono', monospace;
-  font-size: 1em;
+  font-size: 1.01em;
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
@@ -24,8 +24,8 @@
   grid-template-rows: 10% 90%;
   grid-template-areas: 'header' 'content';
   height: 100vh;
-  background-color: #010D00;
-  color: white;
+  /* background-color: #010D00;
+  color: white; */
 }
 
 .header {
