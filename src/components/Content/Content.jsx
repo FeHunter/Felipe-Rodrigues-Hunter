@@ -195,7 +195,7 @@ export function Content (){
             <CardContent id={"Sobre"} title={"Sobre"} icon={<i class="fa-solid fa-circle-info"></i>}>
                 <div className={style.aboutText}>
                 <p>
-                    Me chamo Felipe, tenho 23 anos e sou desenvolvedor. Possuo conhecimentos em linguagens como JavaScript, além de HTML5, CSS3 e o React usados na construção de sites e aplicativos. C# foi a primeira linguagem que aprendi; quando jovem, queria fazer jogos e acabei descobrindo a Unity Engine, que me introduziu ao mundo da programação. Hoje, tenho amplo conhecimento em C# e .NET.
+                    Olá, sou Felipe, desenvolvedor com interesse em criar soluções inovadoras. Tenho experiência sólida em JavaScript, HTML5, CSS3 e React. Iniciei minha jornada com C#, fascinado pelo desenvolvimento de jogos, o que me levou à Unity Engine e posteriormente ao desenvolvimento em .NET. Busco oportunidades que me permitam aplicar minha experiência em projetos desafiadores, buscando continuamente aprender e crescer como profissional.
                 </p>
                 <p>
                     Tenho experiência em trabalhar em grandes projetos, adquirida no desenvolvimento dos meus jogos publicados no Itch.io, além de projetos pessoais e trabalhos acadêmicos. Atualmente, estou estudando Análise e Desenvolvimento de Sistemas no Instituto Infnet, com previsão de conclusão do curso em 2025.

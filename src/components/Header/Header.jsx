@@ -31,10 +31,13 @@ export function Header () {
             <div className={style.buttonsMobile}>
                 <span onClick={()=>{ setViewMenu(!viewMenu) }}> <i class="fa-solid fa-bars"></i> </span>
                 <div className={viewMenu ? style.floatButtonsMobile : style.hide} >
-                    <DefaultButton label={"Sobre"} width={"40%"} onClick={()=>{ scrollToComponent("Sobre") }} />
-                    <DefaultButton label={"Habilidades"} width={"40%"} onClick={()=>{ scrollToComponent("Habilidades") }} />
-                    <DefaultButton label={"Projetos"} width={"40%"} onClick={()=>{ scrollToComponent("Projetos") }} />
-                    <DefaultButton label={"Contato"} width={"40%"} onClick={()=>{setViewContact(true)}} />
+                    <div className={style.mobileMenuButtons}>
+                        <DefaultButton label={"Sobre"} width={"40%"} onClick={()=>{ scrollToComponent("Sobre") }} />
+                        <DefaultButton label={"Habilidades"} width={"40%"} onClick={()=>{ scrollToComponent("Habilidades") }} />
+                        <DefaultButton label={"Projetos"} width={"40%"} onClick={()=>{ scrollToComponent("Projetos") }} />
+                        <DefaultButton label={"Contato"} width={"40%"} onClick={()=>{setViewContact(true)}} />
+                    </div>
+                    <IconButton icon={ iconDarkMode } onClick={()=>{ setGlobalState('darkMode', !darkMode) }} />
                 </div>
             </div>
             <div className={style.buttonsDesktop}>
