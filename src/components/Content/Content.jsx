@@ -15,7 +15,7 @@ export function Content (){
         "Dino Island" : false,
         "The Dark Forest" : false,
         "Fim de Semana" : false,
-        "Jogo Da Velha" : false,
+        "Portfolio" : false,
         "ECommerce React" : false,
         "Rede Social" : false,
         "Tela de Login" : false,
@@ -125,29 +125,30 @@ export function Content (){
                             title={"Algumas Funcionalidades:"}
                             text={"Cardápio: A plataforma permite ao usuário montar um cardápio dos itens que pretende consumir no evento, proporcionando assim um controle sobre seus gastos. Junto com o estabelecimento, a plataforma disponibiliza ao usuário as opções de alimentos para consumo no local. Caso deseje, o usuário também pode realizar compras através da plataforma. \n\n Transporte por Aplicativo: A plataforma, em parceria com alguns serviços de transporte, disponibiliza ao usuário diversas opções de transporte até o evento e de volta para sua residência ou local de escolha, sempre prezando pela segurança e transparência. \n\n Além de outras funcionalidades, como filtros por região, categorias, faixa etária e mais."}
                         />
+                        <ProjectLink label={"Código no GitHub"} link={"https://github.com/FeHunter/Fins-De-Semana-APP"} />
                     </section>
                 </PopUpWindow>
                 <PopUpWindow
-                    label={"Jogo da Velha - Javascript"}
-                    visible={popWindow['Jogo Da Velha']}
-                    closeClick={()=>{ togglePopWindow("Jogo Da Velha") }}
+                    label={"Site Portfólio"}
+                    visible={popWindow['Portfolio']}
+                    closeClick={()=>{ togglePopWindow("Portfolio") }}
                 >
                     <section>
                         <div>
                             <ProjectText
-                                title={"O que é?"}
-                                text={"Este jogo da velha foi feito durante uma aula no Curso de ADS no Instituo Infnet enquanto estavamos aprendendo a programa em Javascript."}
+                                title={"Sobre?"}
+                                text={"Este site serve para apresentar minhas experiências, habilidades e projetos como programador. Inclui uma breve apresentação pessoal, com detalhes sobre projetos, imagens, vídeos e códigos no GitHub."}
                             />
                             <ProjectText
-                                title={"Sobre:"}
-                                text={"O jogo é bem simples como todos conhecem, permitir que um ou dois usuários possam jogar entre si."}
+                                title={"Recursos do site:"}
+                                text={"- Responsividade:\nO site está adaptado para diferentes tamanhos de tela. \n\n- Tema:\nOpções de tema claro e escuro. \n\n- Slider:\nSlider para apresentar os projetos. \n\n- Pop-up:\nJanela em formato de pop-up para apresentar conteúdo. \n\n- Hospedagem:\nO site está hospedado no GitHub Pages."}
                             />
                         </div>
                     </section>
                     <ProjectImages label={"Screenshots do jogo rodando no navegador"}> 
-                        <img src='https://i.ibb.co/4SQpbgc/Jogo-Da-Velha-JS-Scr2.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
-                        <img src='https://i.ibb.co/vDk7fPC/Jogo-Da-Velha-JS-Scr1.png' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
-                        <img src='https://i.ibb.co/RB8Cnrq/Jogo-Da-Velha-JS.jpg' alt='Jogo da Velha JS by Felipe Hunter' width={"40%"} />
+                        <img src='https://i.ibb.co/4SQpbgc/Jogo-Da-Velha-JS-Scr2.png' alt='Portfolio JS by Felipe Hunter' width={"40%"} />
+                        <img src='https://i.ibb.co/vDk7fPC/Jogo-Da-Velha-JS-Scr1.png' alt='Portfolio JS by Felipe Hunter' width={"40%"} />
+                        <img src='https://i.ibb.co/RB8Cnrq/Jogo-Da-Velha-JS.jpg' alt='Portfolio JS by Felipe Hunter' width={"40%"} />
                     </ProjectImages>
                     <ProjectLink label={"Código no GitHub"} link={"https://github.com/FeHunter/JogoDaVelha_JS"} />
                 </PopUpWindow>
@@ -288,9 +289,9 @@ export function Content (){
                                     onClick={()=>{ togglePopWindow("The Dark Forest") }}
                                 />,
                                 <ProjectCard
-                                    title={"Jogo Da Velha - JavaScript"}
+                                    title={"Portfolio - JavaScript"}
                                     img={"https://i.ibb.co/4SQpbgc/Jogo-Da-Velha-JS-Scr2.png"}
-                                    onClick={()=>{ togglePopWindow("Jogo Da Velha") }}
+                                    onClick={()=>{ togglePopWindow("Portfolio") }}
                                 />,
                                 <ProjectCard
                                     title={"E-Commerce com React"}
