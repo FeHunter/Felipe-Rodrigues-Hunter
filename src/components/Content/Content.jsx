@@ -150,9 +150,12 @@ export function Content (){
                         </div>
                     </section>
                     <ProjectImages label={"Screenshots do jogo rodando no navegador"}> 
-                        <img src='https://i.ibb.co/4SQpbgc/Jogo-Da-Velha-JS-Scr2.png' alt='Portfolio JS by Felipe Hunter' width={"40%"} />
-                        <img src='https://i.ibb.co/vDk7fPC/Jogo-Da-Velha-JS-Scr1.png' alt='Portfolio JS by Felipe Hunter' width={"40%"} />
-                        <img src='https://i.ibb.co/RB8Cnrq/Jogo-Da-Velha-JS.jpg' alt='Portfolio JS by Felipe Hunter' width={"40%"} />
+                        <img src='https://i.ibb.co/Vgmg5HG/portfolio-scr-1.png' alt='Portfolio JS by Felipe Hunter' width={"40%"} />
+                        <img src='https://i.ibb.co/PNs2HN3/portfolio-scr-1.png' alt='Portfolio JS by Felipe Hunter' width={"40%"} />
+                        <img src='https://i.ibb.co/6XjvDT6/portfolio-scr-5.png' alt='Portfolio JS by Felipe Hunter' width={"40%"} />
+                        <img src='https://i.ibb.co/7kYTFCn/portfolio-scr-4.png' alt='Portfolio JS by Felipe Hunter' width={"40%"} />
+                        <img src='https://i.ibb.co/BfRTH94/portfolio-scr-3.png' alt='Portfolio JS by Felipe Hunter' width={"40%"} />
+                        <img src='https://i.ibb.co/BtM022w/portfolio-scr-6.png' alt='Portfolio JS by Felipe Hunter' width={"40%"} />
                     </ProjectImages>
                     <ProjectLink label={"Código no GitHub"} link={"https://github.com/FeHunter/Felipe-Rodrigues-Hunter"} />
                 </PopUpWindow>
@@ -301,8 +304,8 @@ export function Content (){
                                     onClick={()=>{ togglePopWindow("The Dark Forest") }}
                                 />,
                                 <ProjectCard
-                                    title={"Portfolio - JavaScript"}
-                                    img={"https://i.ibb.co/4SQpbgc/Jogo-Da-Velha-JS-Scr2.png"}
+                                    title={"Portfolio"}
+                                    img={"https://i.ibb.co/BtM022w/portfolio-scr-6.png"}
                                     onClick={()=>{ togglePopWindow("Portfolio") }}
                                 />,
                                 <ProjectCard
