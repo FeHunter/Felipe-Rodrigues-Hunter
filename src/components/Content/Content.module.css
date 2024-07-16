@@ -60,6 +60,19 @@
     height: 450px;
 }
 
+.resumeLink {
+    text-decoration: none;
+}
+.resumeLink i {
+    color: gray;
+}
+.resumeLink:hover {
+    border-bottom: 2px solid var(--highligth-font-color);
+}
+.resumeLink:hover > i {
+    color: var(--highligth-font-color);
+}
+
 @media screen and (min-width: 900px) {
     .list h3 {
         width: 70%;

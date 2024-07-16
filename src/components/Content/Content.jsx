@@ -145,7 +145,7 @@ export function Content (){
                             />
                             <ProjectText
                                 title={"Recursos do site:"}
-                                text={"- Responsividade:\nO site está adaptado para diferentes tamanhos de tela. \n\n- Tema:\nOpções de tema claro e escuro. \n\n- Slider:\nSlider para apresentar os projetos. \n\n- Pop-up:\nJanela em formato de pop-up para apresentar conteúdo. \n\n- Hospedagem:\nO site está hospedado no GitHub Pages."}
+                                text={"- Responsividade:\nO site está adaptado para diferentes tamanhos de tela. \n\n- Tema:\nOpções de tema claro e escuro. \n\n- Slider:\nSlider para apresentar os projetos. \n\n- Pop-up:\nJanela em formato de pop-up para apresentar conteúdo. \n\n- Hospedagem:\nO site está hospedado no GitHub Pages. \n\n-Arquivos:\nArquivos em formato PDF estão hospedados no Google Drive, imagens estão no imgBB e os vídeos estão no YouTube."}
                             />
                         </div>
                     </section>
@@ -215,7 +215,7 @@ export function Content (){
                         </ItemList>
                         <ItemList progressBar={'100%'}>
                             <p>Curso em Vídeo HTML5</p>
-                            <a href="src/assets/pdf/Certificado_do_Curso_Em_Vidio_HTML5.pdf" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
+                            <a href="https://drive.google.com/uc?id=1_sUbyI7zA0FTAFkvL-uXmCPcq5PKEnvw&export=download" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
                         </ItemList>
                         {/* <ItemList  progressBar={'100%'}>
                             <p>Curso Completo de Linguagem C e C++</p>
@@ -231,7 +231,7 @@ export function Content (){
                         </ItemList>
                         <ItemList  progressBar={'100%'}>
                             <p>Microsoft POWER BI 2023</p>
-                            <a href="src/assets/pdf/Certificado Udemy Power BI.pdf" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
+                            <a href="https://drive.google.com/uc?id=1VcqeeNumr1k9NgshOeELQqdFWI5IHZa5&export=download" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
                         </ItemList>
                     </ul>
                 </div>
@@ -255,6 +255,14 @@ export function Content (){
                         </li>
                         
                     </ul>
+                </div>
+                <div>
+                    <a
+                        className={style.resumeLink}
+                        href="https://drive.google.com/uc?id=1qep7HHuC1ne7w9o2rsRTyAs_TIJkBZvh&export=download" target="_blank"
+                    >
+                        <i class="fa-solid fa-file"></i> Currículo
+                    </a>
                 </div>
             </CardContent>
             <CardContent id={"Habilidades"} title={"Habilidades"} icon={<i class="fa-regular fa-file-code"></i>} >
