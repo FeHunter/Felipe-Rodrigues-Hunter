@@ -217,13 +217,9 @@ export function Content (){
                             <p>Curso em Vídeo HTML5</p>
                             <a href="https://drive.google.com/uc?id=1_sUbyI7zA0FTAFkvL-uXmCPcq5PKEnvw&export=download" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
                         </ItemList>
-                        {/* <ItemList  progressBar={'100%'}>
-                            <p>Curso Completo de Linguagem C e C++</p>
-                            <a href="src/assets/pdf/Certificado_C&C++_Udemy.pdf" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
-                        </ItemList> */}
                         <ItemList  progressBar={'95%'}>
                             <p>C# Programação Orientada a Objetos + Projetos</p>
-                            <span className={style.cursando}><i class="fa-solid fa-hourglass-end"></i> Cursando...</span>
+                            <a href="https://drive.google.com/uc?export=download&id=15NsOEErMdOgui6GaT9WPzhCaQrOcU3dh" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
                         </ItemList>
                         <ItemList  progressBar={'30%'}>
                             <p>Banco de Dados SQL</p>
