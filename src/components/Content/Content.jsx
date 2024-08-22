@@ -220,7 +220,7 @@ export function Content (){
                             <p>Curso em Vídeo HTML5</p>
                             <a href="https://drive.google.com/uc?id=1_sUbyI7zA0FTAFkvL-uXmCPcq5PKEnvw&export=download" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
                         </ItemList>
-                        <ItemList  progressBar={'95%'}>
+                        <ItemList  progressBar={'100%'}>
                             <p>C# Programação Orientada a Objetos + Projetos</p>
                             <a href="https://drive.google.com/uc?export=download&id=15NsOEErMdOgui6GaT9WPzhCaQrOcU3dh" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
                         </ItemList>
