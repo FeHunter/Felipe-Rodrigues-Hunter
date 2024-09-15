@@ -217,8 +217,12 @@ export function Content (){
                             <span className={style.cursando}><i class="fa-solid fa-hourglass-end"></i> Cursando...</span>
                         </ItemList>
                         <ItemList progressBar={'100%'}>
-                            <p>Curso em Vídeo HTML5</p>
-                            <a href="https://drive.google.com/uc?id=1_sUbyI7zA0FTAFkvL-uXmCPcq5PKEnvw&export=download" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
+                            <p>React</p>
+                            <span className={style.cursando}><i class="fa-solid fa-circle-check"></i> Instituto Infnet</span>
+                        </ItemList>
+                        <ItemList progressBar={'100%'}>
+                            <p>C# ASP.NET</p>
+                            <span className={style.cursando}><i class="fa-solid fa-circle-check"></i> Instituto Infnet</span>
                         </ItemList>
                         <ItemList  progressBar={'100%'}>
                             <p>C# Programação Orientada a Objetos + Projetos</p>
@@ -231,6 +235,10 @@ export function Content (){
                         <ItemList  progressBar={'100%'}>
                             <p>Microsoft POWER BI 2023</p>
                             <a href="https://drive.google.com/uc?id=1VcqeeNumr1k9NgshOeELQqdFWI5IHZa5&export=download" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
+                        </ItemList>
+                        <ItemList progressBar={'100%'}>
+                            <p>Curso em Vídeo HTML5</p>
+                            <a href="https://drive.google.com/uc?id=1_sUbyI7zA0FTAFkvL-uXmCPcq5PKEnvw&export=download" target="_blank"><i class="fa-solid fa-circle-check"></i> Certificado</a>
                         </ItemList>
                     </ul>
                 </div>
