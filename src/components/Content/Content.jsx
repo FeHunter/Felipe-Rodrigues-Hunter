@@ -312,16 +312,6 @@ export function Content (){
                                     img={"https://i.ibb.co/BtM022w/portfolio-scr-6.png"}
                                     onClick={()=>{ togglePopWindow("Portfolio") }}
                                 />,
-                                <ProjectCard
-                                    title={"E-Commerce com React"}
-                                    img={"https://i.ibb.co/28DV8TB/E-commerce-Img.png"}
-                                    onClick={()=>{ togglePopWindow("ECommerce React") }}
-                                />,
-                                <ProjectCard
-                                    title={"Rede Social com React"}
-                                    img={"https://i.ibb.co/7S3bjwD/Social-Network-Img.png"}
-                                    onClick={()=>{ togglePopWindow("Rede Social") }}
-                                />,
                             ]}
                         />
                     </div>
