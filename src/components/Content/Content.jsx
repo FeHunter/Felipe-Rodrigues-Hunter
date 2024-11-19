@@ -20,6 +20,8 @@ export function Content (){
         "Rede Social" : false,
         "Tela de Login" : false,
     })
+
+    // CARTÕES DOS PROJETOS
     function togglePopWindow (key) {
         setPopWindow(prevState => ({
             ...prevState,
@@ -30,6 +32,7 @@ export function Content (){
     function ContentOfPopWindows (){
         return (
             <section>
+                {/* Dino Island The Four Crystals */}
                 <PopUpWindow
                     label={"Dino Island The Four Crystals - Unity, C#"}
                     visible={popWindow['Dino Island']}
@@ -70,6 +73,8 @@ export function Content (){
                         <ProjectLink label={"Link do jogo"} link={"https://felipehunter.itch.io/dino-island-the-four-crystals"} />
                     </section>
                 </PopUpWindow>
+
+                {/* The Dark Forest Guardians */}
                 <PopUpWindow
                     label={"The Dark Forest Guardians - Unity, C#"}
                     visible={popWindow['The Dark Forest']}
@@ -101,6 +106,8 @@ export function Content (){
                         <ProjectLink label={"Link do jogo"} link={"https://felipehunter.itch.io/the-dark-forest-guardians"} />
                     </section>
                 </PopUpWindow>
+
+                {/* Fim de Semana */}
                 <PopUpWindow
                     label={"Fim de Semana"}
                     visible={popWindow['Fim de Semana']}
@@ -132,6 +139,8 @@ export function Content (){
                         {/* <ProjectLink label={"Código no GitHub"} link={"https://github.com/FeHunter/Fins-De-Semana-APP"} /> */}
                     </section>
                 </PopUpWindow>
+
+                {/* Site Portfólio */}
                 <PopUpWindow
                     label={"Site Portfólio"}
                     visible={popWindow['Portfolio']}
@@ -159,6 +168,8 @@ export function Content (){
                     </ProjectImages>
                     <ProjectLink label={"Código no GitHub"} link={"https://github.com/FeHunter/Felipe-Rodrigues-Hunter"} />
                 </PopUpWindow>
+
+                {/* E-Commerce para avaliação da faculdade */}
                 <PopUpWindow
                     label={"E-Commerce para avaliação da faculdade"}
                     visible={popWindow['ECommerce React']}
@@ -176,6 +187,8 @@ export function Content (){
                         <ProjectLink label={"Código no GitHub"} link={"https://github.com/FeHunter/Site-Ecommerce-AT"} />
                     </section>
                 </PopUpWindow>
+
+                {/* Projeto Rede Social feito para avaliação da faculdade */}
                 <PopUpWindow
                     label={"Projeto Rede Social feito para avaliação da faculdade"}
                     visible={popWindow['Rede Social']}
@@ -200,6 +213,7 @@ export function Content (){
 
     return (
         <section className={style.container}>
+            {/* SOBRE */}
             <CardContent id={"Sobre"} title={"Sobre"} icon={<i class="fa-solid fa-circle-info"></i>}>
                 <div className={style.aboutText}>
                 <p>
@@ -272,6 +286,8 @@ export function Content (){
                     </a>
                 </div>
             </CardContent>
+
+            {/* HABILIDADES */}
             <CardContent id={"Habilidades"} title={"Habilidades"} icon={<i class="fa-regular fa-file-code"></i>} >
                 <section className={style.skillContainer}>
                     <div className={style.skills}>
@@ -280,13 +296,15 @@ export function Content (){
                         <SkillCard label={"Javascript"} img={"https://i.ibb.co/kKP423K/javascript.png"} icon={<i class="fa-brands fa-js"></i>} />
                         <SkillCard label={"React"} img={"https://i.ibb.co/kQtXB3y/react.png"} icon={<i class="fa-brands fa-react"></i>} />
                         <SkillCard label={"SQL"} img={"https://i.ibb.co/9TMkFr9/sql.png"} icon={<i class="fa-solid fa-database"></i>} />
-                        <SkillCard label={"C#"} img={"https://i.ibb.co/6R9MJhb/c-sharp.png"} />
-                        <SkillCard label={"Unity Engine"} img={"https://i.ibb.co/pdMzW8Z/unity.png"} />
-                        <SkillCard label={"Game Dev"} img={"https://i.ibb.co/jbFZZJY/game-development.png"} />
+                        <SkillCard label={"C#"} img={"https://i.ibb.co/6R9MJhb/c-sharp.png"} icon={<i class="fa-solid fa-code"></i>} />
+                        <SkillCard label={"Unity Engine"} img={"https://i.ibb.co/pdMzW8Z/unity.png"} icon={<i class="fa-brands fa-unity"></i>} />
+                        <SkillCard label={"Game Dev"} img={"https://i.ibb.co/jbFZZJY/game-development.png"} icon={<i class="fa-solid fa-gamepad"></i>} />
                         <SkillCard label={"Power BI"} img={"https://i.ibb.co/2Mb0YDF/powerBi.png"} icon={<i class="fa-solid fa-chart-column"></i>} />
                     </div>
                 </section>
             </CardContent>
+
+            {/* PROJETOS */}
             <CardContent id={"Projetos"} title={"Projetos"} icon={<i class="fa-regular fa-folder-open"></i>} >
                 <div className={style.projectsContainer}>
                     <div className={style.projects}>
@@ -319,6 +337,7 @@ export function Content (){
                 {/* Janelas de PopUp dos projetos */}
                 {ContentOfPopWindows()}
             </CardContent>
+
             <Footer/>
         </section>
     );

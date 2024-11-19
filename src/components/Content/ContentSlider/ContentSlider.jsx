@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import style from './ContentSlider.module.css';
 
 export function ContentSlider({ blocks }) {
+  
   const [blockId, setBlockId] = useState(0);
+  const [animationTransition, setAnimationTransition] = useState("")
 
   function next() {
     setBlockId(prevBlockId => {
@@ -12,6 +14,7 @@ export function ContentSlider({ blocks }) {
       }
       return newBlockId;
     });
+    setAnimationTransition(style.ApplySliderLeft)
   }
 
   function prev() {
@@ -22,6 +25,7 @@ export function ContentSlider({ blocks }) {
       }
       return newBlockId;
     });
+    setAnimationTransition(style.ApplySliderRight)
   }
 
   const viewBlock1 = blocks[blockId] || null;
@@ -31,7 +35,7 @@ export function ContentSlider({ blocks }) {
   const rightLimitColor = blockId+2 >= blocks.length ? {color: 'transparent'} : {};
 
   return (
-    <section className={style.container}>
+    <section className={`${style.container} ${animationTransition}`}>
       <div className={style.leftButton} style={leftLimitColor} onClick={prev}>
         <i className="fa-solid fa-chevron-left"></i>
       </div>

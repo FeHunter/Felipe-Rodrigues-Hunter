@@ -5,6 +5,7 @@
     grid-template-areas: 'left content right';
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .mobile {
@@ -43,6 +44,43 @@
 }
 .rightButton {
     grid-area: right;
+}
+
+
+.ApplySliderLeft {
+    animation: slideLeft 0.5s ease-in-out forwards;
+}
+.ApplySliderRight {
+    animation: slideRight 0.5s ease-in-out forwards;
+}
+
+@keyframes slideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(-1%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(1%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 @media screen and (min-width: 900px) {
