@@ -64,4 +64,56 @@
         width: 50%;
         transition: .5s;
     }
+
+    .floatingHidden {
+        display: none;
+    }
+  
+    .floatingContent {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 14%;
+        /* height: 15%; */
+        padding: 1%;
+        border-radius: 10px;
+        background-color: var(--background-highlith-color);
+        animation: showFloatPanel 1s forwards;
+    }
+    .floatPanelAboutText {
+        animation: FloatPanelText 1s forwards;
+    }
+
+    @keyframes showFloatPanel {
+        0% {
+            opacity: 0;
+            width: 0px;
+            height: 0px;
+            transform: translateY(100px);
+        }
+        50% {
+            opacity: .3;
+            height: 6%;
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+            height: auto;
+        }
+    }
+    @keyframes FloatPanelText {
+        0% {
+            opacity: 0;
+            transform: scale(0);
+        }
+        70% {
+            opacity: 0;
+            transform: scale(0.2);
+        }
+      
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
 }

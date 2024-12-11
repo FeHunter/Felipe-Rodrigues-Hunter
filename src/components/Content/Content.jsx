@@ -211,6 +211,10 @@ export function Content (){
         )
     }
 
+    const skillDescriptions = {
+        html5: "HTML 5 é a base de todas as páginas webs. Meu primeiro contato com o html foi com o professor Gustavo Guanabara em seu canal do YouTube, curso em vídeo onde aprendi muito sobre esta linguagem de marcação de texto."
+    }
+
     return (
         <section className={style.container}>
             {/* SOBRE */}
@@ -291,7 +295,7 @@ export function Content (){
             <CardContent id={"Habilidades"} title={"Habilidades"} icon={<i class="fa-regular fa-file-code"></i>} >
                 <section className={style.skillContainer}>
                     <div className={style.skills}>
-                        <SkillCard label={"HTML 5"} img={"https://i.ibb.co/fXz53Jk/html5.png"} icon={<i class="fa-brands fa-html5"></i>} />
+                        <SkillCard label={"HTML 5"} about={skillDescriptions.html5} img={"https://i.ibb.co/fXz53Jk/html5.png"} icon={<i class="fa-brands fa-html5"></i>} />
                         <SkillCard label={"CSS 3"} img={"https://i.ibb.co/c2zqG4N/css.png"} icon={<i class="fa-brands fa-css3-alt"></i>} />
                         <SkillCard label={"Javascript"} img={"https://i.ibb.co/kKP423K/javascript.png"} icon={<i class="fa-brands fa-js"></i>} />
                         <SkillCard label={"React"} img={"https://i.ibb.co/kQtXB3y/react.png"} icon={<i class="fa-brands fa-react"></i>} />
@@ -300,6 +304,8 @@ export function Content (){
                         <SkillCard label={"Unity Engine"} img={"https://i.ibb.co/pdMzW8Z/unity.png"} icon={<i class="fa-brands fa-unity"></i>} />
                         <SkillCard label={"Game Dev"} img={"https://i.ibb.co/jbFZZJY/game-development.png"} icon={<i class="fa-solid fa-gamepad"></i>} />
                         <SkillCard label={"Power BI"} img={"https://i.ibb.co/2Mb0YDF/powerBi.png"} icon={<i class="fa-solid fa-chart-column"></i>} />
+                        <SkillCard label={"Metodologia Scrum"} img={"https://i.ibb.co/2Mb0YDF/powerBi.png"} icon={<i class="fa-solid fa-scroll"></i>} />
+                        <SkillCard label={"Metodologia RUP"} img={"https://i.ibb.co/2Mb0YDF/powerBi.png"} icon={<i class="fa-solid fa-scroll"></i>} />
                     </div>
                 </section>
             </CardContent>
