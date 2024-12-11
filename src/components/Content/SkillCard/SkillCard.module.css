@@ -79,6 +79,7 @@
         border-radius: 10px;
         background-color: var(--background-highlith-color);
         animation: showFloatPanel 1s forwards;
+        z-index: 1;
     }
     .floatPanelAboutText {
         animation: FloatPanelText 1s forwards;
