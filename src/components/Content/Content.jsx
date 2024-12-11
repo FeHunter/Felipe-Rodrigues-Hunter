@@ -212,7 +212,16 @@ export function Content (){
     }
 
     const skillDescriptions = {
-        html5: "HTML 5 é a base de todas as páginas webs. Meu primeiro contato com o html foi com o professor Gustavo Guanabara em seu canal do YouTube, curso em vídeo onde aprendi muito sobre esta linguagem de marcação de texto."
+        html5: "HTML 5 é a base de todas as páginas webs. Meu primeiro contato com o html foi com o professor Gustavo Guanabara em seu canal do YouTube, curso em vídeo onde aprendi muito sobre esta linguagem de marcação de texto.",
+        css3: "CSS3 para a estilização das páginas web pode ser usado com o JavaScript ou algum outro framework para realizar diversas estilizações e animações na página.",
+        javascript: "JavaScript é a principal linguagem usada para criar páginas webs. Durante a faculdade, ganhei muita experiência e uma base sólida da linguagem. Aprendi algumas bibliotecas como React que utilizam o JavaScript em sua base.",
+        react: "React é a minha biblioteca preferida quando se trata de criar aplicações webs. Uso para todos os projetos que posso, aprendi muito sobre React na faculdade e aprimorei minhas habilidades desenvolvendo projetos pessoais e comerciais.",
+        sql: "Estou estudando SQL na faculdade e por alguns cursos na Udemy, continuo aprendendo sobre banco de dados. Consigo criar e manter um projeto com SQL apesar de ainda não ser muito bom com banco de dados.",
+        cSharp: "C-Sharp foi a primeira linguagem de programação que aprendi, comecei a programar usando a Unity para criar alguns jogos e tive meu primeiro contato com a linguagem. Durante a faculdade, aprimorei meus conhecimentos na linguagem e aprendi o .NET e ASP.NET Core que me permitiu ter um conhecimento mais amplo sobre a linguagem.",
+        unityEngine: "Criei alguns games usando a ferramenta. Aprimorei muito minhas habilidades com C# entre outras habilidades como Designer, Áudio, Arte e algumas outras envolvidas no processo de desenvolvimento de um jogo.",
+        powerBI: "Meu primeiro contato com Power Bi foi durante meu trabalho como recepcionista Bilíngue, onde em certo momento fiquei responsável por criar indicadores gráficos utilizando a ferramenta. Desde então, busquei cursos para aprimorar minhas habilidades.",
+        scrum: "Aprendi sobre esta metodologia durante a faculdade, apliquei em alguns trabalhos desenvolvidos com alguns colegas. Uma das minhas preferidas para manter a equipe e o projeto em constante evolução.",
+        rup: "Aprendi o RUP no bloco de Back-End da faculdade, achei bem completo e requer um conhecimento a mais da equipe sobre a metodologia para aplicá-la no dia a dia. Particularmente, sempre que posso, tento aplicar no desenvolvimento dos projetos que participo.",
     }
 
     return (
@@ -296,16 +305,16 @@ export function Content (){
                 <section className={style.skillContainer}>
                     <div className={style.skills}>
                         <SkillCard label={"HTML 5"} about={skillDescriptions.html5} img={"https://i.ibb.co/fXz53Jk/html5.png"} icon={<i class="fa-brands fa-html5"></i>} />
-                        <SkillCard label={"CSS 3"} img={"https://i.ibb.co/c2zqG4N/css.png"} icon={<i class="fa-brands fa-css3-alt"></i>} />
-                        <SkillCard label={"Javascript"} img={"https://i.ibb.co/kKP423K/javascript.png"} icon={<i class="fa-brands fa-js"></i>} />
-                        <SkillCard label={"React"} img={"https://i.ibb.co/kQtXB3y/react.png"} icon={<i class="fa-brands fa-react"></i>} />
-                        <SkillCard label={"SQL"} img={"https://i.ibb.co/9TMkFr9/sql.png"} icon={<i class="fa-solid fa-database"></i>} />
-                        <SkillCard label={"C#"} img={"https://i.ibb.co/6R9MJhb/c-sharp.png"} icon={<i class="fa-solid fa-code"></i>} />
-                        <SkillCard label={"Unity Engine"} img={"https://i.ibb.co/pdMzW8Z/unity.png"} icon={<i class="fa-brands fa-unity"></i>} />
-                        <SkillCard label={"Game Dev"} img={"https://i.ibb.co/jbFZZJY/game-development.png"} icon={<i class="fa-solid fa-gamepad"></i>} />
-                        <SkillCard label={"Power BI"} img={"https://i.ibb.co/2Mb0YDF/powerBi.png"} icon={<i class="fa-solid fa-chart-column"></i>} />
-                        <SkillCard label={"Metodologia Scrum"} img={"https://i.ibb.co/2Mb0YDF/powerBi.png"} icon={<i class="fa-solid fa-scroll"></i>} />
-                        <SkillCard label={"Metodologia RUP"} img={"https://i.ibb.co/2Mb0YDF/powerBi.png"} icon={<i class="fa-solid fa-scroll"></i>} />
+                        <SkillCard label={"CSS 3"} about={skillDescriptions.css3} img={"https://i.ibb.co/c2zqG4N/css.png"} icon={<i class="fa-brands fa-css3-alt"></i>} />
+                        <SkillCard label={"Javascript"} about={skillDescriptions.javascript} img={"https://i.ibb.co/kKP423K/javascript.png"} icon={<i class="fa-brands fa-js"></i>} />
+                        <SkillCard label={"React"} about={skillDescriptions.react} img={"https://i.ibb.co/kQtXB3y/react.png"} icon={<i class="fa-brands fa-react"></i>} />
+                        <SkillCard label={"SQL"} about={skillDescriptions.sql} img={"https://i.ibb.co/9TMkFr9/sql.png"} icon={<i class="fa-solid fa-database"></i>} />
+                        <SkillCard label={"C-Sharp"} about={skillDescriptions.cSharp} img={"https://i.ibb.co/6R9MJhb/c-sharp.png"} icon={"C#"} />
+                        <SkillCard label={"Unity Engine"} about={skillDescriptions.unityEngine} img={"https://i.ibb.co/pdMzW8Z/unity.png"} icon={<i class="fa-brands fa-unity"></i>} />
+                        {/* <SkillCard label={"Game Dev"} img={"https://i.ibb.co/jbFZZJY/game-development.png"} icon={<i class="fa-solid fa-gamepad"></i>} /> */}
+                        <SkillCard label={"Power BI"} about={skillDescriptions.powerBI} img={"https://i.ibb.co/2Mb0YDF/powerBi.png"} icon={<i class="fa-solid fa-chart-column"></i>} />
+                        <SkillCard label={"Metodologia Scrum"} about={skillDescriptions.scrum} img={"https://i.ibb.co/2Mb0YDF/powerBi.png"} icon={<i class="fa-solid fa-scroll"></i>} />
+                        <SkillCard label={"Metodologia RUP"} about={skillDescriptions.rup} img={"https://i.ibb.co/2Mb0YDF/powerBi.png"} icon={<i class="fa-solid fa-scroll"></i>} />
                     </div>
                 </section>
             </CardContent>
