@@ -62,7 +62,7 @@
     z-index: 1;
 }
 .floatPanelAboutText {
-    animation: FloatPanelText 1s forwards;
+    animation: FloatPanelText 1s forwards 1s;
 }
 
 /* POSITION CORRECTION FOR FLOATING CONTENT ON MOBILE VIEW */
@@ -109,7 +109,18 @@
 
 /* Animations */
 @keyframes showFloatPanel {
-    0% {
+    0%{
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    47%{
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    49% {
+        display: flex;
         opacity: 0;
         width: 0px;
         height: 0px;
