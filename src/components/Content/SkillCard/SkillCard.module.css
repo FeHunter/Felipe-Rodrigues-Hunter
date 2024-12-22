@@ -1,6 +1,7 @@
 .container {
     width: 100px;
     height: 100px;
+    overflow: hidden;
 }
 
 .container, .card {
@@ -42,7 +43,7 @@
     transition: .5s;
 }
 .card:hover > .skillIcon {
-    font-size: 2.3em;
+    font-size: 2em;
     transition: .1s;
 }
 
@@ -75,8 +76,10 @@
 
 @media screen and (min-width: 900px) {
     .container {
-        width: 180px;
-        height: 180px;
+        justify-content: space-between;
+        width: 15%;
+        margin: 1%;
+        overflow: hidden;
     }
     .card {
         width: 80%;
@@ -111,13 +114,13 @@
 @keyframes showFloatPanel {
     0%{
         display: none;
-        width: 0;
-        height: 0;
+        width: 0px;
+        height: 0px;
     }
     47%{
         display: none;
-        width: 0;
-        height: 0;
+        width: 0px;
+        height: 0px;
     }
     49% {
         display: flex;
@@ -128,7 +131,8 @@
     }
     50% {
         opacity: .3;
-        height: 6%;
+        width: 2%;
+        height: 2%;
     }
     100% {
         opacity: 1;
