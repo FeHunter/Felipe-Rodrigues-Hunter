@@ -98,7 +98,7 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        width: 14%;
+        width: 20%;
         padding: 1%;
         border-radius: 10px;
         background-color: var(--background-highlith-color);
@@ -131,7 +131,7 @@
     }
     50% {
         opacity: .3;
-        width: 2%;
+        width: 10%;
         height: 2%;
     }
     100% {
