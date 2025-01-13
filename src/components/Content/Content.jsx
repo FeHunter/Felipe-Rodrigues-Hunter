@@ -8,6 +8,7 @@ import { ProjectCard } from './ProjectCard/ProjectCard';
 import { SkillCard } from './SkillCard/SkillCard';
 import { PopUpWindow } from './PopUpWindow/PopUpWindow';
 import { ProjectImages, ProjectLink, ProjectText, ProjectVideo } from './ProjectCard/ProjectContent';
+import { LeetcodeCard } from './LeetCodeCard/LeetcodeCard';
 
 export function Content (){
 
@@ -345,6 +346,23 @@ export function Content (){
                                     img={"https://i.ibb.co/BtM022w/portfolio-scr-6.png"}
                                     onClick={()=>{ togglePopWindow("Portfolio") }}
                                 />,
+                            ]}
+                        />
+                    </div>
+                </div>
+                {/* Janelas de PopUp dos projetos */}
+                {ContentOfPopWindows()}
+            </CardContent>
+
+            {/* PROJETOS */}
+            <CardContent id={"LeetCode"} title={"Leet Code"} icon={<i class="fa-solid fa-code"></i>} >
+                <div className={style.projectsContainer}>
+                    <div className={style.projects}>
+                        <ContentSlider
+                            blocks={[
+                                <LeetcodeCard title="Minimum Length of String after Operations" />,
+                                <LeetcodeCard title="Test 2" />,
+                                <LeetcodeCard title="Test 3" />,
                             ]}
                         />
                     </div>
