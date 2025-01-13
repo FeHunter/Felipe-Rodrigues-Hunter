@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import { PopUpWindow } from '../PopUpWindow/PopUpWindow'
 import style from './LeetcodeCard.module.css'
+import { CodeCard } from '../CodeCard/CodeCard'
 
-export function LeetcodeCard ({title}){
+export function LeetcodeCard ({title, content}){
 
     const [popUp, setPopUp] = useState(false)
 
@@ -17,11 +18,7 @@ export function LeetcodeCard ({title}){
                 label={title}
                 visible={popUp}
                 closeClick={()=>{setPopUp(false)}}
-                children={
-                    <>
-                        <p>Teste: {title}</p>
-                    </>
-                }
+                children={content}
             />
         </>
     )

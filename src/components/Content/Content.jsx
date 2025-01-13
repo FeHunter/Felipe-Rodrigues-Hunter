@@ -9,6 +9,7 @@ import { SkillCard } from './SkillCard/SkillCard';
 import { PopUpWindow } from './PopUpWindow/PopUpWindow';
 import { ProjectImages, ProjectLink, ProjectText, ProjectVideo } from './ProjectCard/ProjectContent';
 import { LeetcodeCard } from './LeetCodeCard/LeetcodeCard';
+import { CodeCard } from './CodeCard/CodeCard';
 
 export function Content (){
 
@@ -225,6 +226,24 @@ export function Content (){
         rup: "Aprendi o RUP no bloco de Back-End da faculdade, achei bem completo e requer um conhecimento a mais da equipe sobre a metodologia para aplicá-la no dia a dia. Particularmente, sempre que posso, tento aplicar no desenvolvimento dos projetos que participo.",
     }
 
+    const leetCodeSolutions = {
+        TwoSum: `
+        public class Solution {
+            public int[] TwoSum(int[] nums, int target) {
+                for (int i=0; i < nums.Length; i++) {
+                    for (int j=0; j < nums.Length; j++) {
+                        int sum = nums[i] + nums[j];
+                        if (sum == target && i != j) {
+                            return new int[2] {i, j};
+                        }
+                    }
+                }
+            return new int[2]{0, 0};
+            }
+        }`,
+
+    }
+
     return (
         <section className={style.container}>
             {/* SOBRE */}
@@ -360,7 +379,25 @@ export function Content (){
                     <div className={style.projects}>
                         <ContentSlider
                             blocks={[
-                                <LeetcodeCard title="Minimum Length of String after Operations" />,
+                                <LeetcodeCard
+                                    title="Two Sum"
+                                    content={
+                                        <CodeCard
+                                            title="Two Sum"
+                                            code={leetCodeSolutions.TwoSum}
+                                            about={
+                                            <>
+                                                <p>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.</p>
+                                            </>
+                                            }
+                                            aboutSolution={
+                                                <>
+                                                    <p>Usando laços for aninhados para percorre pela array verificando todos os números, ingorando somente o número que o indice de 'i' e 'j' são o mesmo.</p>
+                                                </>
+                                            }
+                                        />
+                                    }
+                                />,
                                 <LeetcodeCard title="Test 2" />,
                                 <LeetcodeCard title="Test 3" />,
                             ]}
