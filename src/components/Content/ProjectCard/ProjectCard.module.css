@@ -31,6 +31,8 @@
     width: 90%;
     height: 90%;
     transition: 1s;
+    object-fit: cover;
+    object-position: center;
 }
 
 .container:hover {
@@ -57,7 +59,7 @@
     .container {
         grid-template-rows: 20% 80%;
         width: 45%;
-        height: auto;
+        height: 350px;
     }
     .image {
         width: 90%;

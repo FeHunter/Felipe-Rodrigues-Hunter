@@ -15,6 +15,7 @@ export function Content (){
 
     const [popWindow, setPopWindow] = useState({
         "Dino Island" : false,
+        "E-Commerce Loja Virtual" : false,
         "The Dark Forest" : false,
         "Fim de Semana" : false,
         "Portfolio" : false,
@@ -50,10 +51,10 @@ export function Content (){
                             text={"Este é um jogo de plataforma 2D sidescroll com desafios de plataforma e progressão de níveis. \n Neste jogo você jogará com um dinossauro que é o guardião do cristal azul, seu objetivo será recuperar os outros três cristais que foram levados por um mago malvado que quer todo o poder dos cristais."}
                         />
                         <ProjectImages label={"Imagens do jogo"}>
-                            <img src="https://img.itch.zone/aW1hZ2UvNzkyNDU3LzUxMjc3NzguZ2lm/347x500/UftXH4.gif" alt="Dino Island The Four Crystal - BY Felipe Hunter" />
-                            <img src="https://img.itch.zone/aW1hZ2UvNzkyNDU3LzUxMjc3OTguZ2lm/347x500/EmXVle.gif" alt="Dino Island The Four Crystal - BY Felipe Hunter" srcset="" />
-                            <img src="https://img.itch.zone/aW1hZ2UvNzkyNDU3LzUxNjQyODAuZ2lm/347x500/fJRcUH.gif" alt="Dino Island The Four Crystal - BY Felipe Hunter" />
-                            <img src="https://img.itch.zone/aW1hZ2UvNzkyNDU3LzUxNjQyNzguZ2lm/347x500/KVnF5F.gif" alt="Dino Island The Four Crystal - BY Felipe Hunter" />
+                            <img className={style.projectImage} src="https://img.itch.zone/aW1hZ2UvNzkyNDU3LzUxMjc3NzguZ2lm/347x500/UftXH4.gif" alt="Dino Island The Four Crystal - BY Felipe Hunter" />
+                            <img className={style.projectImage} src="https://img.itch.zone/aW1hZ2UvNzkyNDU3LzUxMjc3OTguZ2lm/347x500/EmXVle.gif" alt="Dino Island The Four Crystal - BY Felipe Hunter" srcset="" />
+                            <img className={style.projectImage} src="https://img.itch.zone/aW1hZ2UvNzkyNDU3LzUxNjQyODAuZ2lm/347x500/fJRcUH.gif" alt="Dino Island The Four Crystal - BY Felipe Hunter" />
+                            <img className={style.projectImage} src="https://img.itch.zone/aW1hZ2UvNzkyNDU3LzUxNjQyNzguZ2lm/347x500/KVnF5F.gif" alt="Dino Island The Four Crystal - BY Felipe Hunter" />
                         </ProjectImages>
                         <ProjectText
                             title={"Um pouco sobre o desenvolvimento"}
@@ -92,10 +93,10 @@ export function Content (){
                             text={"Aqui foi minha primeira interação com um projeto grande que exigia gerenciamento para sair do papel. Minha maior dificuldade foi com o aspecto visual do jogo; eu não sabia muito bem como lidar com diferentes assets de diferentes artistas e mesclá-los. O jogo acabou ficando bastante escuro até eu conseguir adaptar um shader para aumentar o brilho."}
                         />
                         <ProjectImages label={"Imagens do jogo"}>
-                            <img src="https://img.itch.zone/aW1hZ2UvNTYyNjE1LzI5NTI2NjAucG5n/347x500/vWmWjj.png" alt="The Dark Forest by Felipe H."/>
-                            <img src="https://img.itch.zone/aW1hZ2UvNTYyNjE1LzI5NTI2NTkucG5n/347x500/ct6Prb.png" alt="The Dark Forest by Felipe H."/>
-                            <img src="https://img.itch.zone/aW1hZ2UvNTYyNjE1LzI5NTI2NTcucG5n/347x500/DrBGhv.png" alt="The Dark Forest by Felipe H."/>
-                            <img src="https://img.itch.zone/aW1hZ2UvNTYyNjE1LzMxNTIwNjcucG5n/347x500/%2FkWCuG.png" alt="The Dark Forest by Felipe H."/>
+                            <img className={style.projectImage} src="https://img.itch.zone/aW1hZ2UvNTYyNjE1LzI5NTI2NjAucG5n/347x500/vWmWjj.png" alt="The Dark Forest by Felipe H."/>
+                            <img className={style.projectImage} src="https://img.itch.zone/aW1hZ2UvNTYyNjE1LzI5NTI2NTkucG5n/347x500/ct6Prb.png" alt="The Dark Forest by Felipe H."/>
+                            <img className={style.projectImage} src="https://img.itch.zone/aW1hZ2UvNTYyNjE1LzI5NTI2NTcucG5n/347x500/DrBGhv.png" alt="The Dark Forest by Felipe H."/>
+                            <img className={style.projectImage} src="https://img.itch.zone/aW1hZ2UvNTYyNjE1LzMxNTIwNjcucG5n/347x500/%2FkWCuG.png" alt="The Dark Forest by Felipe H."/>
                         </ProjectImages>
                         <ProjectText
                             title={"Considerações finais"}
@@ -125,10 +126,10 @@ export function Content (){
                             text={"Esta plataforma foi desenvolvida utilizando React e técnicas como Mobile First e Scrum. Todo o versionamento do código foi feito utilizando o GitHub. Foram usadas APIs de terceiros como Sympla, Google Analytics e Google Maps. \n\n Estou utilizando o sistema de autenticação do Google Firebase para cadastrar os usuários na plataforma, mas pretendo migrar futuramente para o Auth0, que permitirá mais opções de login com uma maior facilidade de implementação. \n\n Um dos maiores desafios foi implementar a API do Google Maps. Mesmo com vários tutoriais disponíveis na internet sobre o assunto, nada parecia funcionar corretamente. Depois de muito tempo, comecei a entender o funcionamento o suficiente para conseguir mostrar a rota entre duas localizações: a localização padrão do usuário informada no cadastro até o local do evento. \n\n Uma função desafiadora para programar, sem sombra de dúvidas, foi o sistema de cardápio para os eventos. A ideia é permitir ao usuário montar seu cardápio com os itens disponíveis no evento; ao arrastar o item para seu carrinho, o valor do item é adicionado à soma total."}
                         />
                         <ProjectImages label={"Imagens da Plataforma"}>
-                            <img src='https://i.ibb.co/wr81JBQ/Fim-de-Semana-App-scr1.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
-                            <img src='https://i.ibb.co/6P2xv7J/Fim-de-Semana-App-scr2.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
-                            <img src='https://i.ibb.co/0cF9Lpq/Fim-de-Semana-App-scr3.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
-                            <img src='https://i.ibb.co/1MKSJNy/Fim-de-Semana-App-scr4.png' alt='Fim de Semana by Felipe Hunter' width={"40%"} />
+                            <img className={style.projectImage} src='https://i.ibb.co/wr81JBQ/Fim-de-Semana-App-scr1.png' alt='Fim de Semana by Felipe Hunter' />
+                            <img className={style.projectImage} src='https://i.ibb.co/6P2xv7J/Fim-de-Semana-App-scr2.png' alt='Fim de Semana by Felipe Hunter' />
+                            <img className={style.projectImage} src='https://i.ibb.co/0cF9Lpq/Fim-de-Semana-App-scr3.png' alt='Fim de Semana by Felipe Hunter' />
+                            <img className={style.projectImage} src='https://i.ibb.co/1MKSJNy/Fim-de-Semana-App-scr4.png' alt='Fim de Semana by Felipe Hunter' />
                         </ProjectImages>
                         <ProjectText
                             title={"Algumas Funcionalidades"}
@@ -161,12 +162,12 @@ export function Content (){
                         </div>
                     </section>
                     <ProjectImages label={"Screenshots do jogo rodando no navegador"}> 
-                        <img src='https://i.ibb.co/Vgmg5HG/portfolio-scr-1.png' alt='Portfolio JS by Felipe Hunter' width={"40%"} />
-                        <img src='https://i.ibb.co/PNs2HN3/portfolio-scr-1.png' alt='Portfolio JS by Felipe Hunter' width={"40%"} />
-                        <img src='https://i.ibb.co/6XjvDT6/portfolio-scr-5.png' alt='Portfolio JS by Felipe Hunter' width={"40%"} />
-                        <img src='https://i.ibb.co/7kYTFCn/portfolio-scr-4.png' alt='Portfolio JS by Felipe Hunter' width={"40%"} />
-                        <img src='https://i.ibb.co/BfRTH94/portfolio-scr-3.png' alt='Portfolio JS by Felipe Hunter' width={"40%"} />
-                        <img src='https://i.ibb.co/BtM022w/portfolio-scr-6.png' alt='Portfolio JS by Felipe Hunter' width={"40%"} />
+                        <img className={style.projectImage} src='https://i.ibb.co/Vgmg5HG/portfolio-scr-1.png' alt='Portfolio JS by Felipe Hunter' />
+                        <img className={style.projectImage} src='https://i.ibb.co/PNs2HN3/portfolio-scr-1.png' alt='Portfolio JS by Felipe Hunter' />
+                        <img className={style.projectImage} src='https://i.ibb.co/6XjvDT6/portfolio-scr-5.png' alt='Portfolio JS by Felipe Hunter' />
+                        <img className={style.projectImage} src='https://i.ibb.co/7kYTFCn/portfolio-scr-4.png' alt='Portfolio JS by Felipe Hunter'/>
+                        <img className={style.projectImage} src='https://i.ibb.co/BfRTH94/portfolio-scr-3.png' alt='Portfolio JS by Felipe Hunter' />
+                        <img className={style.projectImage} src='https://i.ibb.co/BtM022w/portfolio-scr-6.png' alt='Portfolio JS by Felipe Hunter' />
                     </ProjectImages>
                     <ProjectLink label={"Código no GitHub"} link={"https://github.com/FeHunter/Felipe-Rodrigues-Hunter"} />
                 </PopUpWindow>
@@ -183,10 +184,31 @@ export function Content (){
                             text={"Projeto feito para avaliação da faculdade. Site e-commerce, uma loja que vende peças exclusivas para lamborghini. Site totalmente responsivo e pensando em Mobile First. \n\n Técninas e tecnologias usadas usadas: Mobile First, React, CSS Module, HTML, CSS, JS, Responsividade. \n\n Este projeto foi fundamental para fixar os conceitos de responsividade e o conceito de Mobile First. Foi um dos primeiros desafios durante a faculdade; hoje é algo simples, mas no começo foi bem desafiador."}
                         />
                         <ProjectImages label={"Screenshots"}> 
-                            <img src='https://i.ibb.co/fGNrgmK/eccomerce-scr1.png' alt='ECommerce React by Felipe Hunter' width={"40%"} />
-                            <img src='https://i.ibb.co/RPbHhYY/eccomerce-scr2.png' alt='ECommerce React by Felipe Hunter' width={"40%"} />
+                            <img className={style.projectImage} src='https://i.ibb.co/fGNrgmK/eccomerce-scr1.png' alt='ECommerce React by Felipe Hunter' />
+                            <img  className={style.projectImage} src='https://i.ibb.co/RPbHhYY/eccomerce-scr2.png' alt='ECommerce React by Felipe Hunter' />
                         </ProjectImages>
                         <ProjectLink label={"Código no GitHub"} link={"https://github.com/FeHunter/Site-Ecommerce-AT"} />
+                    </section>
+                </PopUpWindow>
+
+                {/* E-commerce - Loja Virtual */}
+                <PopUpWindow
+                    label={"E-Commerce Loja Virtual"}
+                    visible={popWindow['E-Commerce Loja Virtual']}
+                    closeClick={()=>{ togglePopWindow("E-Commerce Loja Virtual") }}
+                >
+                    <section>
+                        <ProjectText
+                            title={"Sobre"}
+                            text={"Este é projeto de e-commerce que estou desenvolvendo como projeto pessoal, no início era para minha irmã vender bolsas artesanais na internet. Porém, por uma oportunidade melhor ela não seguiu com o projeto, então continue trabalhando no site para finalizar o projeto de um e-commerce. \n\n DETALHE: O projeto esta em andamento, estou trabalhando com Móbile First então o projeto esta sendo desenvolvido inicialmente para telas de smartphones, não se assuste ao abrir no Desktop user o F12 que ira ficar bem melhor."}
+                        />
+                        <ProjectImages label={"Screenshots"}> 
+                            <img className={style.projectImage} src='https://i.ibb.co/cXptMLvw/Ecommerce-img-1.jpg' alt='E-Commerce Loja Virtual 1 by Felipe Hunter' />
+                            <img className={style.projectImage} src='https://i.ibb.co/cSHwzgtY/Ecommerce-img-2.jpg' alt='E-Commerce Loja Virtual 2 by Felipe Hunter' />
+                            <img className={style.projectImage} src='https://i.ibb.co/387bd4f/Ecommerce-img-3.jpg' alt='E-Commerce Loja Virtual 3 by Felipe Hunter' />
+                            <img className={style.projectImage} src='https://i.ibb.co/fjcSJLn/Ecommerce-img-4.jpg' alt='E-Commerce Loja Virtual 4 by Felipe Hunter' />
+                            <img className={style.projectImage} src='https://i.ibb.co/b9TbL5L/Ecommerce-img-5.jpg' alt='E-Commerce Loja Virtual 5 by Felipe Hunter' />
+                        </ProjectImages>
                     </section>
                 </PopUpWindow>
 
@@ -202,9 +224,9 @@ export function Content (){
                             text={"Projeto Rede Social feito para avaliação da faculdade. Site de uma rede social com tema de F1 e carros, campos como feed de postagem, amigos sugestão de amizades e comentários em cada post. \n\n Técninas e tecnologias usadas usadas Mobile First, React, CSS Module, HTML, CSS, JS, Material UI, Responsividade. \n\n Assim como dito no projeto do E-Commerce de auto-peças este projeto foi um dos pilhares para fixar os conceitos de responsividade, mobile first e Material UI."}
                         />
                         <ProjectImages label={"Screenshots"}> 
-                            <img src='https://i.ibb.co/j8Z8ZHM/social-Cars-Scr2.png' alt='Rede Social by Felipe Hunter' width={"40%"} />
-                            <img src='https://i.ibb.co/PGVJqQJ/social-Cars-Scr1.png' alt='Rede Social by Felipe Hunter' width={"40%"} />
-                            <img src='https://i.ibb.co/nQ0wfPC/social-Cars-Scr3.png' alt='Rede Social by Felipe Hunter' width={"40%"} />
+                            <img className={style.projectImage} src='https://i.ibb.co/j8Z8ZHM/social-Cars-Scr2.png' alt='Rede Social by Felipe Hunter' />
+                            <img className={style.projectImage} src='https://i.ibb.co/PGVJqQJ/social-Cars-Scr1.png' alt='Rede Social by Felipe Hunter' />
+                            <img className={style.projectImage} src='https://i.ibb.co/nQ0wfPC/social-Cars-Scr3.png' alt='Rede Social by Felipe Hunter' />
                         </ProjectImages>
                         <ProjectLink label={"Código no GitHub"} link={"https://github.com/FeHunter/Rede-Social-AT-Mobile-First"} />
                     </section>
@@ -349,6 +371,11 @@ export function Content (){
                                     title={"Dino Island The Four Crystals - Unity, C#"}
                                     img={"https://img.itch.zone/aW1hZ2UvNzkyNDU3LzExMzMwNTM3LmpwZw==/original/IKZOMQ.jpg"}
                                     onClick={()=>{ togglePopWindow("Dino Island") }}
+                                />,
+                                <ProjectCard
+                                    title={"E-Commerce Loja Virtual"}
+                                    img={"https://i.ibb.co/vSybn3r/Ecommerce-img-cover.jpg"}
+                                    onClick={()=>{ togglePopWindow("E-Commerce Loja Virtual") }}
                                 />,
                                 <ProjectCard
                                     title={"Fim de Semana App - React"}
