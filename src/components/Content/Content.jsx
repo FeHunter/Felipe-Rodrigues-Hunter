@@ -373,42 +373,41 @@ export function Content (){
                 {ContentOfPopWindows()}
             </CardContent>
 
-            {/* PROJETOS */}
-            <CardContent id={"LeetCode"} title={"Leet Code"} icon={<i class="fa-solid fa-code"></i>} >
-                <div className={style.projectsContainer}>
-                    <div className={style.projects}>
-                        <ContentSlider
-                            blocks={[
-                                <LeetcodeCard
-                                    title="Two Sum"
-                                    content={
-                                        <CodeCard
-                                            title="Two Sum"
-                                            code={leetCodeSolutions.TwoSum}
-                                            about={
-                                            <>
-                                                <p>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.</p>
-                                            </>
-                                            }
-                                            aboutSolution={
-                                                <>
-                                                    <p>Usando laços for aninhados para percorre pela array verificando todos os números, ingorando somente o número que o indice de 'i' e 'j' são o mesmo.</p>
-                                                </>
-                                            }
-                                        />
-                                    }
-                                />,
-                                <LeetcodeCard title="Test 2" />,
-                                <LeetcodeCard title="Test 3" />,
-                            ]}
-                        />
-                    </div>
-                </div>
-                {/* Janelas de PopUp dos projetos */}
-                {ContentOfPopWindows()}
-            </CardContent>
+            {/* LEET CODE */}
+            {/* code nos comentários */}
 
             <Footer/>
         </section>
     );
 }
+
+/*
+<CardContent id={"LeetCode"} title={"Leet Code"} icon={<i class="fa-solid fa-code"></i>} >
+    <div className={style.projectsContainer}>
+        <div className={style.projects}>
+            <ContentSlider
+                blocks={[
+                    <LeetcodeCard
+                        title="Two Sum"
+                        content={
+                            <CodeCard
+                                title="Two Sum"
+                                code={leetCodeSolutions.TwoSum}
+                                about={<p>
+                                    Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.
+                                </p>}
+                                aboutSolution={<p>
+                                    Usando laços for aninhados para percorre pela array verificando todos os números, ingorando somente o número que o indice de 'i' e 'j' são o mesmo.
+                                </p>}
+                            />
+                        }
+                    />,
+                    <LeetcodeCard title="Test 2" />,
+                    <LeetcodeCard title="Test 3" />,
+                ]}
+            />
+        </div>
+    </div>
+    {ContentOfPopWindows()}
+</CardContent>
+*/

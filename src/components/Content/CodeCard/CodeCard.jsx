@@ -3,7 +3,7 @@ import style from './CodeCard.module.css'
 export function CodeCard ({title, code, about, aboutSolution}){
     return (
         <section className={style.codeArea}>
-            <h2>{title}</h2>
+            <h2 className={style.codeTitle}>{title}</h2>
             <figure className={style.code}>
                 <pre>
                     <code className={style.codeText}>{code}</code>
