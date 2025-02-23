@@ -313,7 +313,7 @@ export function Content (){
                 <div>
                     <a
                         className={style.resumeLink}
-                        href="https://drive.google.com/uc?id=1qep7HHuC1ne7w9o2rsRTyAs_TIJkBZvh&export=download" target="_blank"
+                        href="https://drive.google.com/uc?id=1SyUQ6lPKLjpu0_j52NqRiuOmCtbQdnE3&export=download" target="_blank"
                     >
                         <i class="fa-solid fa-file"></i> Currículo
                     </a>
