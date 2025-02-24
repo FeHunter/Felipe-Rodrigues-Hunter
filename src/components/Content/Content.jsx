@@ -209,6 +209,7 @@ export function Content (){
                             <img className={style.projectImage} src='https://i.ibb.co/fjcSJLn/Ecommerce-img-4.jpg' alt='E-Commerce Loja Virtual 4 by Felipe Hunter' />
                             <img className={style.projectImage} src='https://i.ibb.co/b9TbL5L/Ecommerce-img-5.jpg' alt='E-Commerce Loja Virtual 5 by Felipe Hunter' />
                         </ProjectImages>
+                        <ProjectLink label={"Link do site"} link={"https://lalunejessybags.firebaseapp.com/"} />
                     </section>
                 </PopUpWindow>
 
