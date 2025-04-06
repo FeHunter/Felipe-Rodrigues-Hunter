@@ -318,7 +318,7 @@ export function Content (){
                         <br/>
                         <li>
                             <p>Recepcionista Bilíngue - Verzani & Sandrini - Itaú BBA S.A.</p>
-                            <p>2022 - Atualmente</p>
+                            <p>2022 - 2025</p>
                         </li>
                         <br/>
                         <li>
