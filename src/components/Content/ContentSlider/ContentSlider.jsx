@@ -4,46 +4,27 @@ import style from './ContentSlider.module.css';
 export function ContentSlider({ blocks }) {
   
   const [blockId, setBlockId] = useState(0);
-  const [animationTransition, setAnimationTransition] = useState("")
 
-  function next() {
-    setBlockId(prevBlockId => {
-      const newBlockId = prevBlockId + 2; // Avança por dois blocos
-      if (newBlockId >= blocks.length) {
-        return prevBlockId; // Evita exceder os limites do array
-      }
-      return newBlockId;
-    });
-    setAnimationTransition(style.ApplySliderLeft)
+  const move_left = () => {
+    const slider = document.getElementById('slider_content')
+    slider.scrollLeft -= 100
   }
-
-  function prev() {
-    setBlockId(prevBlockId => {
-      const newBlockId = prevBlockId - 2; // Retrocede por dois blocos
-      if (newBlockId < 0) {
-        return prevBlockId; // Evita valores negativos
-      }
-      return newBlockId;
-    });
-    setAnimationTransition(style.ApplySliderRight)
+  const move_right = () => {
+    const slider = document.getElementById('slider_content')
+    slider.scrollLeft += 100
   }
-
-  const viewBlock1 = blocks[blockId] || null;
-  const viewBlock2 = blocks[blockId + 1] || null;
-
-  const leftLimitColor = blockId <= 0 ? {color: 'transparent'} : {};
-  const rightLimitColor = blockId+2 >= blocks.length ? {color: 'transparent'} : {};
 
   return (
-    <section className={`${style.container} ${animationTransition}`}>
-      <div className={style.leftButton} style={leftLimitColor} onClick={prev}>
+    <section className={style.container}>
+      <div className={style.leftButton} onClick={()=>{ move_left() }}>
         <i className="fa-solid fa-chevron-left"></i>
       </div>
-      <div className={style.content}>
-        <span className={style.mobile}>{viewBlock1} {viewBlock2}</span>
-        <span className={style.desktop}>{viewBlock1} {viewBlock2}</span>
+      <div className={style.content} id='slider_content'>
+        {blocks.map((item, i) => {
+          return <span key={`Slider_item_${i}`} className={style.contentElement}>{item}</span>
+        })}
       </div>
-      <div className={style.rightButton} style={rightLimitColor} onClick={next}>
+      <div className={style.rightButton} onClick={()=>{ move_right() }}>
         <i className="fa-solid fa-chevron-right"></i>
       </div>
     </section>

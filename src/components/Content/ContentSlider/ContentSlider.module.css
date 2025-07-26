@@ -1,94 +1,63 @@
 .container {
-    display: grid;
-    grid-template-columns: 5% 90% 5%;
-    grid-template-rows: 100%;
-    grid-template-areas: 'left content right';
+    display: flex;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    padding: 2%;
+    border: 1px solid gray;
+    border-radius: 10px;
 }
 
-.mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-.desktop {
-    display: none;
-}
-
-.leftButton, .rightButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-}
-.leftButton:hover, .rightButton:hover {
-    cursor: pointer;
-    color: var(--highligth-font-color);
-    transition: .5s;
-}
-
-.leftButton {
-    grid-area: left;
-}
 .content {
     grid-area: content;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
     width: 100%;
+    padding: 2%;
+    overflow-x: hidden;
+    box-shadow: 2px 2px 5px whitesmoke;
+    scroll-behavior: smooth;
 }
-.rightButton {
-    grid-area: right;
-}
-
-
-.ApplySliderLeft {
-    animation: slideLeft 0.5s ease-in-out forwards;
-}
-.ApplySliderRight {
-    animation: slideRight 0.5s ease-in-out forwards;
+.leftButton, .rightButton {
+    display: none;
 }
 
-@keyframes slideLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(50%);
-    }
-    60% {
-        opacity: 1;
-        transform: translateX(-1%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-@keyframes slideRight {
-    0% {
-        opacity: 0;
-        transform: translateX(-50%);
-    }
-    60% {
-        opacity: 1;
-        transform: translateX(1%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+.contentElement {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
 }
 
 @media screen and (min-width: 900px) {
-    .mobile {
-        display: none;
+    .container {
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: 100%;
+        grid-template-areas: 'left content right';
     }
-    .desktop {
+    .leftButton, .rightButton {
         display: flex;
-        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .leftButton:hover , .rightButton:hover {
+        cursor: pointer;
+    }
+    .leftButton {
+        grid-area: left;
+    }
+    .rightButton {
+        grid-area: right;
+    }
+
+    .content {
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 50px;
+    }
+    .contentElement {
+        display: flex;
+        flex-shrink: 0;
+        width: 50%;
     }
 }
