@@ -3,7 +3,7 @@
     grid-template-columns: 100%;
     grid-template-rows: 30% 70%;
     grid-template-areas: 'title' 'image';
-    width: 100%;
+    width: 40%;
     padding: 1%;
     border: 1px solid transparent;
     border-bottom: 2px solid var(--highligth-font-color);
@@ -58,6 +58,7 @@
 @media screen and (min-width: 900px) {
     .container {
         grid-template-rows: 20% 80%;
+        width: 100%;
     }
     .image {
         width: 90%;
