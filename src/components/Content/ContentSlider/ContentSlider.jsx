@@ -21,14 +21,16 @@ export function ContentSlider({ blocks }) {
 
   
   const move_left = () => {
-    if (moveIndex > 2) {
+    const min_to_roll = visibleCount-1
+    if (moveIndex >= min_to_roll) {
       setPosition((prev) => prev + translateXStep);
       setMoveIndex((prev) => prev - 1);
     }
   }
   
   const move_right = () => {
-    if (moveIndex <= blocks.length - visibleCount) {
+    const max_to_roll = blocks.length - visibleCount-1
+    if (moveIndex < max_to_roll) {
       setPosition((prev) => prev - translateXStep);
       setMoveIndex((prev) => prev + 1);
     }

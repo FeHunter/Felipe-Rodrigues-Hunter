@@ -1,7 +1,14 @@
 .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80% 20%;
+    grid-template-areas:
+        'content content'
+        'left right'
+    ;
     width: 100%;
-    height: 80%;
+    /* height: 100%; */
+    height: 250px;
     border: 1px solid gray;
     border-radius: 10px;
     overflow: hidden;
@@ -11,25 +18,31 @@
     grid-area: content;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
     box-shadow: 2px 2px 5px whitesmoke;
 }
 .leftButton, .rightButton {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
 
 .toSlider {
     display: flex;
     align-items: center;
-    justify-content: stretch;
+    justify-content: space-between;
     width: 90%;
     height: 90%;
+    padding: 1%;
     gap: 50px;
 }
 .contentElement {
     display: flex;
     flex-shrink: 0;
-    width: 100%;
+    width: 40%;
+    height: 100%;
 }
 
 @media screen and (min-width: 900px) {
@@ -38,14 +51,20 @@
         grid-template-columns: 5% 90% 5%;
         grid-template-rows: 100%;
         grid-template-areas: 'left content right';
+        height: auto;
     }
     .leftButton, .rightButton {
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: white;
+        z-index: 1;
     }
     .leftButton:hover , .rightButton:hover {
         cursor: pointer;
+        font-size: 1.1em;
+        transition: .2s;
+        background-color: whitesmoke;
     }
     .leftButton {
         grid-area: left;
@@ -56,12 +75,22 @@
 
     .content {
         flex-direction: row;
-        overflow-x: auto;
+        align-items: center;
+        justify-content: space-between;
         gap: 50px;
+        padding: 2%;
     }
     .contentElement {
         display: flex;
         flex-shrink: 0;
         width: 50%;
+    }
+    .toSlider {
+        display: flex;
+        align-items: center;
+        justify-content: stretch;
+        width: 90%;
+        height: 90%;
+        gap: 50px;
     }
 }
