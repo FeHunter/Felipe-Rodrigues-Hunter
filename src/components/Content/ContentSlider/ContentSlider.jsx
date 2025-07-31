@@ -9,15 +9,26 @@ export function ContentSlider({ blocks }) {
   const [position, setPosition] = useState(0)
   const [translateXStep, setTranslateXStep] = useState(0)
   const cardRef = useRef(null)
-  const visibleCount = 2
+  const [visibleCount, setVisibleCount] = useState(2)
 
   useEffect(()=>{
+
+    let gap = 50
+    if (screen.width <= 900){
+      setVisibleCount(1)
+      gap = 20
+    }
+
     if (cardRef.current){
       const cardWidth = cardRef.current.clientWidth
-      const gap = 50
-      setTranslateXStep( cardWidth * visibleCount + gap )
+      setTranslateXStep( cardWidth / 2 * visibleCount + gap )
     }
+
   }, [])
+
+  useEffect(()=>{
+    console.log(visibleCount)
+  },[visibleCount])
 
   
   const move_left = () => {
@@ -29,7 +40,7 @@ export function ContentSlider({ blocks }) {
   }
   
   const move_right = () => {
-    const max_to_roll = blocks.length - visibleCount-1
+    const max_to_roll = blocks.length - visibleCount
     if (moveIndex < max_to_roll) {
       setPosition((prev) => prev - translateXStep);
       setMoveIndex((prev) => prev + 1);
