@@ -13,10 +13,10 @@
     animation: showUp .5s normal;
 }
 .animationOff {
-    animation: showOff .5s normal;
+    animation: showOff 5s normal;
 }
 
-.window {
+.mainWindow {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 95% 5%;
@@ -29,6 +29,10 @@
     display: flex;
     width: 100%;
     height: 100%;
+}
+.headerButtons {
+    display: flex;
+    gap: 20px;
 }
 
 .label {
@@ -121,8 +125,10 @@
         grid-template-columns: 100%;
         grid-template-rows: 10% 90%;
         grid-template-areas: 'windowHeader' 'windowContent';
-        width: 80%;
-        height: 80%;
+        width: auto;
+        height: auto;
+        /* width: 80%;
+        height: 80%; */
         background-color: var(--background-color);
         border-radius: 10px;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
@@ -148,22 +154,22 @@
 /* Animations */
 @keyframes showUp {
     0% {
+        transform: translateY(100%);
         position: absolute;
-        width: 10%;
-        height: 0;
-        bottom: 0;
-        transform: scale(.5);
+        width: 50%;
+        left: 30%;
     }
     100% {
-        position: absolute;
-        bottom: 2.5%;
+        transform: translateY(0);
     }
 }
 @keyframes showOff {
     0% {
         transform: scale(1);
+        transform: translateY(0);
     }
     99% {
+        transform: translateY(100%);
         transform: scale(0);
     }
     100% {
