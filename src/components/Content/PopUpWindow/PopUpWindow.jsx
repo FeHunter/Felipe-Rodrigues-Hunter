@@ -3,6 +3,14 @@ import style from './PopUpWindow.module.css';
 
 export function PopUpWindow ({label, visible, closeClick, children}) {
 
+    // window controller - visible
+    const [isVisible, setIsVisible] = useState(visible)
+    const [windowAnim, setWindowAnim] = useState(style.animationOn) // style.animationOff
+    useEffect(()=>{
+        setIsVisible(visible)
+        setWindowAnim(visible && style.animationOn)
+    }, [visible])
+
     // max and min window width
     const windowMin = { width: '75%', height: '80%', transition: '.5s' }
     const windowMax = { width: '100%', height: '100%', transition: '.5s' }
@@ -18,8 +26,8 @@ export function PopUpWindow ({label, visible, closeClick, children}) {
 
     return (
         <>
-            <section className={`${visible && style.container} ${visible && style.animationOn || style.animationOff}`}>
-                {visible && <> <div  className={style.mainWindow}>
+            <section className={`${isVisible && style.container} ${windowAnim}`}>
+                {isVisible && <> <div  className={style.mainWindow}>
                     <div className={style.content}>
                         <div className={style.windowContent} style={windowSize}>
                             <div className={style.header}>
@@ -28,7 +36,14 @@ export function PopUpWindow ({label, visible, closeClick, children}) {
                                     <span className={style.closeButton} onClick={changeWindowSize}>
                                         {windowFull && <i class="fa-solid fa-compress"></i> || <i class="fa-solid fa-expand"></i>}
                                     </span>
-                                    <span className={style.closeButton} onClick={closeClick}> <i class="fa-regular fa-circle-xmark"></i> </span>
+                                    <span className={style.closeButton} onClick={()=>{
+                                        setTimeout(() => {
+                                            closeClick()
+                                        }, 200)
+                                        setWindowAnim(style.animationOff)
+                                    }}>
+                                        <i class="fa-regular fa-circle-xmark"></i>
+                                    </span>
                                 </div>
                             </div>
                             <div className={style.windowLocal}> {children} </div>

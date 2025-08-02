@@ -10,10 +10,10 @@
 }
 
 .animationOn {
-    animation: showUp .5s normal;
+    animation: showUp .3s normal;
 }
 .animationOff {
-    animation: showOff 5s normal;
+    animation: showOff .3s normal;
 }
 
 .mainWindow {
@@ -156,8 +156,8 @@
     0% {
         transform: translateY(100%);
         position: absolute;
-        width: 50%;
-        left: 30%;
+        width: 20%;
+        left: 40%;
     }
     100% {
         transform: translateY(0);
@@ -165,12 +165,13 @@
 }
 @keyframes showOff {
     0% {
-        transform: scale(1);
+        position: absolute;
         transform: translateY(0);
     }
     99% {
         transform: translateY(100%);
-        transform: scale(0);
+        width: 10%;
+        left: 50%;
     }
     100% {
         display: none !important;
