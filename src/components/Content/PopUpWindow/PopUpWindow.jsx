@@ -12,7 +12,7 @@ export function PopUpWindow ({label, visible, closeClick, children}) {
     }, [visible])
 
     // max and min window width
-    const windowMin = { width: '75%', height: '80%', transition: '.5s' }
+    const [windowMin, setWindowMin] = useState({ width: '75%', height: '80%', transition: '.5s' })
     const windowMax = { width: '100%', height: '100%', transition: '.5s' }
     const [windowFull, setWindowFull] = useState(false)
     const [windowSize, setWindowSize] = useState(windowMin)
@@ -24,13 +24,32 @@ export function PopUpWindow ({label, visible, closeClick, children}) {
         console.log(windowFull)
     },[windowFull])
 
+    // move window
+    const [isClicking, setIsClicking] = useState(false)
+    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0})
+    const readMousePosition = (event) => {
+        setMousePosition({ x: event.clientX, y: event.clientY })
+    }
+    useEffect(()=>{
+        moveWindow ()
+        // console.log(mousePosition)
+    },[isClicking])
+    const moveWindow = () => {
+        setWindowMin((prev) => ({...prev, left: `${mousePosition.x}px`, right: `${mousePosition.y}px`}))
+        console.log("estou aqui." + mousePosition.x + "/" + mousePosition.y)
+    }
+
+    // useEffect(()=>{
+    //     console.log(windowMin)
+    // },[windowMin])
+
     return (
         <>
             <section className={`${isVisible && style.container} ${windowAnim}`}>
                 {isVisible && <> <div  className={style.mainWindow}>
-                    <div className={style.content}>
-                        <div className={style.windowContent} style={windowSize}>
-                            <div className={style.header}>
+                    <div className={style.content} onMouseEnter={readMousePosition}>
+                        <div id='moveWindow' className={style.windowContent} style={windowSize}>
+                            <div className={style.header} onMouseDown={()=>{ setIsClicking(true) }} onMouseUp={()=>{ setIsClicking(false) }}>
                                 <p className={style.label}><i class="fa-solid fa-terminal"></i> {label}</p>
                                 <div className={style.headerButtons}>
                                     <span className={style.closeButton} onClick={changeWindowSize}>
