@@ -19,37 +19,18 @@ export function PopUpWindow ({label, visible, closeClick, children}) {
     const changeWindowSize = () => {
         setWindowFull((prev) => !prev )
     }
+
     useEffect(()=>{
         setWindowSize(windowFull ? windowMax : windowMin)
-        console.log(windowFull)
-    },[windowFull])
-
-    // move window
-    const [isClicking, setIsClicking] = useState(false)
-    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0})
-    const readMousePosition = (event) => {
-        setMousePosition({ x: event.clientX, y: event.clientY })
-    }
-    useEffect(()=>{
-        moveWindow ()
-        // console.log(mousePosition)
-    },[isClicking])
-    const moveWindow = () => {
-        setWindowMin((prev) => ({...prev, left: `${mousePosition.x}px`, right: `${mousePosition.y}px`}))
-        console.log("estou aqui." + mousePosition.x + "/" + mousePosition.y)
-    }
-
-    // useEffect(()=>{
-    //     console.log(windowMin)
-    // },[windowMin])
+    },[windowFull]) 
 
     return (
         <>
             <section className={`${isVisible && style.container} ${windowAnim}`}>
                 {isVisible && <> <div  className={style.mainWindow}>
-                    <div className={style.content} onMouseEnter={readMousePosition}>
+                    <div className={style.content}>
                         <div id='moveWindow' className={style.windowContent} style={windowSize}>
-                            <div className={style.header} onMouseDown={()=>{ setIsClicking(true) }} onMouseUp={()=>{ setIsClicking(false) }}>
+                            <div className={style.header}>
                                 <p className={style.label}><i class="fa-solid fa-terminal"></i> {label}</p>
                                 <div className={style.headerButtons}>
                                     <span className={style.closeButton} onClick={changeWindowSize}>
