@@ -25,6 +25,9 @@
     border: 1px solid lightgray;
     border-radius: 10px;
 }
+.errorMessage {
+    color: tomato;
+}
 
 .videoLinksContainer {
     display: flex;

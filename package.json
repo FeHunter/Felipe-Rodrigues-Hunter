@@ -13,12 +13,14 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.58.0",
     "formik": "^2.4.6",
     "history": "^5.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hooks-global-state": "^2.1.0",
     "react-router-dom": "^7.9.2",
+    "supabase": "^2.45.5",
     "yup": "^1.7.1"
   },
   "devDependencies": {
