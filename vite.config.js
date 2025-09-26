@@ -5,4 +5,10 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: "/Felipe-Rodrigues-Hunter",
+  server: {
+    historyApiFallback: true,
+    proxy: {
+      rewrite: (path) => path.replace(/^\/api/, '')
+    }
+  }
 })

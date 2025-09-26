@@ -1,8 +1,14 @@
-import { useEffect } from 'react';
 import './App.css'
-import { Content } from './components/Content/Content'
-import { Header } from './components/Header/Header'
+import { unstable_HistoryRouter as HistoryRouter, Route, Routes } from 'react-router-dom'
+import { history } from './history'
+
+import { useEffect } from 'react';
 import { useGlobalState } from './state/states';
+
+// Pages
+import { Content } from './components/Content/Content'
+import { Blog } from './pages/blog/blog';
+
 
 function App() {
 
@@ -26,24 +32,13 @@ function App() {
     }
   }, [darkMode]);
 
-  const viewMode = darkMode ?
-    {
-      backgroundColor: '#010D00',
-      color: 'white',
-      transition: '.5s'
-    }
-    :
-    {
-      backgroundColor: 'white',
-      color: 'black',
-      transition: '.5s'
-    };
-
   return (
-    <section className='AppSection' style={viewMode}>
-      <div className='header'> <Header/> </div>
-      <div className='content'> <Content/> </div>
-    </section>
+    <HistoryRouter history={history}>
+      <Routes> 
+        <Route path={'*'} element={<Content />} />
+        <Route path={'/Blog'} element={<Blog />} />
+      </Routes>
+    </HistoryRouter>
   )
 }
 
