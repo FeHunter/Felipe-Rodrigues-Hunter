@@ -8,6 +8,7 @@ import { useGlobalState } from './state/states';
 // Pages
 import { Content } from './components/Content/Content'
 import { Blog } from './pages/blog/blog';
+import { AddBlogPostForm } from './pages/add_blog_post/add_blog_post';
 
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
   return (
     <HistoryRouter history={history}>
       <Routes> 
-        <Route path={'*'} element={<Blog />} />
+        <Route path={'*'} element={<AddBlogPostForm />} />
         <Route path={'/Blog'} element={<Blog />} />
       </Routes>
     </HistoryRouter>
