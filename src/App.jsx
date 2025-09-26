@@ -35,7 +35,7 @@ function App() {
   return (
     <HistoryRouter history={history}>
       <Routes> 
-        <Route path={'*'} element={<Content />} />
+        <Route path={'*'} element={<Blog />} />
         <Route path={'/Blog'} element={<Blog />} />
       </Routes>
     </HistoryRouter>
