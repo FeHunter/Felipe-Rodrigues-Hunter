@@ -12,21 +12,9 @@ export function AddBlogPostForm () {
     // load
     const [loading, setLoading] = useState(false)
 
-    // check to load and edit
-    const { id } = useParams()
-    useEffect(()=>{
-        if (id) LoadFormToEdit()
-    },[])
-    const LoadFormToEdit = async () => {
-        setLoading(true)
-        const { data: post_edit } = await supabase.from('Blog_Post').select('*').eq('id', id).single()
-        if (post_edit) setInitialValues(post_edit)
-        setLoading(false)
-    }
-
     // Form
     const [initialValues, setInitialValues] = useState(
-        { title: '', about: '', text_content: '', images: null, video_link: null, created_at: null}
+        { title: '', about: '', text_content: '', images: null, video_link: [], created_at: null}
     )
     const validate = yup.object().shape({
         title: yup.string().required("O Título não pode esta vazio."),
@@ -34,12 +22,36 @@ export function AddBlogPostForm () {
         text_content: yup.string().required("Escreva sobre o projeto."),
     })
 
+    // check to load and edit
+    const { id } = useParams()
+    useEffect(()=>{
+        if (id) LoadFormToEdit()
+    },[])
+    const LoadFormToEdit = async () => {
+        setLoading(true)
+        try{
+            const { data: post_edit } = await supabase.from('Blog_Post').select('*').eq('id', id).single()
+            if (post_edit) {
+                // get links
+                const { data: video_links } = await supabase.from('Blog_video_links').select('*').eq('post_id', id)
+                let links = []
+                for (const link of video_links){
+                    links.push(link.video_link)
+                }
+                setVideoLinks(links)
+                setInitialValues(post_edit)
+            }
+        }finally{
+            setLoading(false)
+        }
+    }
+
     // Images
     const [images, setImages] = useState(null)
 
     // Add links
     const [inputVieoLink, setInputVieoLink] = useState('')
-    const [videoLinks, setVideoLinks] = useState([])
+    const [videoLinks, setVideoLinks] = useState(initialValues.video_link)
     const AddVideoLink = () => {
         // verify is link is already on the list, validate is string is not empty
         if (videoLinks.indexOf(inputVieoLink) === -1 && inputVieoLink.length > 0){
@@ -60,26 +72,33 @@ export function AddBlogPostForm () {
 
     // Save Post - Data base
     const AddPostToDataBase = async (values) => {
-        // add post texts
-        const post_to_upload = { 'title': values.title, 'text_content': values.text_content, 'about': values.about, 'created_at': values.created_at }
-        const { data: post, error: post_error } = await supabase.from('Blog_Post').insert([post_to_upload]).select().single()
-        if (post_error) console.log(post_error)
-        if (post) {
-            console.log(post)
-            // add images links
-            if (images){
-                for (const img of images){
-                    const to_upload = { 'post_id': post.id, 'img_link': img }
-                    const {error: img_link_error} = await supabase.from('Blog_Images').insert([to_upload])
-                    if (img_link_error) console.log(`Erro ao salvar image: ${img}, mais detalhes: ${img_link_error.message}`)
+        // verify if it is update or insert
+        if (id) {
+            const {error: erro_update} = await supabase.from('Blog_Post').update([values]).eq('id', id)
+            if (erro_update) alert("Erro ao atualizar post.")
+            else alert("Post atualizado com sucesso!")
+        }else {
+            // add post texts
+            const post_to_upload = { 'title': values.title, 'text_content': values.text_content, 'about': values.about, 'created_at': values.created_at }
+            const { data: post, error: post_error } = await supabase.from('Blog_Post').insert([post_to_upload]).select().single()
+            if (post_error) console.log(post_error)
+            if (post) {
+                console.log(post)
+                // add images links
+                if (images){
+                    for (const img of images){
+                        const to_upload = { 'post_id': post.id, 'img_link': img }
+                        const {error: img_link_error} = await supabase.from('Blog_Images').insert([to_upload])
+                        if (img_link_error) console.log(`Erro ao salvar image: ${img}, mais detalhes: ${img_link_error.message}`)
+                    }
                 }
-            }
-            // add video links
-            if (videoLinks.length > 0){
-                for (const link of videoLinks){
-                    const to_upload = { 'post_id': post.id, 'video_link': link }
-                    const {error: video_link_error} = await supabase.from('Blog_video_links').insert([to_upload])
-                    if (video_link_error) console.log(`Erro ao salvar link: ${link}, mais detalhes: ${video_link_error.message}`)
+                // add video links
+                if (videoLinks.length > 0){
+                    for (const link of videoLinks){
+                        const to_upload = { 'post_id': post.id, 'video_link': link }
+                        const {error: video_link_error} = await supabase.from('Blog_video_links').insert([to_upload])
+                        if (video_link_error) console.log(`Erro ao salvar link: ${link}, mais detalhes: ${video_link_error.message}`)
+                    }
                 }
             }
         }
@@ -123,7 +142,7 @@ export function AddBlogPostForm () {
                             <ErrorMessage name='imagesLinks' component="p" className={style.errorMessage} />
                         </div>
                         <div className={style.field}>
-                            <label htmlFor="video_link">Imagens do projeto</label>
+                            <label htmlFor="video_link">Links para vídeos *Youtube</label>
                             <Field className={style.inputField} name="video_link" id="video_link" type="text" placeholder="https://"
                                 value={inputVieoLink} onChange={(e)=>{setInputVieoLink(e.target.value)}} />
                             <nav className={style.videoLinksContainer}>
