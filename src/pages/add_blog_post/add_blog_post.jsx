@@ -5,9 +5,29 @@ import { useEffect, useState } from 'react'
 
 // supabase
 import { supabase } from '../../services/supabase/supabaseClient'
+import { useParams } from 'react-router-dom'
 
 export function AddBlogPostForm () {
 
+    // load
+    const [loading, setLoading] = useState(false)
+
+    // check to load and edit
+    const { id } = useParams()
+    useEffect(()=>{
+        if (id) LoadFormToEdit()
+    },[])
+    const LoadFormToEdit = async () => {
+        setLoading(true)
+        const { data: post_edit } = await supabase.from('Blog_Post').select('*').eq('id', id).single()
+        if (post_edit) setInitialValues(post_edit)
+        setLoading(false)
+    }
+
+    // Form
+    const [initialValues, setInitialValues] = useState(
+        { title: '', about: '', text_content: '', images: null, video_link: null, created_at: null}
+    )
     const validate = yup.object().shape({
         title: yup.string().required("O Título não pode esta vazio."),
         about: yup.string().required("Descrição do post é necessária."),
@@ -68,61 +88,63 @@ export function AddBlogPostForm () {
     return (
         <main className={style.container}>
             <h2>Adicionar um post ao blog</h2>
-            <Formik
-                initialValues={{ title: '', about: '', text_content: '', images: null, video_link: null, created_at: null }}
-                validationSchema={validate}
-                onSubmit={(values)=>{
-                    values.created_at = Date.now()
-                    AddPostToDataBase(values)
-                }}
-            >
-                <Form className={style.formContainer}>
-                    <div className={style.field}>
-                        <label htmlFor="Title">Título do Post</label>
-                        <Field className={style.inputField} name="title" id="title" type="text" placeholder="Projeto X" />
-                        <ErrorMessage name='title' component="p" className={style.errorMessage} />
-                    </div>
-                    <div className={style.field}>
-                        <label htmlFor="about">Descrição do Post, breve resumo sobre o post.</label>
-                        <Field className={style.inputField} name="about" id="about" type="text" placeholder="Este projeto é sobre..." />
-                        <ErrorMessage name='about' component="p" className={style.errorMessage} />
-                    </div>
-                    <div className={style.field}>
-                        <label htmlFor="text_content">Conteúdo do post, todo o texto.</label>
-                        <Field className={style.inputField} name="text_content" id="text_content" type="text" as="textarea" rows="10" placeholder="Este projeto é sobre..." />
-                        <ErrorMessage name='text_content' component="p" className={style.errorMessage} />
-                    </div>
-                    <div className={style.field}>
-                        <label htmlFor="imagesLinks">Imagens do projeto</label>
-                        <Field className={style.inputField} name="imagesLinks" id="imagesLinks" type="file" multiple="multiple"
-                            value={images} onChange={(e)=>{
-                                const allFiles = Array.from(e.target.files)
-                                setImages(allFiles)
-                            }}/>
-                        <ErrorMessage name='imagesLinks' component="p" className={style.errorMessage} />
-                    </div>
-                    <div className={style.field}>
-                        <label htmlFor="video_link">Imagens do projeto</label>
-                        <Field className={style.inputField} name="video_link" id="video_link" type="text" placeholder="https://"
-                            value={inputVieoLink} onChange={(e)=>{setInputVieoLink(e.target.value)}} />
-                        <nav className={style.videoLinksContainer}>
-                            {videoLinks.length > 0 && videoLinks.map((link, i) => {
-                                return (
-                                    <div key={`video_link_${i}`} className={style.vieoLinkField}>
-                                        <li> {link} </li>
-                                        <button className={style.videoLinkBtn} type='button' onClick={()=>{RemoveVideoLink(link)}}><i class="fa-solid fa-delete-left"></i></button>
-                                    </div>
-                                )
-                            })}
-                        </nav>
-                        <button type='button' onClick={()=>{AddVideoLink()}}>Adicionar Link</button>
-                        <ErrorMessage name='video_link' />
-                    </div>
-                    <div className={style.field}>
-                        <button type='submit' className={style.addPostBtn}>Salvar Post</button>
-                    </div>
-                </Form>
-            </Formik>
+            {!loading &&
+                <Formik
+                    initialValues={initialValues}
+                    validationSchema={validate}
+                    onSubmit={(values)=>{
+                        values.created_at = Date.now()
+                        AddPostToDataBase(values)
+                    }}
+                >
+                    <Form className={style.formContainer}>
+                        <div className={style.field}>
+                            <label htmlFor="Title">Título do Post</label>
+                            <Field className={style.inputField} name="title" id="title" type="text" placeholder="Projeto X" />
+                            <ErrorMessage name='title' component="p" className={style.errorMessage} />
+                        </div>
+                        <div className={style.field}>
+                            <label htmlFor="about">Descrição do Post, breve resumo sobre o post.</label>
+                            <Field className={style.inputField} name="about" id="about" type="text" placeholder="Este projeto é sobre..." />
+                            <ErrorMessage name='about' component="p" className={style.errorMessage} />
+                        </div>
+                        <div className={style.field}>
+                            <label htmlFor="text_content">Conteúdo do post, todo o texto.</label>
+                            <Field className={style.inputField} name="text_content" id="text_content" type="text" as="textarea" rows="10" placeholder="Este projeto é sobre..." />
+                            <ErrorMessage name='text_content' component="p" className={style.errorMessage} />
+                        </div>
+                        <div className={style.field}>
+                            <label htmlFor="imagesLinks">Imagens do projeto</label>
+                            <Field className={style.inputField} name="imagesLinks" id="imagesLinks" type="file" multiple="multiple"
+                                value={images} onChange={(e)=>{
+                                    const allFiles = Array.from(e.target.files)
+                                    setImages(allFiles)
+                                }}/>
+                            <ErrorMessage name='imagesLinks' component="p" className={style.errorMessage} />
+                        </div>
+                        <div className={style.field}>
+                            <label htmlFor="video_link">Imagens do projeto</label>
+                            <Field className={style.inputField} name="video_link" id="video_link" type="text" placeholder="https://"
+                                value={inputVieoLink} onChange={(e)=>{setInputVieoLink(e.target.value)}} />
+                            <nav className={style.videoLinksContainer}>
+                                {videoLinks.length > 0 && videoLinks.map((link, i) => {
+                                    return (
+                                        <div key={`video_link_${i}`} className={style.vieoLinkField}>
+                                            <li> {link} </li>
+                                            <button className={style.videoLinkBtn} type='button' onClick={()=>{RemoveVideoLink(link)}}><i class="fa-solid fa-delete-left"></i></button>
+                                        </div>
+                                    )
+                                })}
+                            </nav>
+                            <button type='button' onClick={()=>{AddVideoLink()}}>Adicionar Link</button>
+                            <ErrorMessage name='video_link' />
+                        </div>
+                        <div className={style.field}>
+                            <button type='submit' className={style.addPostBtn}>Salvar Post</button>
+                        </div>
+                    </Form>
+                </Formik>
+            }
         </main>
     )
 }
