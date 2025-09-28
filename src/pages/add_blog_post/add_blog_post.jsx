@@ -36,7 +36,7 @@ export function AddBlogPostForm () {
                 const { data: video_links } = await supabase.from('Blog_video_links').select('*').eq('post_id', id)
                 let links = []
                 for (const link of video_links){
-                    links.push(link.video_link)
+                    links.push(link)
                 }
                 setVideoLinks(links)
                 setInitialValues(post_edit)
@@ -63,11 +63,15 @@ export function AddBlogPostForm () {
             alert("Link já adicionado ou vazia.")
         }
     }
-    const RemoveVideoLink = (link) => {
-        const index = videoLinks.indexOf(link)
-        let upt = [...videoLinks]
-        upt.splice(index, 1)
-        setVideoLinks(upt)
+    const RemoveVideoLink = async (link) => {
+        const {error: erro_delete} = await supabase.from('Blog_video_links').delete().eq('id', link.id)
+        if (erro_delete) alert(`Erro ao deletar link ${erro_delete.message}`)
+        else {
+            const index = videoLinks.indexOf(link)
+            let upt = [...videoLinks]
+            upt.splice(index, 1)
+            setVideoLinks(upt)
+        }
     }
 
     // Save Post - Data base
@@ -149,7 +153,7 @@ export function AddBlogPostForm () {
                                 {videoLinks.length > 0 && videoLinks.map((link, i) => {
                                     return (
                                         <div key={`video_link_${i}`} className={style.vieoLinkField}>
-                                            <li> {link} </li>
+                                            <li> {link.video_link} </li>
                                             <button className={style.videoLinkBtn} type='button' onClick={()=>{RemoveVideoLink(link)}}><i class="fa-solid fa-delete-left"></i></button>
                                         </div>
                                     )
