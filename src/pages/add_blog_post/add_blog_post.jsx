@@ -6,11 +6,15 @@ import { useEffect, useState } from 'react'
 // supabase
 import { supabase } from '../../services/supabase/supabaseClient'
 import { useParams } from 'react-router-dom'
+import GetUser from '../../Services/supabase/get_user'
 
 export function AddBlogPostForm () {
 
     // load
     const [loading, setLoading] = useState(false)
+
+    // user
+    const user = GetUser()
 
     // Form
     const [initialValues, setInitialValues] = useState(
@@ -132,6 +136,7 @@ export function AddBlogPostForm () {
     return (
         <main className={style.container}>
             <h2>Adicionar um post ao blog</h2>
+            <h1>{user && user.name}</h1>
             {!loading &&
                 <Formik
                     initialValues={initialValues}

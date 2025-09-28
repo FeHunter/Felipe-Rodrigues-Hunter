@@ -7,6 +7,7 @@ import { useGlobalState } from './state/states'
 import { Blog } from './pages/blog/blog'
 import { AddBlogPostForm } from './pages/add_blog_post/add_blog_post'
 import { BlogManager } from './pages/blog_manager/blog_manager'
+import { UserPage } from './pages/user_page/user_page'
 
 function App() {
   const [darkMode] = useGlobalState('darkMode')
