@@ -33,7 +33,7 @@ function App() {
   return (
     <HashRouter>
       <Routes> 
-        <Route path="/" element={<BlogManager />} />
+        <Route path="/" element={<Blog />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/postform/:id" element={<AddBlogPostForm />} />
       </Routes>
