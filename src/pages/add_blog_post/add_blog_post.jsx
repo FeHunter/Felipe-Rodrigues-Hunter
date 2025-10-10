@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react'
 // supabase
 import { supabase } from '../../services/supabase/supabaseClient'
 import { useParams } from 'react-router-dom'
-import GetUser from '../../Services/supabase/get_user'
+import GetUser from '../../services/supabase/get_user'
 
 export function AddBlogPostForm () {
 

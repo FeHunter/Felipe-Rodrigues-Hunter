@@ -20,15 +20,12 @@ export function BlogCard ({post}) {
 
     return (
         <div className={style.container}>
-            <div className={style.topInfor}>
-                <h2>{post.title}</h2>
-                <p>{new Date(post.created_at).toLocaleString()}</p>
+            <div className={style.content}>
+                <p className={style.date}>{new Date(post.created_at).toLocaleString()}</p>
+                <h2 className={style.title}>{post.title}</h2>
+                <p>{post.about}</p>
             </div>
             <img src={cover && cover || img} alt="{titulo}.img" className={style.image} />
-            <div className={style.content}>
-                <p>{post.about}</p>
-                <a href="">Ler mais</a>
-            </div>
         </div>
     )
 }

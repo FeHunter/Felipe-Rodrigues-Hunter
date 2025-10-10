@@ -17,8 +17,24 @@ export function Blog () {
     }
 
     return (
-        <main>
-            <section>
+        <main className={style.container}>
+            <aside className={style.aside}>
+                <div className={style.buttons}>
+                    <button className={style.button}> Início </button>
+                    <button className={style.button}> Habilidades </button>
+                    <button className={style.button}> Projetos </button>
+                    <button className={style.button}> Contato </button>
+                </div>
+                <nav>
+                    <p>Posts</p>
+                    <ul>
+                        <li>Post 1</li>
+                        <li>Post 2</li>
+                        <li>Post 3</li>
+                    </ul>
+                </nav>
+            </aside>
+            <section className={style.content}>
                 <h2>Projetos</h2>
                 <div className={style.listContainer}>
                     {posts && posts.map((post, i) => {
