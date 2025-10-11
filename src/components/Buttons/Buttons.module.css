@@ -3,7 +3,7 @@
     padding: 1% 3%;
     margin: 1%;
     background-color: transparent;
-    color: white;
+    color: var(--default-font);
     font-size: 1em;
     transition: .1s;
 }
@@ -18,12 +18,12 @@
 }
 
 .BorderButton {
-    border: 2px solid white;
+    border: 2px solid var(--default-font);;
     border-radius: 10px;
     padding: 1% 3%;
     margin: 2%;
     background-color: transparent;
-    color: white;
+    color: var(--default-font);
     font-size: 1em;
     transition: .1s;
 }
@@ -44,7 +44,7 @@
     align-items: center;
     width: 8%;
     font-size: 1.2em;
-    color: white;
+    color: var(--default-font);
     background-color: transparent;
     border: none;
 }

@@ -200,7 +200,7 @@ export function Content (){
                     <section>
                         <ProjectText
                             title={"Sobre"}
-                            text={"Este é projeto de e-commerce que estou desenvolvendo como projeto pessoal, no início era para minha irmã vender bolsas artesanais na internet. Porém, por uma oportunidade melhor ela não seguiu com o projeto, então continue trabalhando no site para finalizar o projeto de um e-commerce. \n\n DETALHE: O projeto esta em andamento, estou trabalhando com Móbile First então o projeto esta sendo desenvolvido inicialmente para telas de smartphones, não se assuste ao abrir no Desktop user o F12 que ira ficar bem melhor."}
+                            text={"Este é um projeto de e-commerce que estou desenvolvendo com o intuito de ter um projeto de vendas feito por mim. Estou contente com o progresso até aqui, o site está 70% pronto. Estou finalizando alguns pontos no BackEnd para completar o projeto."}
                         />
                         <ProjectImages label={"Screenshots"}> 
                             <img className={style.projectImage} src='https://i.ibb.co/cXptMLvw/Ecommerce-img-1.jpg' alt='E-Commerce Loja Virtual 1 by Felipe Hunter' />
