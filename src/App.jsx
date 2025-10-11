@@ -1,12 +1,16 @@
-import { useEffect } from 'react';
 import './App.css'
-import { Content } from './components/Content/Content'
-import { Header } from './components/Header/Header'
-import { useGlobalState } from './state/states';
+import { HashRouter, Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react'
+import { useGlobalState } from './state/states'
+
+// Pages
+import { Blog } from './pages/blog/blog'
+import { AddBlogPostForm } from './pages/add_blog_post/add_blog_post'
+import { BlogManager } from './pages/blog_manager/blog_manager'
+import { UserPage } from './pages/user_page/user_page'
 
 function App() {
-
-  const [darkMode] = useGlobalState('darkMode');
+  const [darkMode] = useGlobalState('darkMode')
 
   useEffect(()=>{
     if (darkMode) {
@@ -41,10 +45,13 @@ function App() {
     };
 
   return (
-    <section className='AppSection' style={viewMode}>
-      <div className='header'> <Header/> </div>
-      <div className='content'> <Content/> </div>
-    </section>
+    <HashRouter>
+      <Routes> 
+        <Route path="/" element={<Blog />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/postform/:id" element={<AddBlogPostForm />} />
+      </Routes>
+    </HashRouter>
   )
 }
 

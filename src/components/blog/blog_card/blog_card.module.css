@@ -1,0 +1,44 @@
+.container {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100%;
+    grid-template-areas: 'content image';
+    padding: 1%;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid whitesmoke;
+}
+.container:hover {
+    cursor: pointer;
+    border: 1px solid lightgray;
+}
+
+.content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+
+.date {
+    color: gray;
+    font-style: italic;
+    font-size: .8em;
+}
+.title {
+    font-size: 1.3em;
+}
+
+.image {
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        width: 30%;
+    }
+}
