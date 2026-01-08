@@ -8,6 +8,9 @@ import { Blog } from './pages/blog/blog'
 import { AddBlogPostForm } from './pages/add_blog_post/add_blog_post'
 import { BlogManager } from './pages/blog_manager/blog_manager'
 import { UserPage } from './pages/user_page/user_page'
+import { Content } from './components/Content/Content'
+import { CV1 } from './pages/curriculum/cv1'
+import { CV2 } from './pages/curriculum/cv2'
 
 function App() {
   const [darkMode] = useGlobalState('darkMode')
@@ -47,7 +50,7 @@ function App() {
   return (
     <HashRouter>
       <Routes> 
-        <Route path="/" element={<Blog />} />
+        <Route path="/" element={ <CV1/> } />
         <Route path="/blog" element={<Blog />} />
         <Route path="/postform/:id" element={<AddBlogPostForm />} />
       </Routes>

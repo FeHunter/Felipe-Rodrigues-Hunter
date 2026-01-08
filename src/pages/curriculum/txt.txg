@@ -1,0 +1,297 @@
+import React from 'react'
+import styles from './Resume.module.css'
+
+export default function ResumeSite() {
+  return (
+    <main className={styles.page}>
+      <div className={styles.container}>
+
+        {/* Header */}
+        <header className={styles.header}>
+          <h1 className={styles.name}>Felipe Hunter</h1>
+          <p className={styles.role}>Fullstack Júnior (Foco Técnico)</p>
+          <p className={styles.stack}>
+            JavaScript • TypeScript • React • Supabase • PostgreSQL
+          </p>
+        </header>
+
+        {/* Perfil Profissional */}
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Perfil Profissional</h2>
+          <p className={styles.text}>
+            Desenvolvedor Fullstack Júnior com foco em JavaScript e TypeScript, experiência prática no desenvolvimento
+            de aplicações web completas, utilizando arquitetura serverless com Supabase e Edge Functions. Atuação em
+            projetos reais envolvendo e-commerce, integrações com APIs externas, regras de negócio, autenticação,
+            banco de dados e segurança (RLS). Experiência prévia como desenvolvedor freelancer e sólido conhecimento em
+            lógica de programação.
+          </p>
+        </section>
+
+        {/* Tecnologias */}
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Tecnologias</h2>
+
+          <div className={styles.grid}>
+            <div className={styles.card}>
+              <h3>Frontend</h3>
+              <p>HTML, CSS, JavaScript, TypeScript e React</p>
+            </div>
+
+            <div className={styles.card}>
+              <h3>Backend</h3>
+              <p>Supabase (Database, Auth, RLS, Edge Functions), APIs REST</p>
+            </div>
+
+            <div className={styles.card}>
+              <h3>Banco de Dados</h3>
+              <p>PostgreSQL (schemas, relacionamentos, regras de acesso)</p>
+            </div>
+
+            <div className={styles.card}>
+              <h3>Integrações</h3>
+              <p>Frenet (frete), InfinitePay (pagamentos), APIs de CEP</p>
+            </div>
+
+            <div className={styles.card}>
+              <h3>Outros</h3>
+              <p>Git, arquitetura serverless, lógica de negócio, validações</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Projetos */}
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Projetos em Destaque</h2>
+
+          <div className={styles.stackCards}>
+            <div className={styles.cardHighlight}>
+              <h3>E-commerce Fullstack (Projeto Principal)</h3>
+              <p className={styles.subtitle}>Projeto completo em desenvolvimento avançado</p>
+              <ul className={styles.list}>
+                <li>Implementação de CRUD de produtos</li>
+                <li>Modelagem de schema de banco de dados PostgreSQL</li>
+                <li>Configuração de Row Level Security (RLS)</li>
+                <li>Backend com Supabase Edge Functions</li>
+                <li>Integração com APIs externas:</li>
+                <ul className={styles.sublist}>
+                  <li>Consulta de CEP</li>
+                  <li>Cálculo de frete com Frenet</li>
+                  <li>Pagamentos via InfinitePay</li>
+                </ul>
+                <li>Definição e aplicação de regras de negócio (checkout, pedidos, validações)</li>
+              </ul>
+            </div>
+
+            <div className={styles.card}>
+              <h3>Freelance – Landing Pages</h3>
+              <p>
+                Desenvolvimento de landing pages responsivas utilizando HTML, CSS e JavaScript
+                para pequenos negócios.
+              </p>
+            </div>
+
+            <div className={styles.card}>
+              <h3>Jogos e Aplicativos – Unity Engine</h3>
+              <p>
+                Criação de jogos e aplicativos com foco em lógica de programação, estruturação
+                de sistemas e interação do usuário.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Experiência Profissional */}
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Experiência Profissional</h2>
+
+          <div className={styles.card}>
+            <h3>Desenvolvedor Freelancer</h3>
+            <ul className={styles.list}>
+              <li>Desenvolvimento de landing pages e projetos web simples</li>
+              <li>Aplicação de boas práticas de estruturação de código</li>
+              <li>Contato direto com clientes e levantamento de requisitos</li>
+            </ul>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Recepcionista Bilíngue</h3>
+            <ul className={styles.list}>
+              <li>Atendimento em inglês e português</li>
+              <li>Comunicação clara com clientes internacionais</li>
+              <li>Organização, responsabilidade e trabalho sob pressão</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Formação */}
+        <section className={styles.sectionGrid}>
+          <div className={styles.card}>
+            <h3>Formação</h3>
+            <p>
+              Análise e Desenvolvimento de Sistemas<br />
+              Instituto Infnet (em andamento)
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Idiomas</h3>
+            <p>
+              Português: Nativo<br />
+              Inglês: Avançado (Certificação Cambridge B2)
+            </p>
+          </div>
+        </section>
+
+        <footer className={styles.footer}>
+          © {new Date().getFullYear()} Felipe Hunter
+        </footer>
+
+      </div>
+    </main>
+  )
+}
+
+/*
+OBS:
+O arquivo Resume.module.css permanece o mesmo da versão anterior,
+apenas garantindo estilos para:
+- .subtitle
+- .list
+- .sublist
+*/
+
+
+// ===============================
+// ResumeStartup.jsx (Versão Startups / Faria Lima)
+// ===============================
+
+import React from 'react'
+import styles from './ResumeStartup.module.css'
+
+export function ResumeStartup() {
+  return (
+    <main className={styles.page}>
+      <div className={styles.container}>
+
+        {/* Header */}
+        <header className={styles.header}>
+          <h1 className={styles.name}>Felipe Hunter</h1>
+          <p className={styles.role}>Fullstack Júnior (Foco Startups / Faria Lima)</p>
+        </header>
+
+        {/* Perfil */}
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Perfil Profissional</h2>
+          <p className={styles.text}>
+            Desenvolvedor Fullstack Júnior com forte capacidade de resolver problemas reais de negócio através da tecnologia.
+            Experiência prática em construção de produtos digitais, integração de serviços externos, definição de regras de negócio
+            e desenvolvimento de soluções escaláveis utilizando JavaScript, Supabase e arquitetura serverless. Perfil analítico,
+            comunicativo e adaptável, com vivência em ambientes dinâmicos e atendimento bilíngue.
+          </p>
+        </section>
+
+        {/* Competências */}
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Principais Competências</h2>
+          <ul className={styles.list}>
+            <li>Desenvolvimento de aplicações web end-to-end</li>
+            <li>Integração com APIs de pagamento, frete e serviços externos</li>
+            <li>Estruturação de backend escalável e seguro</li>
+            <li>Entendimento de fluxos de e-commerce e regras de negócio</li>
+            <li>Comunicação clara com times técnicos e não técnicos</li>
+          </ul>
+        </section>
+
+        {/* Stack */}
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Stack Tecnológica</h2>
+          <ul className={styles.gridList}>
+            <li>JavaScript / TypeScript</li>
+            <li>Supabase (Auth, Database, RLS, Edge Functions)</li>
+            <li>PostgreSQL</li>
+            <li>APIs REST</li>
+            <li>HTML, CSS</li>
+            <li>Git</li>
+          </ul>
+        </section>
+
+        {/* Projeto */}
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Projeto Relevante</h2>
+
+          <div className={styles.cardHighlight}>
+            <h3>Plataforma de E-commerce (Produto Digital)</h3>
+            <p className={styles.subtitle}>
+              Desenvolvimento de uma plataforma de e-commerce com foco em escalabilidade e integração de serviços.
+            </p>
+            <ul className={styles.list}>
+              <li>Backend serverless com Edge Functions</li>
+              <li>Banco de dados estruturado com regras de segurança (RLS)</li>
+              <li>Integração com Frenet (logística e frete)</li>
+              <li>Integração com InfinitePay (pagamentos)</li>
+              <li>Integração com APIs de endereço (CEP)</li>
+              <li>Implementação de fluxos completos de compra</li>
+              <li>Visão orientada a produto e experiência do usuário</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Experiência */}
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Experiência</h2>
+
+          <div className={styles.card}>
+            <h3>Desenvolvedor Freelancer</h3>
+            <ul className={styles.list}>
+              <li>Criação de soluções web sob demanda</li>
+              <li>Desenvolvimento rápido e iterativo</li>
+              <li>Foco em entrega e qualidade</li>
+            </ul>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Recepcionista Bilíngue</h3>
+            <ul className={styles.list}>
+              <li>Atendimento em inglês em ambiente profissional</li>
+              <li>Comunicação com clientes e equipes diversas</li>
+              <li>Organização e senso de responsabilidade</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Formação */}
+        <section className={styles.sectionGrid}>
+          <div className={styles.card}>
+            <h3>Formação Acadêmica</h3>
+            <p>Análise e Desenvolvimento de Sistemas – Instituto Infnet (em andamento)</p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Idiomas</h3>
+            <p>Inglês Avançado – Cambridge B2</p>
+          </div>
+        </section>
+
+        {/* Observações */}
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Observações</h2>
+          <p className={styles.text}>
+            Disponível para atuação como Desenvolvedor Fullstack Júnior, com interesse em ambientes de inovação,
+            startups e times de produto.
+          </p>
+        </section>
+
+        <footer className={styles.footer}>
+          © {new Date().getFullYear()} Felipe Hunter
+        </footer>
+
+      </div>
+    </main>
+  )
+}
+
+/*
+OBS:
+Criar arquivo ResumeStartup.module.css reutilizando a mesma base visual do Resume.module.css
+(pode copiar e apenas ajustar cores se desejar diferenciar a versão).
+*/
