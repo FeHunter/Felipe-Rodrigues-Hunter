@@ -20,6 +20,10 @@ border-bottom: 1px solid #1f2933;
 padding-bottom: 32px;
 }
 
+a {
+    color: white;
+}
+
 
 .name {
 font-size: 3rem;
@@ -32,6 +36,14 @@ color: #6366f1;
 font-size: 1.5rem;
 }
 
+.card {
+    margin: 2% 0;
+}
+.cardItemsContent {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2%;
+}
 
 .stack {
 color: #9ca3af;
@@ -50,4 +62,11 @@ margin-bottom: 16px;
 max-width: 800px;
 line-height: 1.6;
 color: #d1d5db;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    border-top: 1px solid #1f2933;
 }

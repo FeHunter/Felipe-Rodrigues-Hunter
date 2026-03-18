@@ -1,13 +1,16 @@
 import styles from './cv1.module.css'
 
 export function CV1 () {
+
+  const whatsapp_msg_link = `https://wa.me/${11989183372}?text=${encodeURIComponent(`Olá, Felipe! Tudo bem?`)}`
+
     return (
     <main className={styles.page}>
       <div className={styles.container}>
 
         {/* Header */}
         <header className={styles.header}>
-          <h1 className={styles.name}>Felipe Hunter</h1>
+          <h1 className={styles.name}>Felipe Rodrigues</h1>
           <p className={styles.role}>Fullstack Júnior (Foco Técnico)</p>
           <p className={styles.stack}>
             JavaScript • TypeScript • React • Supabase • PostgreSQL
@@ -79,6 +82,7 @@ export function CV1 () {
                 </ul>
                 <li>Definição e aplicação de regras de negócio (checkout, pedidos, validações)</li>
               </ul>
+              <a href="https://lalunejessybags.web.app" target="_blank" rel="noopener noreferrer">lalunejessybags.web.app</a>
             </div>
 
             <div className={styles.card}>
@@ -142,7 +146,22 @@ export function CV1 () {
         </section>
 
         <footer className={styles.footer}>
-          © {new Date().getFullYear()} Felipe Hunter
+          <div className={styles.card}>
+            <h3>Contato</h3>
+            <div className={styles.cardItemsContent}>
+              <a href="mailto:felipehunter001@gmail.com" target='_blank' >E-mail 1: felipehunter001@gmail.com</a>
+              <a href="mailto:felipe.rsilva@al.infnet.edu.br" target='_blank' >E-mail 2: felipe.rsilva@al.infnet.edu.br</a>
+              <a href={whatsapp_msg_link} target='_blank' >WhatsApp: (11) 9 8918-3372</a>
+            </div>
+          </div>
+          <div className={styles.card}>
+            <h3>Redes</h3>
+            <div className={styles.cardItemsContent}>
+              <a href="https://www.linkedin.com/in/felipe-rodrigues-silver/" target='_blank' >Linkedin</a>
+              <a href="https://github.com/FeHunter" target='_blank' >GitHub</a>
+              <a href="https://felipehunter.itch.io" target='_blank' >Itch.io</a>
+            </div>
+          </div>
         </footer>
 
       </div>
