@@ -2,7 +2,7 @@ import styles from './cv1.module.css'
 
 export function CV1 () {
 
-  const whatsapp_msg_link = `https://wa.me/${11989183372}?text=${encodeURIComponent(`Olá, Felipe! Tudo bem?`)}`
+  const whatsapp_msg_link = `https://wa.me/${5511989183372}?text=${encodeURIComponent(`Olá, Felipe! Tudo bem?`)}`
 
     return (
     <main className={styles.page}>
@@ -149,9 +149,9 @@ export function CV1 () {
           <div className={styles.card}>
             <h3>Contato</h3>
             <div className={styles.cardItemsContent}>
-              <a href="mailto:felipehunter001@gmail.com" target='_blank' >E-mail 1: felipehunter001@gmail.com</a>
-              <a href="mailto:felipe.rsilva@al.infnet.edu.br" target='_blank' >E-mail 2: felipe.rsilva@al.infnet.edu.br</a>
-              <a href={whatsapp_msg_link} target='_blank' >WhatsApp: (11) 9 8918-3372</a>
+              <a className={styles.contantText} href="mailto:felipehunter001@gmail.com" target='_blank' >E-mail 1: felipehunter001@gmail.com</a>
+              <a className={styles.contantText} href="mailto:felipe.rsilva@al.infnet.edu.br" target='_blank' >E-mail 2: felipe.rsilva@al.infnet.edu.br</a>
+              <a className={styles.contantText} href={whatsapp_msg_link} target='_blank' >WhatsApp: (11) 9 8918-3372</a>
             </div>
           </div>
           <div className={styles.card}>
