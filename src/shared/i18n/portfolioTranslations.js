@@ -59,7 +59,7 @@ export const portfolioTranslations = {
     about: {
       eyebrow: 'UM POUCO SOBRE MIM',
       title: 'Curiosidade técnica, visão de produto.',
-      description: 'Sou estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor em evolução contínua. Minha experiência combina projetos de software, atendimento bilíngue e organização de informações para apoiar decisões.',
+      description: 'Sou Felipe Rodrigues, também conhecido como Felipe Hunter. Estudo Análise e Desenvolvimento de Sistemas e desenvolvo projetos web e mobile. Minha experiência combina desenvolvimento de software, atendimento bilíngue e organização de informações para apoiar decisões.',
       education: 'Formação',
       educationValue: 'Análise e Desenvolvimento de Sistemas · Instituto Infnet (em andamento)',
       language: 'Idiomas',
@@ -140,7 +140,7 @@ export const portfolioTranslations = {
     about: {
       eyebrow: 'A LITTLE ABOUT ME',
       title: 'Technical curiosity, product thinking.',
-      description: 'I am an Systems Analysis and Development student and a developer who keeps learning. My experience combines software projects, bilingual customer service, and information organization to support decisions.',
+      description: 'I am Felipe Rodrigues, also known as Felipe Hunter. I study Systems Analysis and Development and build web and mobile projects. My experience combines software development, bilingual customer service, and information organization to support decisions.',
       education: 'Education',
       educationValue: 'Systems Analysis and Development · Instituto Infnet (in progress)',
       language: 'Languages',
