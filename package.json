@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@react-pdf-kit/viewer": "^2.11.0",
     "@reduxjs/toolkit": "^2.9.0",
     "@supabase/supabase-js": "^2.58.0",
     "formik": "^2.4.6",
@@ -23,8 +24,7 @@
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.9.3",
     "supabase": "^2.45.5",
-    "yup": "^1.7.1",
-    "@react-pdf-kit/viewer": "^2.3.0"
+    "yup": "^1.7.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
