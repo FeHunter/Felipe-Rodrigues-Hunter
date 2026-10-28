@@ -1,6 +1,7 @@
 export const portfolioTranslations = {
   pt: {
     languageLabel: 'English',
+    theme: { light: 'Claro', dark: 'Escuro', switchToLight: 'Mudar para tema claro', switchToDark: 'Mudar para tema escuro' },
     nav: { projects: 'Projetos', approach: 'Como eu construo', certificates: 'Certificados', about: 'Sobre', contact: 'Contato' },
     hero: {
       eyebrow: 'DESENVOLVEDOR FULLSTACK · AI-ASSISTED BUILDER',
@@ -81,6 +82,7 @@ export const portfolioTranslations = {
   },
   en: {
     languageLabel: 'Português',
+    theme: { light: 'Light', dark: 'Dark', switchToLight: 'Switch to light theme', switchToDark: 'Switch to dark theme' },
     nav: { projects: 'Projects', approach: 'How I build', certificates: 'Certificates', about: 'About', contact: 'Contact' },
     hero: {
       eyebrow: 'FULL-STACK DEVELOPER · AI-ASSISTED BUILDER',
