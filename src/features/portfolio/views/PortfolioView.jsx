@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { usePortfolioViewModel } from '../view_models/usePortfolioViewModel'
+import { CertificatePdfViewer } from './components/CertificatePdfViewer'
 import './portfolio.css'
 
 function SectionHeading({ eyebrow, title, description }) {
@@ -170,19 +171,12 @@ export function PortfolioView() {
       </section>
 
       {selectedCertificate && (
-        <div className="certificate-viewer-backdrop" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) setSelectedCertificate(null) }}>
-          <section className="certificate-viewer" role="dialog" aria-modal="true" aria-labelledby="certificate-viewer-title">
-            <div className="certificate-viewer-header">
-              <div><p className="eyebrow">{language === 'pt' ? 'VISUALIZADOR DE DOCUMENTO' : 'DOCUMENT VIEWER'}</p><h2 id="certificate-viewer-title">{selectedCertificate.title}</h2></div>
-              <button className="certificate-viewer-close" type="button" onClick={() => setSelectedCertificate(null)} aria-label={language === 'pt' ? 'Fechar certificado' : 'Close certificate'}>×</button>
-            </div>
-            <iframe className="certificate-viewer-frame" src={selectedCertificate.fileUrl} title={selectedCertificate.title} />
-            <div className="certificate-viewer-footer">
-              <span>{language === 'pt' ? 'Se o PDF não carregar, abra o arquivo diretamente.' : 'If the PDF does not load, open the file directly.'}</span>
-              <a className="text-link" href={selectedCertificate.fileUrl} target="_blank" rel="noreferrer">{language === 'pt' ? 'Abrir em nova aba' : 'Open in new tab'} ↗</a>
-            </div>
-          </section>
-        </div>
+        <CertificatePdfViewer
+          key={selectedCertificate.id}
+          certificate={selectedCertificate}
+          language={language}
+          onClose={() => setSelectedCertificate(null)}
+        />
       )}
 
       <section className="about-section" id="about">
