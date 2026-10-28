@@ -224,3 +224,138 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--green); outline
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+
+/* Theme switch */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 34px;
+  padding: 0 10px;
+  border: 1px solid #354238;
+  border-radius: 5px;
+  background: transparent;
+  color: #b6c3b8;
+  font-size: 10px;
+  cursor: pointer;
+  transition: color .2s, border-color .2s, background .2s;
+}
+.theme-toggle > span:first-child { color: var(--green); font-size: 16px; line-height: 1; }
+.theme-toggle:hover { border-color: var(--green); }
+.theme-toggle-label { font-size: 10px; }
+
+.portfolio-shell[data-theme="light"] {
+  color: #1d2b22;
+  background: radial-gradient(ellipse at 75% 0%, rgba(66, 111, 73, .08), transparent 35%), #f7f9f6;
+  --text: #1d2b22;
+  --green: #2f6942;
+}
+.portfolio-shell[data-theme="light"] .site-header { border-bottom-color: #e0e7df; }
+.portfolio-shell[data-theme="light"] .brand-symbol { border-color: #b8cbbb; color: #2f6942; }
+.portfolio-shell[data-theme="light"] .brand-symbol span { color: #1d2b22; }
+.portfolio-shell[data-theme="light"] .brand-muted { color: #68786c; }
+.portfolio-shell[data-theme="light"] .main-nav a,
+.portfolio-shell[data-theme="light"] .language-toggle { color: #58695d; }
+.portfolio-shell[data-theme="light"] .main-nav a:hover,
+.portfolio-shell[data-theme="light"] .language-toggle:hover { color: #2f6942; }
+.portfolio-shell[data-theme="light"] .header-contact { border-color: #cbd8cc; color: #2b4432; }
+.portfolio-shell[data-theme="light"] .header-contact:hover { border-color: #2f6942; background: #edf4ed; }
+.portfolio-shell[data-theme="light"] .theme-toggle { border-color: #cbd8cc; color: #42594a; }
+.portfolio-shell[data-theme="light"] .theme-toggle:hover { border-color: #2f6942; background: #edf4ed; }
+.portfolio-shell[data-theme="light"] .hero-availability { border-color: #d6e1d5; color: #506254; background: rgba(255,255,255,.65); }
+.portfolio-shell[data-theme="light"] .status-dot { box-shadow: 0 0 0 3px rgba(47,105,66,.10); }
+.portfolio-shell[data-theme="light"] .eyebrow,
+.portfolio-shell[data-theme="light"] .project-kind,
+.portfolio-shell[data-theme="light"] .pillar-number,
+.portfolio-shell[data-theme="light"] .fact-index { color: #2f6942; }
+.portfolio-shell[data-theme="light"] .hero-copy h1 { color: #1c2b21; }
+.portfolio-shell[data-theme="light"] .hero-copy h1 span { color: #2f6942; }
+.portfolio-shell[data-theme="light"] .hero-description,
+.portfolio-shell[data-theme="light"] .section-description,
+.portfolio-shell[data-theme="light"] .project-summary,
+.portfolio-shell[data-theme="light"] .project-details li,
+.portfolio-shell[data-theme="light"] .pillar-card p,
+.portfolio-shell[data-theme="light"] .about-intro > p:last-child,
+.portfolio-shell[data-theme="light"] .about-fact p,
+.portfolio-shell[data-theme="light"] .footer-description { color: #5e6d62; }
+.portfolio-shell[data-theme="light"] .hero-socials { color: #66766a; }
+.portfolio-shell[data-theme="light"] .hero-socials > span { background: #c1cec1; }
+.portfolio-shell[data-theme="light"] .hero-bottom-note { color: #718174; }
+.portfolio-shell[data-theme="light"] .hero-bottom-line { background: #d3dfd3; }
+.portfolio-shell[data-theme="light"] .button-primary { color: #fff; background: #2f6942; }
+.portfolio-shell[data-theme="light"] .button-primary:hover { background: #245536; }
+.portfolio-shell[data-theme="light"] .button-secondary { color: #2e4434; border-color: #cbd8cc; background: rgba(255,255,255,.75); }
+.portfolio-shell[data-theme="light"] .button-secondary:hover { border-color: #729779; background: #f0f6ef; }
+.portfolio-shell[data-theme="light"] .terminal-card { border-color: #cddbcf; background: linear-gradient(145deg, #ffffff, #f0f5ef 80%); box-shadow: 0 26px 70px rgba(31, 56, 36, .09), 0 0 60px rgba(69, 116, 75, .04); }
+.portfolio-shell[data-theme="light"] .terminal-card::before { border-color: rgba(75, 116, 80, .16); }
+.portfolio-shell[data-theme="light"] .terminal-bar,
+.portfolio-shell[data-theme="light"] .terminal-foot { border-color: #e0e8df; color: #657669; }
+.portfolio-shell[data-theme="light"] .terminal-dots i { background: #b8c5b9; }
+.portfolio-shell[data-theme="light"] .terminal-dots i:first-child { background: #c9917c; }
+.portfolio-shell[data-theme="light"] .terminal-dots i:nth-child(2) { background: #d2bd77; }
+.portfolio-shell[data-theme="light"] .terminal-dots i:nth-child(3) { background: #7eaa82; }
+.portfolio-shell[data-theme="light"] .terminal-code { color: #283c2d; }
+.portfolio-shell[data-theme="light"] .code-muted { color: #9aa99b; }
+.portfolio-shell[data-theme="light"] .code-purple { color: #79539b; }
+.portfolio-shell[data-theme="light"] .code-green { color: #2f6942; }
+.portfolio-shell[data-theme="light"] .code-comment { color: #6d806f; }
+.portfolio-shell[data-theme="light"] .terminal-divider { background: #e0e8df; }
+.portfolio-shell[data-theme="light"] .terminal-prompt { color: #2f6942; }
+.portfolio-shell[data-theme="light"] .prompt-cursor { background: #2f6942; }
+.portfolio-shell[data-theme="light"] .metrics-strip { border-color: #e0e7df; background: #eef3ed; }
+.portfolio-shell[data-theme="light"] .metric-value { color: #2f6942; }
+.portfolio-shell[data-theme="light"] .metric-label { color: #5e6d62; }
+.portfolio-shell[data-theme="light"] .metric-divider { background: #d5dfd4; }
+.portfolio-shell[data-theme="light"] .section-heading h2,
+.portfolio-shell[data-theme="light"] .about-intro h2,
+.portfolio-shell[data-theme="light"] .site-footer h2 { color: #1d2b22; }
+.portfolio-shell[data-theme="light"] .project-card { border-color: #dce5dc; background: linear-gradient(160deg, #ffffff, #f7faf6); box-shadow: 0 8px 24px rgba(35, 62, 39, .035); }
+.portfolio-shell[data-theme="light"] .project-card:hover { border-color: #9db9a0; }
+.portfolio-shell[data-theme="light"] .project-number,
+.portfolio-shell[data-theme="light"] .detail-label { color: #748576; }
+.portfolio-shell[data-theme="light"] .status-pill { border-color: #d3e0d3; color: #526856; background: #f5f8f4; }
+.portfolio-shell[data-theme="light"] .project-card h3,
+.portfolio-shell[data-theme="light"] .pillar-card h3,
+.portfolio-shell[data-theme="light"] .about-fact h3,
+.portfolio-shell[data-theme="light"] .certificate-card h3 { color: #24372a; }
+.portfolio-shell[data-theme="light"] .tech-tag { border-color: #dbe5da; color: #506554; background: #f5f8f4; }
+.portfolio-shell[data-theme="light"] .project-details,
+.portfolio-shell[data-theme="light"] .project-card-footer { border-color: #e0e8df; }
+.portfolio-shell[data-theme="light"] .text-link,
+.portfolio-shell[data-theme="light"] .certificate-institution { color: #2f6942; }
+.portfolio-shell[data-theme="light"] .text-link:hover { color: #1c4c2c; }
+.portfolio-shell[data-theme="light"] .quiet-link { color: #627265; }
+.portfolio-shell[data-theme="light"] .quiet-link:hover { color: #233c2a; }
+.portfolio-shell[data-theme="light"] .approach-section,
+.portfolio-shell[data-theme="light"] .about-section { border-color: #e0e7df; background: radial-gradient(ellipse at 10% 50%, rgba(73, 120, 78, .06), transparent 42%), #eef3ed; }
+.portfolio-shell[data-theme="light"] .pillar-card,
+.portfolio-shell[data-theme="light"] .stack-panel { border-color: #d7e2d6; background: rgba(255,255,255,.7); }
+.portfolio-shell[data-theme="light"] .pillar-arrow { color: #78947b; }
+.portfolio-shell[data-theme="light"] .stack-panel-description { color: #6a7b6d; }
+.portfolio-shell[data-theme="light"] .filter-button { border-color: #d1ddd0; color: #526556; }
+.portfolio-shell[data-theme="light"] .filter-button:hover { border-color: #8eae91; color: #243c2b; }
+.portfolio-shell[data-theme="light"] .filter-button.active { border-color: #2f6942; background: #e4eee3; color: #245536; }
+.portfolio-shell[data-theme="light"] .certificate-card { border-color: #dce5dc; background: #fff; }
+.portfolio-shell[data-theme="light"] .certificate-icon,
+.portfolio-shell[data-theme="light"] .empty-icon { border-color: #c7d9c7; color: #2f6942; background: #f3f8f1; }
+.portfolio-shell[data-theme="light"] .certificate-meta { color: #718174; }
+.portfolio-shell[data-theme="light"] .certificate-card > p:not(.certificate-institution) { color: #5e6d62; }
+.portfolio-shell[data-theme="light"] .certificates-empty { border-color: #c9d8c9; background: rgba(255,255,255,.6); }
+.portfolio-shell[data-theme="light"] .certificates-empty p { color: #5e6d62; }
+.portfolio-shell[data-theme="light"] .certificates-empty .empty-note,
+.portfolio-shell[data-theme="light"] .empty-code { color: #748576; }
+.portfolio-shell[data-theme="light"] .about-fact,
+.portfolio-shell[data-theme="light"] .about-fact:first-child { border-color: #d7e1d6; }
+.portfolio-shell[data-theme="light"] .site-footer { background: radial-gradient(ellipse at 80% 0%, rgba(68, 111, 72, .07), transparent 35%), #f7f9f6; }
+.portfolio-shell[data-theme="light"] .footer-bottom { border-color: #dce5dc; }
+.portfolio-shell[data-theme="light"] .footer-bottom > span,
+.portfolio-shell[data-theme="light"] .back-top { color: #718174; }
+.portfolio-shell[data-theme="light"] .back-top:hover { color: #2f6942; }
+
+@media (max-width: 720px) {
+  .theme-toggle { padding-inline: 8px; gap: 5px; }
+  .theme-toggle-label { font-size: 9px; }
+  .portfolio-shell[data-theme="light"] .main-nav { border-top-color: #e0e7df; }
+}
