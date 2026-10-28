@@ -88,14 +88,14 @@ function CertificateCard({ certificate, copy, language }) {
 
 export function PortfolioView() {
   const {
-    language, copy, projects, certificates, certificateCategories,
-    certificateFilter, setCertificateFilter, toggleLanguage,
+    language, theme, copy, projects, certificates, certificateCategories,
+    certificateFilter, setCertificateFilter, toggleLanguage, toggleTheme,
   } = usePortfolioViewModel()
 
   return (
-    <main className="portfolio-shell">
+    <main className="portfolio-shell" data-theme={theme}>
       <header className="site-header">
-        <a className="brand-mark" href="#top" aria-label="Hunter Dev home"><span className="brand-symbol">H<span>.</span></span><span>HUNTER<span className="brand-muted">.DEV</span></span></a>
+        <a className="brand-mark" href="#top" aria-label="Felipe Rodrigues - Hunter home"><span className="brand-symbol">H<span>.</span></span><span>Felipe Rodrigues<span className="brand-muted"> - Hunter</span></span></a>
         <nav className="main-nav" aria-label={language === 'pt' ? 'Navegação principal' : 'Main navigation'}>
           <a href="#projects">{copy.nav.projects}</a>
           <a href="#approach">{copy.nav.approach}</a>
@@ -103,6 +103,10 @@ export function PortfolioView() {
           <a href="#about">{copy.nav.about}</a>
         </nav>
         <div className="header-actions">
+          <button className="theme-toggle" onClick={toggleTheme} type="button" aria-label={theme === 'light' ? copy.theme.switchToDark : copy.theme.switchToLight} title={theme === 'light' ? copy.theme.switchToDark : copy.theme.switchToLight}>
+            <span aria-hidden="true">{theme === 'light' ? '☾' : '☼'}</span>
+            <span className="theme-toggle-label">{theme === 'light' ? copy.theme.dark : copy.theme.light}</span>
+          </button>
           <button className="language-toggle" onClick={toggleLanguage} type="button" aria-label={language === 'pt' ? 'Switch to English' : 'Mudar para português'}><span className="language-globe">◎</span>{copy.languageLabel}</button>
           <a className="header-contact" href="#contact">{copy.nav.contact}<span aria-hidden="true"> ↗</span></a>
         </div>
@@ -185,7 +189,7 @@ export function PortfolioView() {
             <a className="button-secondary" href="https://github.com/FeHunter" target="_blank" rel="noreferrer">{copy.contact.github}<span aria-hidden="true"> ↗</span></a>
             <a className="button-secondary" href="https://felipehunter.itch.io" target="_blank" rel="noreferrer">{copy.contact.itch}<span aria-hidden="true"> ↗</span></a>
           </div>
-          <div className="footer-bottom"><a className="brand-mark" href="#top"><span className="brand-symbol">H<span>.</span></span><span>HUNTER<span className="brand-muted">.DEV</span></span></a><span>{copy.contact.footer}</span><a className="back-top" href="#top">{copy.contact.backTop}</a></div>
+          <div className="footer-bottom"><a className="brand-mark" href="#top"><span className="brand-symbol">H<span>.</span></span><span>Felipe Rodrigues<span className="brand-muted"> - Hunter</span></span></a><span>{copy.contact.footer}</span><a className="back-top" href="#top">{copy.contact.backTop}</a></div>
         </div>
       </footer>
     </main>
