@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { usePortfolioViewModel } from '../view_models/usePortfolioViewModel'
 import './portfolio.css'
 
@@ -68,7 +69,7 @@ function TerminalCard({ copy }) {
   )
 }
 
-function CertificateCard({ certificate, copy, language }) {
+function CertificateCard({ certificate, copy, language, onOpenCertificate }) {
   const category = copy.certificateCategories[certificate.category] || certificate.category
   return (
     <article className="certificate-card">
@@ -80,13 +81,14 @@ function CertificateCard({ certificate, copy, language }) {
       {certificate.skills?.length > 0 && <div className="tag-list">{certificate.skills.map((skill) => <span className="tech-tag" key={skill}>{skill}</span>)}</div>}
       <div className="certificate-links">
         {certificate.credentialUrl && <a className="text-link" href={certificate.credentialUrl} target="_blank" rel="noreferrer">{language === 'pt' ? 'Ver credencial' : 'Verify credential'} ↗</a>}
-        {certificate.fileUrl && <a className="quiet-link" href={certificate.fileUrl} target="_blank" rel="noreferrer">{language === 'pt' ? 'Abrir certificado' : 'Open certificate'} ↗</a>}
+        {certificate.fileUrl && <button className="quiet-link certificate-open-button" type="button" onClick={() => onOpenCertificate(certificate)}>{language === 'pt' ? 'Abrir certificado' : 'Open certificate'} ↗</button>}
       </div>
     </article>
   )
 }
 
 export function PortfolioView() {
+  const [selectedCertificate, setSelectedCertificate] = useState(null)
   const {
     language, theme, copy, projects, certificates, certificateCategories,
     certificateFilter, setCertificateFilter, toggleLanguage, toggleTheme,
@@ -158,7 +160,7 @@ export function PortfolioView() {
         <div className="certificate-filters" role="group" aria-label={language === 'pt' ? 'Filtrar certificados' : 'Filter certificates'}>
           {certificateCategories.map((category) => <button type="button" key={category} className={certificateFilter === category ? 'filter-button active' : 'filter-button'} aria-pressed={certificateFilter === category} onClick={() => setCertificateFilter(category)}>{copy.certificates.filters[category]}</button>)}
         </div>
-        {certificates.length > 0 ? <div className="certificates-grid">{certificates.map((certificate) => <CertificateCard key={certificate.id} certificate={certificate} copy={copy} language={language} />)}</div> : (
+        {certificates.length > 0 ? <div className="certificates-grid">{certificates.map((certificate) => <CertificateCard key={certificate.id} certificate={certificate} copy={copy} language={language} onOpenCertificate={setSelectedCertificate} />)}</div> : (
           <div className="certificates-empty">
             <div className="empty-icon" aria-hidden="true">✳</div>
             <div><h3>{copy.certificates.emptyTitle}</h3><p>{copy.certificates.emptyDescription}</p><p className="empty-note">{copy.certificates.fields}</p></div>
@@ -166,6 +168,22 @@ export function PortfolioView() {
           </div>
         )}
       </section>
+
+      {selectedCertificate && (
+        <div className="certificate-viewer-backdrop" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) setSelectedCertificate(null) }}>
+          <section className="certificate-viewer" role="dialog" aria-modal="true" aria-labelledby="certificate-viewer-title">
+            <div className="certificate-viewer-header">
+              <div><p className="eyebrow">{language === 'pt' ? 'VISUALIZADOR DE DOCUMENTO' : 'DOCUMENT VIEWER'}</p><h2 id="certificate-viewer-title">{selectedCertificate.title}</h2></div>
+              <button className="certificate-viewer-close" type="button" onClick={() => setSelectedCertificate(null)} aria-label={language === 'pt' ? 'Fechar certificado' : 'Close certificate'}>×</button>
+            </div>
+            <iframe className="certificate-viewer-frame" src={selectedCertificate.fileUrl} title={selectedCertificate.title} />
+            <div className="certificate-viewer-footer">
+              <span>{language === 'pt' ? 'Se o PDF não carregar, abra o arquivo diretamente.' : 'If the PDF does not load, open the file directly.'}</span>
+              <a className="text-link" href={selectedCertificate.fileUrl} target="_blank" rel="noreferrer">{language === 'pt' ? 'Abrir em nova aba' : 'Open in new tab'} ↗</a>
+            </div>
+          </section>
+        </div>
+      )}
 
       <section className="about-section" id="about">
         <div className="page-width about-grid">

@@ -50,8 +50,8 @@ export const portfolioTranslations = {
     certificates: {
       eyebrow: 'APRENDIZADO CONTÍNUO',
       title: 'Certificados e aprendizado.',
-      description: 'Cursos, certificações, palestras e webinars que complementam a experiência prática.',
-      filters: { all: 'Todos', certification: 'Certificações', course: 'Cursos', talk: 'Palestras', webinar: 'Webinars' },
+      description: 'Cursos e webinars que complementam a experiência prática.',
+      filters: { all: 'Todos', course: 'Cursos', webinar: 'Webinars' },
       emptyTitle: 'Sua próxima conquista entra aqui.',
       emptyDescription: 'Esta seção está pronta para receber credenciais verificáveis. Os certificados serão adicionados quando os arquivos ou links forem cadastrados.',
       fields: 'Cada registro pode incluir instituição, data, temas, arquivo e link de validação.',
@@ -78,7 +78,7 @@ export const portfolioTranslations = {
       footer: 'Feito com curiosidade, código e intenção.',
       backTop: 'Voltar ao topo ↑',
     },
-    certificateCategories: { certification: 'Certificação', course: 'Curso', talk: 'Palestra', webinar: 'Webinar' },
+    certificateCategories: { course: 'Curso', webinar: 'Webinar' },
   },
   en: {
     languageLabel: 'Português',
@@ -131,8 +131,8 @@ export const portfolioTranslations = {
     certificates: {
       eyebrow: 'CONTINUOUS LEARNING',
       title: 'Certificates and learning.',
-      description: 'Courses, certifications, talks, and webinars that complement hands-on experience.',
-      filters: { all: 'All', certification: 'Certifications', course: 'Courses', talk: 'Talks', webinar: 'Webinars' },
+      description: 'Courses and webinars that complement hands-on experience.',
+      filters: { all: 'All', course: 'Courses', webinar: 'Webinars' },
       emptyTitle: 'Your next achievement belongs here.',
       emptyDescription: 'This section is ready for verifiable credentials. Certificates will be added once their files or links are registered.',
       fields: 'Each record can include its institution, date, topics, file, and verification link.',
@@ -159,6 +159,6 @@ export const portfolioTranslations = {
       footer: 'Built with curiosity, code, and intention.',
       backTop: 'Back to top ↑',
     },
-    certificateCategories: { certification: 'Certification', course: 'Course', talk: 'Talk', webinar: 'Webinar' },
+    certificateCategories: { course: 'Course', webinar: 'Webinar' },
   },
 }
