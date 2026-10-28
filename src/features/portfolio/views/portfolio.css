@@ -423,6 +423,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--green); outline
   border: 1px solid #31556d;
   border-radius: 10px;
   background: var(--page-bg);
+  isolation: isolate;
   box-shadow: 0 25px 90px rgba(0, 0, 0, .45);
 }
 .certificate-viewer-header {
@@ -451,12 +452,28 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--green); outline
   font-size: 27px;
   cursor: pointer;
 }
-.certificate-viewer-frame {
+ .certificate-viewer-frame {
   width: 100%;
   flex: 1;
   min-height: 0;
   border: 0;
   background: #fff;
+}
+.certificate-viewer-content {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  background: #eef1f4;
+}
+.certificate-viewer-content > div {
+  height: 100%;
+}
+.certificate-viewer-content [data-rp="layout"] {
+  height: 100% !important;
+  min-height: 0;
+}
+.certificate-viewer-content [data-rp="pages"] {
+  min-height: 0;
 }
 .certificate-viewer-footer {
   display: flex;
