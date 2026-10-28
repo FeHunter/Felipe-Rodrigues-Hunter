@@ -1,4 +1,4 @@
-# Felipe Rodrigues (Hunter) — Portfolio
+# Felipe Rodrigues - Hunter — Portfolio
 
 Bilingual developer portfolio built with React, Vite, and JavaScript, deployed to GitHub Pages.
 
@@ -6,7 +6,7 @@ Bilingual developer portfolio built with React, Vite, and JavaScript, deployed t
 
 ## Direction
 
-A professional, minimal interface with terminal-inspired details. The portfolio presents product work, engineering decisions, and AI-assisted development as a workflow grounded in understanding and validation.
+A professional, minimal interface with terminal-inspired details, a persistent light/dark theme switch, and Portuguese/English content. The light theme is the default; the dark theme preserves the terminal-inspired visual direction. The portfolio presents product work, engineering decisions, and AI-assisted development as a workflow grounded in understanding and validation.
 
 ## Stack
 
