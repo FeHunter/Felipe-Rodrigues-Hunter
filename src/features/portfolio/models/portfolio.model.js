@@ -82,7 +82,7 @@ export const certificates = [
     date: '',
     description: { pt: 'Certificado de conclusão do curso de C#.', en: 'Certificate of completion for a C# course.' },
     skills: ['C#', 'Programação'],
-    fileUrl: `${import.meta.env.BASE_URL}certificates/Certifica%C3%A7%C3%B5es/C%23%20COMPLETO%20Programa%C3%A7%C3%A3o.pdf`,
+    fileUrl: `${import.meta.env.BASE_URL}certificates/csharp-completo.pdf`,
   },
   {
     id: 'excel-complete',
@@ -92,7 +92,7 @@ export const certificates = [
     date: '',
     description: { pt: 'Certificado de conclusão do curso de Excel.', en: 'Certificate of completion for an Excel course.' },
     skills: ['Excel', 'Análise de dados'],
-    fileUrl: `${import.meta.env.BASE_URL}certificates/Certifica%C3%A7%C3%B5es/Curso%20Excel%20COMPLETO%20do.pdf`,
+    fileUrl: `${import.meta.env.BASE_URL}certificates/excel-completo.pdf`,
   },
   {
     id: 'elective-react',
@@ -102,7 +102,7 @@ export const certificates = [
     date: '',
     description: { pt: 'Certificado de atividade eletiva em desenvolvimento web com React.', en: 'College elective certificate in web development with React.' },
     skills: ['React', 'Desenvolvimento Web'],
-    fileUrl: `${import.meta.env.BASE_URL}certificates/Eletivas%20Faculdade/Certificado%20_%20Felipe%20Rodrigues%20da%20Silva%20_%20Desenvolvimento%20Web%20com%20React.pdf`,
+    fileUrl: `${import.meta.env.BASE_URL}certificates/react-web.pdf`,
   },
   {
     id: 'elective-scientific-method',
@@ -112,7 +112,7 @@ export const certificates = [
     date: '',
     description: { pt: 'Certificado de atividade eletiva sobre metodologia científica aplicada a problemas corporativos.', en: 'College elective certificate on scientific methods for solving corporate problems.' },
     skills: ['Metodologia científica', 'Resolução de problemas'],
-    fileUrl: `${import.meta.env.BASE_URL}certificates/Eletivas%20Faculdade/Certificado%20_%20Felipe%20Rodrigues%20da%20Silva%20_%20Metodologia%20cient%C3%ADfica%20na%20solu%C3%A7%C3%A3o%20de%20problemas%20em%20ambientes%20corporativos.pdf`,
+    fileUrl: `${import.meta.env.BASE_URL}certificates/metodologia-cientifica.pdf`,
   },
   {
     id: 'elective-ai',
@@ -122,7 +122,7 @@ export const certificates = [
     date: '',
     description: { pt: 'Certificado de atividade eletiva sobre IA generativa, LLMs e Deep Learning.', en: 'College elective certificate covering generative AI, LLMs, and deep learning.' },
     skills: ['Inteligência Artificial', 'LLMs', 'Deep Learning'],
-    fileUrl: `${import.meta.env.BASE_URL}certificates/Eletivas%20Faculdade/Certificado%20_%20Felipe%20Rodrigues%20da%20Silva%20_%20Princ%C3%ADpios%20de%20Intelig%C3%AAncia%20Artificial_%20generativa,%20LLM%20e%20Deep%20Learning.pdf`,
+    fileUrl: `${import.meta.env.BASE_URL}certificates/inteligencia-artificial.pdf`,
   },
   {
     id: 'webinar-aws-eks',
@@ -132,7 +132,7 @@ export const certificates = [
     date: '',
     description: { pt: 'Participação em webinar sobre estratégias de Auto Scaling no Amazon EKS.', en: 'Webinar on Auto Scaling strategies for Amazon EKS.' },
     skills: ['AWS', 'Kubernetes', 'Auto Scaling'],
-    fileUrl: `${import.meta.env.BASE_URL}certificates/Webinar/AWS%20Elastic%20Kubernetes%20Service%20Estrat%C3%A9gias%20de%20AutoScaling.pdf`,
+    fileUrl: `${import.meta.env.BASE_URL}certificates/aws-eks-autoscaling.pdf`,
   },
   {
     id: 'webinar-public-security',
@@ -142,7 +142,7 @@ export const certificates = [
     date: '',
     description: { pt: 'Webinar sobre carreira pública e caminhos profissionais em segurança da informação.', en: 'Webinar about public-sector careers and career paths in information security.' },
     skills: ['Segurança da Informação', 'Carreira'],
-    fileUrl: `${import.meta.env.BASE_URL}certificates/Webinar/Carreira%20P%C3%BAblica%20em%20Seguran%C3%A7a%20da%20Informa%C3%A7%C3%A3o%20Caminhos%20e%20Estrat%C3%A9gias.pdf`,
+    fileUrl: `${import.meta.env.BASE_URL}certificates/seguranca-informacao.pdf`,
   },
   {
     id: 'webinar-data-science',
@@ -152,7 +152,7 @@ export const certificates = [
     date: '',
     description: { pt: 'Webinar sobre desafios e possibilidades de carreira em Data Science.', en: 'Webinar about challenges and career opportunities in data science.' },
     skills: ['Data Science', 'Carreira'],
-    fileUrl: `${import.meta.env.BASE_URL}certificates/Webinar/Carreira%20em%20Data%20Science%20Desafios%20al%C3%A9m%20dos%20modelos.pdf`,
+    fileUrl: `${import.meta.env.BASE_URL}certificates/carreira-data-science.pdf`,
   },
   {
     id: 'webinar-genai-code',
@@ -162,7 +162,7 @@ export const certificates = [
     date: '',
     description: { pt: 'Webinar sobre geração automática de código e soluções com IA generativa.', en: 'Webinar on automatic code generation and generative AI solutions.' },
     skills: ['IA Generativa', 'Desenvolvimento de Software'],
-    fileUrl: `${import.meta.env.BASE_URL}certificates/Webinar/GenAI%20Code%20Desenvolvendo%20Solu%C3%A7%C3%B5es%20com%20Gera%C3%A7%C3%A3o%20Autom%C3%A1tica%20de%20C%C3%B3digo.pdf`,
+    fileUrl: `${import.meta.env.BASE_URL}certificates/genai-code.pdf`,
   },
   {
     id: 'webinar-kyverno',
@@ -172,7 +172,7 @@ export const certificates = [
     date: '',
     description: { pt: 'Webinar sobre políticas como código, automação e segurança em Kubernetes.', en: 'Webinar on policy as code, automation, and Kubernetes security.' },
     skills: ['Kubernetes', 'Kyverno', 'Segurança'],
-    fileUrl: `${import.meta.env.BASE_URL}certificates/Webinar/Policy%20As%20Code%20no%20Kubernetes%20Automa%C3%A7%C3%A3o%20e%20Seguran%C3%A7a%20com%20Kyverno.pdf`,
+    fileUrl: `${import.meta.env.BASE_URL}certificates/kyverno-policy-as-code.pdf`,
   },
   {
     id: 'webinar-geospatial-python',
@@ -182,6 +182,6 @@ export const certificates = [
     date: '',
     description: { pt: 'Webinar sobre resolução de problemas geoespaciais usando Python.', en: 'Webinar on solving complex geospatial problems with Python.' },
     skills: ['Python', 'Geoespacial'],
-    fileUrl: `${import.meta.env.BASE_URL}certificates/Webinar/Resolvendo%20problemas%20geoespaciais%20complexos%20com%20Python%20.pdf`,
+    fileUrl: `${import.meta.env.BASE_URL}certificates/python-geoespacial.pdf`,
   },
 ]
