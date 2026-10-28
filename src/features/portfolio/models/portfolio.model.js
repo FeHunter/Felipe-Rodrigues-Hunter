@@ -61,7 +61,7 @@ export const projects = [
   },
 ]
 
-export const certificateCategories = ['all', 'certification', 'course', 'talk', 'webinar']
+export const certificateCategories = ['all', 'course', 'webinar']
 
 /**
  * Add verified credentials here.
@@ -71,7 +71,7 @@ export const certificateCategories = ['all', 'certification', 'course', 'talk', 
  *   credentialUrl?, fileUrl?, language?
  * }
  *
- * category must be one of: certification, course, talk, webinar.
+ * category must be one of: course, webinar.
  */
 export const certificates = [
   {
