@@ -20,7 +20,7 @@ export const portfolioTranslations = {
       available: 'Aberto a oportunidades',
     },
     metrics: [
-      { value: '01', label: 'produto mobile em construção' },
+      { value: '02', label: 'projetos mobile' },
       { value: '01', label: 'e-commerce publicado' },
       { value: '01', label: 'jogo publicado' },
     ],
@@ -32,6 +32,7 @@ export const portfolioTranslations = {
       live: 'Publicado',
       viewProject: 'Ver projeto',
       viewCode: 'Ver repositório',
+      caseStudy: 'Ler case de estudo',
       details: 'Pontos de engenharia',
     },
     approach: {
@@ -101,7 +102,7 @@ export const portfolioTranslations = {
       available: 'Open to opportunities',
     },
     metrics: [
-      { value: '01', label: 'mobile product in progress' },
+      { value: '02', label: 'mobile projects' },
       { value: '01', label: 'published e-commerce' },
       { value: '01', label: 'published game' },
     ],
@@ -113,6 +114,7 @@ export const portfolioTranslations = {
       live: 'Live',
       viewProject: 'View project',
       viewCode: 'View repository',
+      caseStudy: 'Read case study',
       details: 'Engineering highlights',
     },
     approach: {

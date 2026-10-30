@@ -18,7 +18,7 @@ function ProjectCard({ project, copy, language }) {
   return (
     <article className="project-card">
       <div className="project-card-top">
-        <span className="project-number">{project.number} / 03</span>
+        <span className="project-number">{project.number} / 04</span>
         <span className={`status-pill status-${project.status}`}><span className="status-dot" />{status}</span>
       </div>
       <div className="project-card-content">
@@ -34,9 +34,12 @@ function ProjectCard({ project, copy, language }) {
         </div>
       </div>
       <div className="project-card-footer">
-        <a className="text-link" href={project.href} target="_blank" rel="noreferrer">
-          {project.repository ? copy.projects.viewCode : copy.projects.viewProject} <span aria-hidden="true">↗</span>
-        </a>
+        <div className="project-card-links">
+          <a className="text-link" href={project.href} target="_blank" rel="noreferrer">
+            {project.repository ? copy.projects.viewCode : copy.projects.viewProject} <span aria-hidden="true">↗</span>
+          </a>
+          {project.caseStudyUrl && <a className="text-link case-study-link" href={project.caseStudyUrl}>{copy.projects.caseStudy} <span aria-hidden="true">→</span></a>}
+        </div>
         {project.id === 'la-lune' && (
           <a className="quiet-link" href="https://github.com/FeHunter" target="_blank" rel="noreferrer">
             GitHub <span aria-hidden="true">↗</span>
