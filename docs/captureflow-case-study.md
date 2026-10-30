@@ -36,6 +36,13 @@ Features: captures, imageimport, categories, search, fullscreen, dashboard e set
 | Feature-first + MVVM | Organização por capacidade e separação de responsabilidades | Exige disciplina para manter limites entre features |
 | AppContainer manual | Simplicidade adequada ao tamanho atual | Composição e wiring são responsabilidade explícita do app |
 
+## Ferramenta de IA utilizada
+
+- **ChatGPT — OpenAI:** https://chatgpt.com/
+- **Site oficial da OpenAI:** https://openai.com/
+
+O ChatGPT foi utilizado como assistente de programação ao longo do desenvolvimento, apoiando análise, exploração de alternativas, geração e revisão de código, refatorações, testes e documentação. A referência identifica o produto utilizado; não especificamos uma versão de modelo porque o desenvolvimento não foi limitado a uma única versão identificável.
+
 ## Desenvolvimento assistido por IA e ganho de velocidade
 
 O CaptureFlow foi desenvolvido com uso intensivo de IA como ferramenta de programação (*AI-assisted coding*). A IA apoiou a geração de código e de estruturas iniciais, implementação de funcionalidades, refatorações, criação de testes e documentação. Isso reduziu significativamente o tempo bruto dedicado à escrita manual de código e acelerou ciclos de implementação.
