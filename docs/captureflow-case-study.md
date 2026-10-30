@@ -36,6 +36,22 @@ Features: captures, imageimport, categories, search, fullscreen, dashboard e set
 | Feature-first + MVVM | Organização por capacidade e separação de responsabilidades | Exige disciplina para manter limites entre features |
 | AppContainer manual | Simplicidade adequada ao tamanho atual | Composição e wiring são responsabilidade explícita do app |
 
+## Desenvolvimento assistido por IA e ganho de velocidade
+
+O CaptureFlow foi desenvolvido com uso intensivo de IA como ferramenta de programação (*AI-assisted coding*). A IA apoiou a geração de código e de estruturas iniciais, implementação de funcionalidades, refatorações, criação de testes e documentação. Isso reduziu significativamente o tempo bruto dedicado à escrita manual de código e acelerou ciclos de implementação.
+
+A IA não atuou como responsável autônoma pelo produto: requisitos, priorização, decisões arquiteturais, integração entre componentes, revisão das respostas, investigação de erros e validação permaneceram sob condução humana. O ganho de velocidade não elimina a necessidade de compreender, revisar e testar o código gerado.
+
+### Tempo decorrido até a primeira base consolidada
+
+- **Início registrado:** 29/10/2026 às 06:25:55 UTC.
+- **Marco final considerado:** 30/10/2026 às 11:52:25 UTC, após a conclusão do CI para a base com ícones de launcher, testes configurados e montagem do APK debug.
+- **Tempo de calendário decorrido:** **29 horas, 26 minutos e 30 segundos (29h26m30s)**.
+
+Esse número mede o intervalo entre os registros do projeto, não horas efetivamente trabalhadas nem tempo contínuo de programação. Também não representa uma comparação controlada com desenvolvimento sem IA; portanto, não é possível atribuir uma porcentagem ou quantidade exata de horas economizadas. Ele contextualiza a velocidade de evolução alcançada com o fluxo assistido por IA.
+
+O marco é uma **base funcional consolidada com CI e build debug validados**, não uma release de produção nem comprovação de QA manual completo em dispositivos.
+
 ## Evolução
 
 1. Fundação Android nativa e integração com fluxos de captura.
@@ -45,7 +61,7 @@ Features: captures, imageimport, categories, search, fullscreen, dashboard e set
 5. Consolidação arquitetural, UseCases, repositories, AppContainer, testes e documentação.
 6. Ícones de launcher e validação de build no CI.
 
-O histórico da primeira fase registra 44 pull requests mescladas. O intervalo de calendário estimado foi de aproximadamente 29h26 entre o primeiro registro e o CI final, mas isso não representa horas efetivamente trabalhadas.
+O histórico da primeira fase registra 44 pull requests mescladas. O intervalo de 29h26m30s está detalhado na seção de desenvolvimento assistido por IA, com os horários de início e marco final.
 
 ## Qualidade e limites
 
