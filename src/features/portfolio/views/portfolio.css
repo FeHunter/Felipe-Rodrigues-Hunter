@@ -492,3 +492,6 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--green); outline
   .certificate-viewer-header h2 { font-size: 13px; }
   .certificate-viewer-footer { align-items: flex-start; flex-direction: column; }
 }
+
+.project-card-links{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.case-study-link{color:var(--green)}

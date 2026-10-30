@@ -26,7 +26,7 @@ export const projects = [
   },
   {
     id: 'weekend',
-    number: '01',
+    number: '02',
     name: 'Fim de Semana',
     kind: 'mobile',
     status: 'inProgress',
@@ -44,7 +44,7 @@ export const projects = [
   },
   {
     id: 'la-lune',
-    number: '02',
+    number: '03',
     name: 'La Lune Jessy Bags',
     kind: 'web',
     status: 'live',
@@ -62,7 +62,7 @@ export const projects = [
   },
   {
     id: 'dino-island',
-    number: '03',
+    number: '04',
     name: 'Dino Island: The Four Crystals',
     kind: 'game',
     status: 'live',
