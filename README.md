@@ -111,3 +111,9 @@ Alternatively, use the repository's configured GitHub Pages workflow if deployme
 - LinkedIn: https://www.linkedin.com/in/felipe-rodrigues-silver/
 - itch.io: https://felipehunter.itch.io
 - Email: felipehunter001@gmail.com
+
+
+## Design documentation
+
+- [Portfolio design system, layout, features, and UX](docs/portfolio-design-system.md)
+- [CaptureFlow case study](docs/captureflow-case-study.md)

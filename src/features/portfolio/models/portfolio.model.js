@@ -6,6 +6,25 @@
  */
 export const projects = [
   {
+    id: 'captureflow',
+    number: '01',
+    name: 'CaptureFlow',
+    kind: 'android · engineering case study',
+    status: 'inProgress',
+    href: 'https://github.com/FeHunter/captureflow',
+    repository: 'FeHunter/captureflow',
+    caseStudyUrl: '?page=case-study-captureflow',
+    stack: ['Kotlin', 'Jetpack Compose', 'MVVM', 'Room', 'ML Kit', 'Coroutines'],
+    summary: {
+      pt: 'Aplicativo Android para capturar, organizar e transformar links, textos e imagens em referências acionáveis. Case de produto e engenharia.',
+      en: 'An Android app to capture, organize, and turn links, text, and images into actionable references. A product and engineering case study.',
+    },
+    highlights: {
+      pt: ['Compartilhamento nativo, metadata e OCR on-device', 'Arquitetura Feature-first com MVVM e Clean Architecture pragmática', 'Persistência local, anotações, subtarefas e filtros'],
+      en: ['Native sharing, metadata extraction, and on-device OCR', 'Feature-first architecture with MVVM and pragmatic Clean Architecture', 'Local persistence, notes, subtasks, and filters'],
+    },
+  },
+  {
     id: 'weekend',
     number: '01',
     name: 'Fim de Semana',

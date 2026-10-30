@@ -32,6 +32,7 @@ export const portfolioTranslations = {
       live: 'Publicado',
       viewProject: 'Ver projeto',
       viewCode: 'Ver repositório',
+      caseStudy: 'Ler case de estudo',
       details: 'Pontos de engenharia',
     },
     approach: {
@@ -113,6 +114,7 @@ export const portfolioTranslations = {
       live: 'Live',
       viewProject: 'View project',
       viewCode: 'View repository',
+      caseStudy: 'Read case study',
       details: 'Engineering highlights',
     },
     approach: {
