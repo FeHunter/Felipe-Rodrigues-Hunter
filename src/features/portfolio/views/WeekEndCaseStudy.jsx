@@ -70,7 +70,7 @@ export function WeekEndCaseStudy() {
   const t = content[language]
   const toggleTheme = () => setTheme((current) => {
     const next = current === 'light' ? 'dark' : 'light'
-    try { localStorage.setItem('portfolio-theme', next) } catch {}
+    try { localStorage.setItem('portfolio-theme', next) } catch { /* localStorage may be unavailable in restricted browsing contexts. */ }
     return next
   })
 
