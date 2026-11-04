@@ -35,9 +35,13 @@ function ProjectCard({ project, copy, language }) {
       </div>
       <div className="project-card-footer">
         <div className="project-card-links">
-          <a className="text-link" href={project.href} target="_blank" rel="noreferrer">
-            {project.repository ? copy.projects.viewCode : copy.projects.viewProject} <span aria-hidden="true">↗</span>
-          </a>
+          {project.repositoryPrivate ? (
+            <span className="quiet-link">{copy.projects.sourcePrivate}</span>
+          ) : (
+            <a className="text-link" href={project.href} target="_blank" rel="noreferrer">
+              {project.repository ? copy.projects.viewCode : copy.projects.viewProject} <span aria-hidden="true">↗</span>
+            </a>
+          )}
           {project.caseStudyUrl && <a className="text-link case-study-link" href={project.caseStudyUrl}>{copy.projects.caseStudy} <span aria-hidden="true">→</span></a>}
         </div>
         {project.id === 'la-lune' && (
