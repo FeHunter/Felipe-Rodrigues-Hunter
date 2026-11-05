@@ -44,6 +44,7 @@ function ProjectCard({ project, copy, language }) {
               {project.repository ? copy.projects.viewCode : copy.projects.viewProject} <span aria-hidden="true">↗</span>
             </a>
           )}
+          {project.id === 'captureflow' && <a className="text-link case-study-link" href="/Felipe-Rodrigues-Hunter/captureflow/">{language === 'pt' ? 'Site oficial' : 'Official site'} <span aria-hidden="true">→</span></a>}
           {project.caseStudyUrl && <a className="text-link case-study-link" href={project.caseStudyUrl}>{copy.projects.caseStudy} <span aria-hidden="true">→</span></a>}
           {project.id === 'captureflow' && <a className="text-link case-study-link" href={captureFlowPrivacyUrl}>{language === 'pt' ? 'Privacidade' : 'Privacy'} <span aria-hidden="true">→</span></a>}
         </div>
