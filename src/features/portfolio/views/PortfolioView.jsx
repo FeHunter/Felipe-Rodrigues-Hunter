@@ -3,6 +3,8 @@ import { usePortfolioViewModel } from '../view_models/usePortfolioViewModel'
 import { CertificatePdfViewer } from './components/CertificatePdfViewer'
 import './portfolio.css'
 
+const captureFlowPrivacyUrl = '/Felipe-Rodrigues-Hunter/captureflow/privacy/'
+
 function SectionHeading({ eyebrow, title, description }) {
   return (
     <div className="section-heading">
@@ -43,6 +45,7 @@ function ProjectCard({ project, copy, language }) {
             </a>
           )}
           {project.caseStudyUrl && <a className="text-link case-study-link" href={project.caseStudyUrl}>{copy.projects.caseStudy} <span aria-hidden="true">→</span></a>}
+          {project.id === 'captureflow' && <a className="text-link case-study-link" href={captureFlowPrivacyUrl}>{language === 'pt' ? 'Privacidade' : 'Privacy'} <span aria-hidden="true">→</span></a>}
         </div>
         {project.id === 'la-lune' && (
           <a className="quiet-link" href="https://github.com/FeHunter" target="_blank" rel="noreferrer">
