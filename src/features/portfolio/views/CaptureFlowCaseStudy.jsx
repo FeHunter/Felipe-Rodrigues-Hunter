@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './captureflow-case-study.css'
-import { CaptureFlowPrivacyPolicy } from './CaptureFlowPrivacyPolicy'
 
 const content = {
   pt: {
@@ -25,8 +24,6 @@ const content = {
 }
 
 export function CaptureFlowCaseStudy() {
-  const isPrivacyPolicy = window.location.pathname.endsWith('/privacy') || new URLSearchParams(window.location.search).get('page') === 'captureflow-privacy'
-  if (isPrivacyPolicy) return <CaptureFlowPrivacyPolicy />
   const [language, setLanguage] = useState('pt')
   const [theme, setTheme] = useState(() => { try { return localStorage.getItem('portfolio-theme') === 'dark' ? 'dark' : 'light' } catch { return 'light' } })
   const t = content[language]
