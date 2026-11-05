@@ -5,8 +5,8 @@ export function CaptureFlowPrivacyPolicy() {
   return (
     <main className="case-shell privacy-shell">
       <header className="case-header">
-        <a className="case-back" href="./?page=case-study-captureflow">← Voltar ao CaptureFlow</a>
-        <a className="privacy-language" href="./?page=case-study-captureflow">Case de estudo</a>
+        <a className="case-back" href="/Felipe-Rodrigues-Hunter/?page=case-study-captureflow">← Voltar ao CaptureFlow</a>
+        <a className="privacy-language" href="/Felipe-Rodrigues-Hunter/?page=case-study-captureflow">Case de estudo</a>
       </header>
       <article className="privacy-document">
         <p className="case-eyebrow">CAPTUREFLOW · PRIVACIDADE</p>
