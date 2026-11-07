@@ -15,7 +15,8 @@ const content = {
       ['7. Recursos de terceiros', 'O jogo pode incluir recursos de terceiros, como artes, fontes, efeitos sonoros ou músicas, utilizados de acordo com as licenças e créditos aplicáveis. A licença de um recurso individual não transfere direitos sobre o jogo nem autoriza sua reprodução ou redistribuição.'],
       ['8. Uso permitido', 'O usuário pode instalar e utilizar uma cópia legítima do jogo para fins pessoais e não comerciais, respeitando as regras da plataforma de distribuição. Não é permitido realizar engenharia reversa, explorar falhas, remover avisos de direitos autorais ou distribuir cópias não autorizadas, exceto quando a legislação aplicável permitir expressamente.'],
       ['9. Alterações e disponibilidade', 'O jogo, seus recursos, anúncios e condições de disponibilidade podem ser atualizados, modificados, suspensos ou descontinuados. Este documento também poderá ser atualizado para refletir mudanças no aplicativo ou em requisitos legais. A versão vigente ficará publicada nesta página.'],
-      ['10. Contato', 'Para dúvidas sobre este documento, direitos autorais ou uso do jogo, entre em contato pelo e-mail felipehunter001@gmail.com.']
+      ['10. Retenção e exclusão', 'Como o desenvolvedor não mantém uma base própria de dados pessoais ou contas de jogadores, não há perfil pessoal mantido pelo desenvolvedor para consultar ou excluir. Informações técnicas eventualmente processadas por provedores de anúncios seguem os prazos e procedimentos definidos por esses provedores em suas próprias políticas.'] ,
+      ['11. Contato', 'Desenvolvedor: Felipe Rodrigues (Felipe Hunter). Para dúvidas sobre este documento, privacidade, direitos autorais ou uso do jogo, entre em contato pelo e-mail felipehunter001@gmail.com.']
     ],
     disclaimer: 'Este texto é uma apresentação informativa das práticas e condições do jogo. O tratamento de dados realizado por provedores de anúncios é regido pelas políticas desses terceiros.',
     footer: 'Dino Island: The Four Crystals · Felipe Hunter'
@@ -33,7 +34,8 @@ const content = {
       ['7. Third-party assets', 'The game may include third-party resources such as artwork, fonts, sound effects, or music, used under their applicable licenses and credits. A license for an individual asset does not transfer rights to the game or authorize its reproduction or redistribution.'],
       ['8. Permitted use', 'Users may install and use one legitimate copy of the game for personal, non-commercial purposes, subject to the distribution platform’s rules. Reverse engineering, exploiting bugs, removing copyright notices, or distributing unauthorized copies is not permitted, except where expressly allowed by applicable law.'],
       ['9. Changes and availability', 'The game, its features, ads, and availability may be updated, changed, suspended, or discontinued. This document may also be updated to reflect app changes or legal requirements. The current version will be published on this page.'],
-      ['10. Contact', 'For questions about this document, copyright, or use of the game, contact felipehunter001@gmail.com.']
+      ['10. Data retention and deletion', 'Because the developer does not maintain its own database of players’ personal data or player accounts, there is no personal player profile held by the developer to access or delete. Technical information that may be processed by advertising providers is subject to those providers’ own retention periods and procedures.'],
+      ['11. Contact', 'Developer: Felipe Rodrigues (Felipe Hunter). For questions about this document, privacy, copyright, or use of the game, contact felipehunter001@gmail.com.']
     ],
     disclaimer: 'This document is an informational summary of the game’s practices and terms. Data processing performed by advertising providers is governed by those third parties’ policies.',
     footer: 'Dino Island: The Four Crystals · Felipe Hunter'
