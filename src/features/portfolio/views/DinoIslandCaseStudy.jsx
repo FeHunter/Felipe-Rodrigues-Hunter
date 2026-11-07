@@ -2,10 +2,10 @@ import { useState } from 'react'
 import './dino-island-pages.css'
 
 const gallery = [
-  { src: 'https://img.itch.zone/aW1nLzg3MDg4MTAucG5n/original/9lpnSj.png', alt: 'Montagem de cenas de gameplay de Dino Island' },
-  { src: 'https://img.itch.zone/aW1nLzg3MDg3NTUucG5n/original/L9%2FD2C.png', alt: 'Cena de plataforma e exploração' },
-  { src: 'https://img.itch.zone/aW1nLzg3MDg3NjcucG5n/original/hggiOS.png', alt: 'Ambiente de uma das regiões da ilha' },
-  { src: 'https://img.itch.zone/aW1nLzg3MDg3NzIucG5n/original/X0mOCf.png', alt: 'Desafio de plataforma em pixel art' },
+  { src: 'https://img.itch.zone/aW1hZ2UvNzkyNDU3LzY0NDIwNzIucG5n/794x1000/2FxOA1.png', alt: 'Arte e cena de Dino Island: The Four Crystals' },
+  { src: 'https://img.itch.zone/aW1hZ2UvNzkyNDU3LzExMzMwNTMwLmpwZw==/794x1000/vjEmen.jpg', alt: 'Gameplay de Dino Island em uma das fases' },
+  { src: 'https://img.itch.zone/aW1hZ2UvNzkyNDU3LzExMzMwNTM3LmpwZw==/794x1000/cEn8nv.jpg', alt: 'Outra cena de gameplay de Dino Island' },
+  { src: 'https://img.itch.zone/aW1hZ2UvNzkyNDU3LzUxNjQyNzkuZ2lm/original/ovyCJY.gif', alt: 'Animação de gameplay de Dino Island' },
 ]
 
 const content = {
