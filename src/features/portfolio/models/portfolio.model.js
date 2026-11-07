@@ -71,13 +71,15 @@ export const projects = [
     href: 'https://felipehunter.itch.io/dino-island-the-four-crystals',
     repository: null,
     stack: ['Unity', 'C#', 'Game Development'],
+    caseStudyUrl: '?page=dino-island',
+    privacyUrl: '?page=dino-privacy',
     summary: {
-      pt: 'Projeto de jogo que demonstra fundamentos de programação, lógica de sistemas e desenvolvimento interativo.',
-      en: 'A game project demonstrating programming fundamentals, system logic, and interactive development.',
+      pt: 'Aventura 2D de plataforma em pixel art. Um jogo autoral que agora também ganha uma versão mobile para Android.',
+      en: 'A pixel-art 2D platform adventure. An independent game project now expanding to an Android mobile edition.',
     },
     highlights: {
-      pt: ['Lógica de gameplay em C#', 'Desenvolvimento com Unity Engine', 'Projeto publicado no itch.io'],
-      en: ['Gameplay logic in C#', 'Development with Unity Engine', 'Published project on itch.io'],
+      pt: ['Mais de 40 fases, quatro chefes e fases bônus na edição para PC', 'Power-ups, segredos e desafios de exploração', 'Versão original no itch.io e expansão mobile em preparação'],
+      en: ['40+ levels, four bosses, and bonus stages in the PC edition', 'Power-ups, secrets, and exploration challenges', 'Original itch.io release and mobile expansion in preparation'],
     },
   },
 ]
