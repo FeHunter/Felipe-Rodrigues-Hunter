@@ -73,7 +73,6 @@ export const projects = [
     stack: ['Unity', 'C#', 'Game Development'],
     caseStudyUrl: '?page=dino-island',
     privacyUrl: '?page=dino-privacy',
-    stack: ['Unity', 'C#', 'Pixel Art', 'Game Design'],
     summary: {
       pt: 'Aventura 2D de plataforma em pixel art. Um jogo autoral que agora também ganha uma versão mobile para Android.',
       en: 'A pixel-art 2D platform adventure. An independent game project now expanding to an Android mobile edition.',
