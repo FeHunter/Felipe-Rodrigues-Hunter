@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#f4f8fb">
+  <meta name="description" content="Política de Privacidade do CaptureFlow: dados locais, permissões, OCR local e métricas técnicas do Google ML Kit, monitoramento de screenshots, conexões externas, compartilhamento e backup.">
+  <link rel="canonical" href="https://fehunter.github.io/Felipe-Rodrigues-Hunter/captureflow/privacy/">
+  <title>Política de Privacidade · CaptureFlow</title>
+  <style>
+    :root{color-scheme:light dark;--bg:#f4f8fb;--surface:#fff;--text:#1d2b22;--muted:#58695d;--line:#d8e4ec;--accent:#236b8e}
+    @media(prefers-color-scheme:dark){:root{--bg:#06111d;--surface:#0b1b29;--text:#edf5fa;--muted:#9aafbd;--line:#203c50;--accent:#69bfe5}}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.75 system-ui,-apple-system,"Segoe UI",sans-serif}
+    header,main,footer{width:min(820px,calc(100% - 40px));margin:auto}header{display:flex;justify-content:space-between;align-items:center;padding:24px 0;border-bottom:1px solid var(--line);font-size:13px}
+    a{color:var(--accent);font-weight:650}header a{text-decoration:none}main{padding:64px 0 48px}
+    .eyebrow{font:11px ui-monospace,monospace;letter-spacing:.12em;color:var(--accent);text-transform:uppercase}
+    h1{font-size:clamp(36px,7vw,58px);line-height:1.08;letter-spacing:-.055em;margin:10px 0}
+    .updated{font:12px ui-monospace,monospace;color:var(--muted);margin:15px 0 32px}
+    .lead{font-size:18px;line-height:1.85;color:var(--muted);padding-bottom:35px;border-bottom:1px solid var(--line)}
+    section{padding:27px 0;border-bottom:1px solid var(--line)}h2{font-size:20px;letter-spacing:-.025em;margin:0 0 13px}
+    p,li{color:var(--muted)}p{margin:0 0 12px}ul{padding-left:23px}li{margin:7px 0}strong{color:var(--text)}
+    footer{border-top:1px solid var(--line);padding:28px 0 50px;color:var(--muted);font-size:13px;display:flex;gap:10px 24px;flex-wrap:wrap}
+    @media(max-width:600px){header,main,footer{width:calc(100% - 32px)}main{padding-top:44px}.lead{font-size:16px}}
+  </style>
+</head>
+<body>
+<header>
+  <a href="/Felipe-Rodrigues-Hunter/?page=case-study-captureflow">← CaptureFlow</a>
+  <a href="https://github.com/FeHunter/captureflow">Repositório ↗</a>
+</header>
+<main>
+  <p class="eyebrow">CAPTUREFLOW · PRIVACIDADE</p>
+  <h1>Política de Privacidade</h1>
+  <p class="updated">Última atualização: 5 de novembro de 2026</p>
+  <p class="lead">O CaptureFlow é um aplicativo Android para organizar referências pessoais, tarefas, imagens e anotações. Esta política explica como o aplicativo acessa, armazena, utiliza e compartilha informações durante seu uso.</p>
+
+  <section><h2>1. Desenvolvedor e contato</h2><p>O CaptureFlow é desenvolvido e mantido por Felipe Rodrigues. Para dúvidas, solicitações de privacidade ou esclarecimentos sobre esta política, escreva para <a href="mailto:captureflowhunter@gmail.com">captureflowhunter@gmail.com</a>.</p></section>
+  <section><h2>2. Dados armazenados no dispositivo</h2><p>O aplicativo não exige criação de conta e não oferece sincronização própria com servidores ou armazenamento em nuvem. Referências, títulos, categorias, subtarefas, anotações, estados, preferências e imagens importadas são armazenados localmente no dispositivo.</p><p>O CaptureFlow não recebe esses dados em um servidor próprio para sincronização, publicidade ou perfilamento.</p></section>
+  <section><h2>3. Câmera, imagens e monitoramento de screenshots</h2><p>A câmera é acessada quando você escolhe fotografar uma referência. O acesso a imagens também permite selecionar arquivos manualmente e, quando o monitoramento opcional é ativado, identificar novas capturas de tela.</p><ul><li>O monitoramento depende de ativação explícita e das permissões do Android.</li><li>Enquanto habilitado, um serviço em primeiro plano observa metadados do MediaStore, como identificador, nome, data e pasta relativa, inclusive quando você utiliza outros aplicativos.</li><li>Uma notificação persistente informa que o monitoramento está ativo e oferece uma ação para desativá-lo.</li><li>Quando uma screenshot é identificada, uma notificação abre uma prévia. A imagem só é importada após sua revisão, escolha de categoria e confirmação.</li><li>A imagem original permanece na galeria.</li><li>O serviço não captura a tela, não utiliza Serviços de Acessibilidade e não envia imagens para servidores do CaptureFlow.</li></ul><p>Você pode interromper o monitoramento pela notificação ou pela interface do aplicativo e pode revogar permissões nas configurações do Android. O Android pode interromper o serviço; durante uma interrupção, novas capturas podem não gerar avisos.</p></section>
+  <section><h2>4. Reconhecimento de texto (OCR) e métricas técnicas do ML Kit</h2>
+<p>O OCR usa Google ML Kit para reconhecer texto em imagens selecionadas ou importadas. O modelo de reconhecimento utilizado nesta versão está incluído no pacote do aplicativo (modelo bundled), e o processamento da imagem e a produção do texto reconhecido ocorrem no dispositivo. Segundo o Google, as imagens de entrada e os resultados do reconhecimento não são enviados aos servidores do ML Kit.</p>
+<p>O SDK do ML Kit pode entrar em contato com servidores Google para receber correções, informações de compatibilidade com aceleradores de hardware e atualizações relacionadas à biblioteca. Além disso, envia métricas técnicas de desempenho e utilização para diagnóstico, análise de uso, manutenção e melhoria das APIs e detecção de uso indevido.</p>
+<p>De acordo com a documentação do Google para recursos bundled, essas métricas podem incluir informações do dispositivo (fabricante, modelo, versão/build do Android e aceleradores ML disponíveis), informações do aplicativo (nome do pacote e versões), identificador por instalação que não se destina a identificar exclusivamente uma pessoa ou dispositivo físico, métricas de desempenho como latência, configuração da API (por exemplo, formato e resolução da imagem), tamanho das entradas e saídas, versão do recurso, tipos de eventos técnicos (como inicialização, detecção e liberação de recursos) e códigos de erro.</p>
+<p>O Google informa que os dados técnicos listados são transmitidos por HTTPS e não são transferidos a terceiros. Esse tratamento é realizado pelo Google como parte do funcionamento e diagnóstico do SDK, sob os termos e a política de privacidade do Google. O CaptureFlow não recebe essas métricas em servidor próprio.</p>
+<p>Mais informações: <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank" rel="noopener noreferrer">divulgação de dados do ML Kit para Google Play</a> e <a href="https://developers.google.com/ml-kit/terms" target="_blank" rel="noopener noreferrer">termos e privacidade do ML Kit</a>.</p></section>
+  <section><h2>5. Conexões com serviços externos</h2><p>Alguns recursos fazem requisições à internet quando utilizados:</p><ul><li><strong>Importação de links:</strong> o app consulta a URL que você compartilha para tentar obter título, descrição e imagens. A URL e informações técnicas da conexão, como endereço IP, podem ser recebidas pelo site consultado.</li><li><strong>YouTube:</strong> URLs de vídeos podem ser enviadas ao endpoint oEmbed do YouTube para obter título e thumbnail.</li><li><strong>Newsletters:</strong> o app consulta sites públicos para descobrir feeds RSS/Atom e depois acessa os endereços de feed selecionados.</li><li><strong>Player incorporado:</strong> o player utiliza WebView para carregar conteúdo do YouTube. JavaScript e DOM Storage são habilitados nesse contexto, e cookies de terceiros são aceitos pelo WebView. O YouTube e provedores associados podem receber dados de conexão e aplicar suas próprias tecnologias e políticas.</li><li><strong>Leitor web e navegador externo:</strong> páginas abertas recebem requisições diretamente do dispositivo, segundo o funcionamento do site e do navegador.</li></ul><p>Esses serviços são operados por terceiros. O CaptureFlow não controla as práticas de privacidade, cookies, retenção ou tratamento de dados desses provedores. Consulte as políticas dos serviços utilizados.</p></section>
+  <section><h2>6. Compartilhamento de conteúdo</h2><p>Quando você escolhe compartilhar uma referência, o CaptureFlow pode gerar um PDF com as informações e imagens selecionadas e disponibilizá-lo por meio do compartilhamento nativo do Android ao aplicativo escolhido por você. Essa transferência ocorre por ação explícita. O tratamento posterior depende do aplicativo destinatário.</p></section>
+  <section><h2>7. Backup e restauração</h2><p>O aplicativo oferece exportação e importação manual de backups em ZIP. O arquivo pode incluir referências, categorias, subtarefas, mídias, anotações e dados de Newsletters compatíveis com a versão do arquivo. A importação mescla informações ao conteúdo existente e não apaga automaticamente os dados locais.</p><p>O backup automático do Android e a transferência automática de dados do app estão desabilitados. O arquivo é salvo no destino escolhido por você e não é enviado aos servidores do CaptureFlow. Proteja o ZIP, pois ele pode conter informações pessoais e imagens.</p></section>
+  <section><h2>8. Publicidade e comercialização de dados</h2><p>O modelo inicial do CaptureFlow é gratuito. O aplicativo não utiliza o conteúdo pessoal armazenado no caderno para publicidade, perfilamento ou comercialização de dados. Esta declaração será revisada caso o modelo de negócio ou as integrações mudem.</p></section>
+  <section><h2>9. Retenção e exclusão</h2><p>Os dados do caderno permanecem no dispositivo até que você os exclua no aplicativo ou remova os dados locais do aplicativo pelas configurações do Android. Ao excluir uma referência, o CaptureFlow realiza a limpeza dos arquivos privados associados quando aplicável. Arquivos exportados ou compartilhados e cópias guardadas em outros locais precisam ser excluídos separadamente.</p></section>
+  <section><h2>10. Segurança</h2><p>O CaptureFlow utiliza armazenamento local e mecanismos do Android para limitar o compartilhamento de arquivos. Mantenha seu dispositivo protegido e armazene backups em local seguro. Nenhum sistema pode garantir segurança absoluta.</p></section>
+  <section><h2>11. Alterações desta política</h2><p>Esta política será atualizada quando funcionalidades, integrações ou práticas de tratamento de dados forem alteradas. A data de atualização será modificada para indicar a versão vigente.</p></section>
+</main>
+<footer><span>Dúvidas sobre privacidade:</span><a href="mailto:captureflowhunter@gmail.com">captureflowhunter@gmail.com</a><a href="/Felipe-Rodrigues-Hunter/?page=case-study-captureflow">Case de estudo do CaptureFlow</a></footer>
+</body>
+</html>
